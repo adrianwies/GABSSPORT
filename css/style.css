@@ -1052,6 +1052,55 @@ header{
     100%{ transform: translateY(0); }
 }
 
+/* =========================
+   BOTÓN WHATSAPP
+========================= */
+
+.whatsapp-btn{
+    position: fixed;
+
+    left: 30px;
+    bottom: 30px;
+
+    width: 68px;
+    height: 68px;
+
+    background: #25D366;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    box-shadow: 0 10px 25px rgba(37,211,102,0.35);
+
+    z-index: 999;
+
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.whatsapp-btn i{
+    color: white;
+
+    font-size: 38px;
+}
+
+.whatsapp-btn:hover{
+    transform: translateY(-6px) scale(1.05);
+
+    background: #1ebe5d;
+
+    box-shadow: 0 14px 30px rgba(37,211,102,0.45);
+}
+
+
+
 /* RESPONSIVE */
 
 @media(max-width: 950px){
