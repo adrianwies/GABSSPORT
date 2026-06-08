@@ -79,7 +79,7 @@
       <div class="servicios-grid">
         <!-- CARD 1 -->
         <div class="servicio-card">
-          <img src="../img/cancha1.jpeg" alt="Canchas de fútbol" />
+          <img src="../img/canchafut.png" alt="Canchas de fútbol" />
 
           <div class="card-content">
             <div class="servicio-icon">
@@ -97,8 +97,7 @@
               <li>Alta resistencia</li>
               <li>Mantenimiento mínimo</li>
             </ul>
-
-            <a href="#">
+            <a href="#" id="abrirModal">
               VER MÁS
               <span>→</span>
             </a>
@@ -107,24 +106,27 @@
 
         <!-- CARD 2 -->
         <div class="servicio-card">
-          <img src="../img/multi.png" alt="Canchas deportivas" />
+          <img src="../img/pistaatl.png" alt="Pistas atléticas" />
 
           <div class="card-content">
             <div class="servicio-icon">
-              <i class="fa-solid fa-basketball"></i>
+              <i class="fa-solid fa-person-running"></i>
             </div>
 
-            <h3>Canchas Deportivas</h3>
+            <h3>Pistas Atléticas</h3>
 
-            <p>Superficies para tenis, pádel, vóley y básquet.</p>
+            <p>
+              Superficies diseñadas para entrenamiento y competiciones
+              deportivas.
+            </p>
 
             <ul>
-              <li>Alta adherencia</li>
-              <li>Colores personalizables</li>
-              <li>Acabados profesionales</li>
+              <li>Alto rendimiento y seguridad</li>
+              <li>Resistencia al desgaste y clima</li>
+              <li>Acabados certificados y duraderos</li>
             </ul>
 
-            <a href="#">
+            <a href="#" id="abrirModalPistas">
               VER MÁS
               <span>→</span>
             </a>
@@ -140,9 +142,9 @@
               <i class="fa-solid fa-children"></i>
             </div>
 
-            <h3>Juegos Infantiles</h3>
+            <h3>Suelos Recreativos</h3>
 
-            <p>Sistemas seguros y resistentes para parques y recreación.</p>
+            <p>Sistemas seguros y resistentes para parques y áreas recreativas.</p>
 
             <ul>
               <li>Superficie antideslizante</li>
@@ -150,10 +152,10 @@
               <li>Seguridad garantizada</li>
             </ul>
 
-            <a href="#">
-              VER MÁS
-              <span>→</span>
-            </a>
+            <a href="#" id="abrirModalSuelos">
+            VER MÁS
+            <span>→</span>
+          </a>
           </div>
         </div>
 
@@ -176,7 +178,7 @@
               <li>Cumplimiento normativo</li>
             </ul>
 
-            <a href="#">
+            <a href="#" id="abrirModalLuces">
               VER MÁS
               <span>→</span>
             </a>
@@ -205,14 +207,504 @@
               <li>Planes de mantenimiento</li>
             </ul>
 
-            <a href="#">
+            <a href="#" id="abrirModalMantenimiento">
               VER MÁS
               <span>→</span>
             </a>
+
+
+
           </div>
         </div>
       </div>
     </section>
+
+<!-- =========================
+     MODAL
+========================= -->
+
+<div class="modal-overlay" id="modalFutbol">
+  <div class="modal-box">
+
+    <button class="modal-close" id="cerrarModal">×</button>
+
+    <div class="modal-left">
+      <div class="modal-img-wrapper">
+        <button class="modal-arrow prev" id="modalPrev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <img src="../img/canchafut.png" class="modal-main-img" id="modalMainImg" alt="Canchas en general">
+
+        <button class="modal-arrow next" id="modalNext">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="modal-thumbs">
+        <img src="../img/canchafut.png" class="active" alt="">
+        <img src="../img/tennis.png" alt="">
+        <img src="../img/basq.png" alt="">
+        <img src="../img/padell.png" alt="">
+        <img src="../img/voley.png" alt="">
+      </div>
+    </div>
+
+    <div class="modal-right">
+      <h2>Canchas en General</h2>
+
+      <p class="modal-text">
+        Construimos canchas deportivas de alto rendimiento para múltiples disciplinas:
+        fútbol, tenis, básquet, pádel y más. Utilizamos césped sintético premium y
+        materiales de la más alta calidad 
+      </p>
+
+      <div class="modal-features">
+        <div class="feature-item">
+          <i class="fa-solid fa-seedling"></i>
+          <div>
+            <h4>Césped sintético premium</h4>
+            <p>Fibras de última generación que brindan mayor resistencia, confort y apariencia natural.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-layer-group"></i>
+          <div>
+            <h4>Versatilidad de disciplinas</h4>
+            <p>Soluciones adaptadas para fútbol, tenis, básquet, pádel y canchas multiuso.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h4>Máxima durabilidad</h4>
+            <p>Materiales resistentes al desgaste, rayos UV y condiciones climáticas extremas.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-water"></i>
+          <div>
+            <h4>Drenaje eficiente</h4>
+            <p>Sistemas de base y drenaje que aseguran superficies siempre listas para jugar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cta">
+      <div class="modal-cta-text">
+        <i class="fa-solid fa-trophy"></i>
+        <div>
+          <h4>Superficies que elevan tu juego</h4>
+          <p>Canchas diseñadas para ofrecer rendimiento, seguridad y diversión sin límites.</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/51999999999" target="_blank" class="modal-btn">
+        COTIZAR ESTE SERVICIO
+        <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="modal-overlay" id="modalPistas">
+  <div class="modal-box">
+
+    <button class="modal-close" id="cerrarModalPistas">×</button>
+
+    <div class="modal-left">
+      <div class="modal-img-wrapper">
+        <button class="modal-arrow prev" id="pistasPrev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <img src="../img/pistaatl.png" class="modal-main-img" id="pistasMainImg" alt="Pistas atléticas">
+
+        <button class="modal-arrow next" id="pistasNext">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="modal-thumbs pistas-thumbs">
+        <img src="../img/pistaatl.png" class="active" alt="">
+        <img src="../img/pistas1.png" alt="">
+        <img src="../img/pistas2.png" alt="">
+        <img src="../img/pistas3.png" alt="">
+        <img src="../img/pistas4.png" alt="">
+      </div>
+    </div>
+
+    <div class="modal-right">
+      <h2>Pistas Atléticas</h2>
+
+      <p class="modal-text">
+        Diseñamos y construimos pistas atléticas de alta calidad para entrenamiento
+        y competencia. Superficies seguras, duraderas y certificadas para el máximo rendimiento.
+      </p>
+
+      <div class="modal-features">
+        <div class="feature-item">
+          <i class="fa-solid fa-layer-group"></i>
+          <div>
+            <h4>Superficies de alto rendimiento</h4>
+            <p>Materiales sintéticos de última generación que brindan excelente amortiguación y tracción.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h4>Seguridad garantizada</h4>
+            <p>Cumplimos con normativas internacionales para competencias y entrenamientos seguros.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-sun"></i>
+          <div>
+            <h4>Resistencia UV y clima</h4>
+            <p>Diseñadas para soportar condiciones extremas y uso intensivo sin perder calidad.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <div>
+            <h4>Bajo mantenimiento</h4>
+            <p>Superficies duraderas que requieren mínimo mantenimiento y mayor vida útil.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cta">
+      <div class="modal-cta-text">
+        <i class="fa-solid fa-trophy"></i>
+        <div>
+          <h4>Rendimiento que marca la diferencia</h4>
+          <p>Pistas atléticas diseñadas para atletas que superan límites.</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/51999999999" target="_blank" class="modal-btn">
+        COTIZAR ESTE PROYECTO
+        <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalSuelos">
+  <div class="modal-box">
+
+    <button class="modal-close" id="cerrarModalSuelos">×</button>
+
+    <div class="modal-left">
+      <div class="modal-img-wrapper">
+        <button class="modal-arrow prev" id="suelosPrev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <img src="../img/juegos.png" class="modal-main-img" id="suelosMainImg" alt="Suelos recreativos">
+
+        <button class="modal-arrow next" id="suelosNext">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="modal-thumbs suelos-thumbs">
+        <img src="../img/juegos.png" class="active" alt="">
+        <img src="../img/juegos2.png" alt="">
+        <img src="../img/juegos3.png" alt="">
+        <img src="../img/juegos4.png" alt="">
+        <img src="../img/juegos5.png" alt="">
+      </div>
+    </div>
+
+    <div class="modal-right">
+      <h2>Suelos Recreativos</h2>
+
+      <p class="modal-text">
+        Creamos suelos recreativos seguros, resistentes y atractivos.
+        Ideales para áreas de juego, parques, colegios y espacios comunitarios.
+      </p>
+
+      <div class="modal-features">
+        <div class="feature-item">
+          <i class="fa-solid fa-layer-group"></i>
+          <div>
+            <h4>Superficies seguras y resistentes</h4>
+            <p>Materiales de alta calidad que brindan absorción de impactos y máxima durabilidad.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-palette"></i>
+          <div>
+            <h4>Diseños atractivos y personalizables</h4>
+            <p>Amplia variedad de colores, texturas y diseños que se adaptan a cada espacio.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-sun"></i>
+          <div>
+            <h4>Resistencia UV y clima</h4>
+            <p>Superficies que mantienen su color y propiedades frente al sol, la lluvia y el uso intensivo.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h4>Fácil mantenimiento</h4>
+            <p>Materiales de fácil limpieza que garantizan espacios siempre en óptimas condiciones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cta">
+      <div class="modal-cta-text">
+        <i class="fa-solid fa-trophy"></i>
+        <div>
+          <h4>Espacios que inspiran juego y movimiento</h4>
+          <p>Suelos recreativos que combinan seguridad, diseño y diversión.</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/51999999999" target="_blank" class="modal-btn">
+        COTIZAR ESTE PROYECTO
+        <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalLuces">
+  <div class="modal-box">
+
+    <button class="modal-close" id="cerrarModalLuces">×</button>
+
+    <div class="modal-left">
+      <div class="modal-img-wrapper">
+        <button class="modal-arrow prev" id="lucesPrev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <img src="../img/luces.png" class="modal-main-img" id="lucesMainImg" alt="Instalaciones de luces">
+
+        <button class="modal-arrow next" id="lucesNext">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="modal-thumbs luces-thumbs">
+        <img src="../img/luces.png" class="active" alt="">
+        <img src="../img/luces2.png" alt="">
+        <img src="../img/luces3.png" alt="">
+        <img src="../img/luces4.png" alt="">
+        <img src="../img/luces5.png" alt="">
+      </div>
+    </div>
+
+    <div class="modal-right">
+      <h2>Instalaciones de Luces</h2>
+
+      <p class="modal-text">
+        Diseñamos e instalamos sistemas de iluminación de alto rendimiento
+        para espacios deportivos. Tecnología LED de última generación que
+        garantiza eficiencia, potencia y seguridad.
+      </p>
+
+      <div class="modal-features">
+        <div class="feature-item">
+          <i class="fa-solid fa-bolt"></i>
+          <div>
+            <h4>Iluminación de alto rendimiento</h4>
+            <p>Luminarias LED de última generación que ofrecen máxima potencia y uniformidad de luz.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-leaf"></i>
+          <div>
+            <h4>Eficiencia energética</h4>
+            <p>Tecnología LED que reduce el consumo eléctrico y los costos operativos.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h4>Seguridad y confiabilidad</h4>
+            <p>Sistemas diseñados para resistir condiciones climáticas exigentes y uso intensivo.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-gear"></i>
+          <div>
+            <h4>Control y automatización</h4>
+            <p>Opciones de encendido inteligente, regulación y control remoto para mayor comodidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cta">
+      <div class="modal-cta-text">
+        <i class="fa-solid fa-trophy"></i>
+        <div>
+          <h4>Iluminación que potencia el rendimiento</h4>
+          <p>Mejor visibilidad, mayor seguridad y eficiencia en cada partido.</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/51999999999" target="_blank" class="modal-btn">
+        COTIZAR ESTE PROYECTO
+        <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="modal-overlay" id="modalMantenimiento">
+  <div class="modal-box">
+
+    <button class="modal-close" id="cerrarModalMantenimiento">×</button>
+
+    <div class="modal-left">
+      <div class="modal-img-wrapper">
+        <button class="modal-arrow prev" id="mantenimientoPrev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <img src="../img/mantenimiento.png" class="modal-main-img" id="mantenimientoMainImg" alt="Mantenimiento">
+
+        <button class="modal-arrow next" id="mantenimientoNext">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="modal-thumbs mantenimiento-thumbs">
+        <img src="../img/mantenimiento.png" class="active" alt="">
+        <img src="../img/mantenimiento2.png" alt="">
+        <img src="../img/mantenimiento3.png" alt="">
+        <img src="../img/mantenimiento4.png" alt="">
+        <img src="../img/mantenimiento5.png" alt="">
+      </div>
+    </div>
+
+    <div class="modal-right">
+      <h2>Mantenimiento</h2>
+
+      <p class="modal-text">
+        Cuidamos y prolongamos la vida útil de tus espacios deportivos con planes
+        de mantenimiento preventivo y correctivo, asegurando siempre el mejor
+        rendimiento y seguridad.
+      </p>
+
+      <div class="modal-features">
+        <div class="feature-item">
+          <i class="fa-solid fa-calendar-check"></i>
+          <div>
+            <h4>Planes preventivos</h4>
+            <p>Programas periódicos que previenen daños y aseguran el óptimo funcionamiento.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <div>
+            <h4>Mantenimiento correctivo</h4>
+            <p>Atención rápida y efectiva para solucionar cualquier inconveniente.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h4>Mayor vida útil</h4>
+            <p>Cuidado especializado que prolonga la durabilidad de cada superficie y estructura.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-chart-column"></i>
+          <div>
+            <h4>Rendimiento garantizado</h4>
+            <p>Espacios siempre en las mejores condiciones para un desempeño superior.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cta">
+      <div class="modal-cta-text">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div>
+          <h4>Tu espacio en las mejores condiciones, siempre</h4>
+          <p>Mantenimiento profesional para que solo te enfoques en el juego.</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/51999999999" target="_blank" class="modal-btn">
+        COTIZAR ESTE SERVICIO
+        <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-content">
@@ -276,5 +768,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="../js/scriptc.js"></script>
+
   </body>
 </html>
