@@ -1054,7 +1054,7 @@ header{
 
 /* =========================
    BOTÓN WHATSAPP
-========================= */
+========================= 
 
 .whatsapp-btn{
     position: fixed;
@@ -1062,10 +1062,10 @@ header{
     left: 30px;
     bottom: 30px;
 
-    width: 68px;
-    height: 68px;
+    width: 52px;
+    height: 52px;
 
-    background: #25D366;
+    background: var(--color-primary);
 
     border-radius: 50%;
 
@@ -1075,29 +1075,199 @@ header{
 
     text-decoration: none;
 
-    box-shadow: 0 10px 25px rgba(37,211,102,0.35);
-
     z-index: 999;
+
+    box-shadow: 0 5px 20px rgba(139,195,74,0.35);
+
+    animation: floatArrow 2s ease-in-out infinite;
 
     transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease,
     background 0.3s ease;
 }
+
 
 .whatsapp-btn i{
     color: white;
 
-    font-size: 38px;
+    font-size: 30px;
+
+    transition: 0.3s ease;
 }
+
 
 .whatsapp-btn:hover{
-    transform: translateY(-6px) scale(1.05);
-
-    background: #1ebe5d;
-
-    box-shadow: 0 14px 30px rgba(37,211,102,0.45);
+    background: var(--color-primary-light);
 }
+
+
+.whatsapp-btn:hover i{
+    transform: scale(1.08);
+}
+*/
+
+/*
+.whatsapp-btn{
+    position: fixed;
+
+    left: 30px;
+    bottom: 30px;
+
+    width: 52px;
+    height: 52px;
+
+    background: transparent;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    z-index: 999;
+
+    animation: floatArrow 2s ease-in-out infinite;
+}
+
+.whatsapp-btn i{
+    color: var(--color-primary);
+
+    font-size: 42px;
+
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-btn:hover i{
+    color: var(--color-primary-light);
+    transform: scale(1.08);
+}
+*/
+
+.whatsapp-btn{
+    position: fixed;
+
+    left: 30px;
+    bottom: 30px;
+
+    width: 52px;
+    height: 52px;
+
+    background: transparent;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    z-index: 999;
+}
+
+
+.whatsapp-btn i{
+    color: var(--color-primary);
+
+    font-size: 42px;
+
+    animation: whatsappPulse 1.8s ease-in-out infinite;
+
+    transition: color 0.3s ease;
+}
+
+
+.whatsapp-btn:hover i{
+    color: var(--color-primary-light);
+}
+
+
+/* =========================
+   PULSO
+========================= */
+
+@keyframes whatsappPulse{
+
+    0%{
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(139,195,74,0));
+    }
+
+    40%{
+        transform: scale(1.18);
+
+        filter:
+        drop-shadow(0 0 6px rgba(139,195,74,0.8))
+        drop-shadow(0 0 14px rgba(139,195,74,0.5));
+    }
+
+    100%{
+        transform: scale(1);
+
+        filter: drop-shadow(0 0 0 rgba(139,195,74,0));
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

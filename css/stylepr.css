@@ -1,44 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
-
 /* =========================
-   VARIABLES
+   BANNER PROYECTOS
 ========================= */
 
-:root{
-
-    --color-primary: #8BC34A;
-    --color-primary-light: #A5D65C;
-    --color-primary-dark: #73B626;
-
-    --color-dark: #0B0B0B;
-    --color-text: #1A1A1A;
-    --color-text-light: #5A5A5A;
-
-    --color-white: #FFFFFF;
-    --color-gray-bg: #F5F5F5;
-    --color-gray-line: #D6D6D6;
-
-    --font-main: 'Montserrat', sans-serif;
-
-    --radius-small: 10px;
-    --radius-medium: 18px;
-}
-
-/* =========================
-   BODY
-========================= */
-
-body{
-    font-family: var(--font-main);
-    background: var(--color-white);
-    overflow-x: hidden;
-}
-
-/* =========================
-   BANNER
-========================= */
-
-.servicio-banner{
+.proyecto-banner{
     position: relative;
 
     width: 100%;
@@ -54,7 +18,7 @@ body{
         rgba(0,0,0,0.35) 65%,
         rgba(0,0,0,0.05) 100%
     ),
-    url("../img/bannerservicios.png");
+    url("../img/bannerproyectos.png");
 
     background-size: cover;
     background-position: center 60%;
@@ -63,7 +27,7 @@ body{
     align-items: center;
 }
 
-.servicio-content{
+.proyecto-content{
     position: relative;
     z-index: 2;
 
@@ -74,7 +38,7 @@ body{
     color: var(--color-white);
 }
 
-.servicio-content span{
+.proyecto-content span{
     display: block;
 
     color: var(--color-primary);
@@ -87,7 +51,7 @@ body{
     letter-spacing: 0.5px;
 }
 
-.servicio-content h1{
+.proyecto-content h1{
     font-size: 44px;
     font-weight: 900;
 
@@ -98,11 +62,11 @@ body{
     text-transform: uppercase;
 }
 
-.servicio-content h1 strong{
+.proyecto-content h1 strong{
     color: var(--color-primary);
 }
 
-.servicio-content p{
+.proyecto-content p{
     font-size: 15px;
 
     line-height: 1.8;
@@ -112,29 +76,31 @@ body{
     color: #EAEAEA;
 }
 
+
 /* =========================
-   SECTION SERVICIOS
+   PROYECTOS SECTION
 ========================= */
 
-.servicios-section{
+.proyectos-section{
     width: 100%;
 
-    padding: 65px 30px;
+    padding: 70px 30px;
 
     background: var(--color-gray-bg);
 }
 
+
 /* =========================
-   HEADER SERVICIOS
+   HEADER
 ========================= */
 
-.servicios-header{
+.proyectos-header{
     text-align: center;
 
     margin-bottom: 45px;
 }
 
-.servicios-header span{
+.proyectos-header span{
     display: block;
 
     color: var(--color-primary);
@@ -144,10 +110,10 @@ body{
 
     text-transform: uppercase;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-.servicios-header h2{
+.proyectos-header h2{
     color: var(--color-text);
 
     font-size: 38px;
@@ -155,299 +121,282 @@ body{
 
     line-height: 1.1;
 
-    margin-bottom: 12px;
+    margin-bottom: 28px;
 }
 
-.servicios-header p{
-    color: var(--color-text-light);
 
-    font-size: 14px;
+/* =========================
+   FILTROS
+========================= */
 
-    line-height: 1.5;
+.proyectos-filtros{
+    display: flex;
 
-    max-width: 620px;
+    justify-content: center;
 
-    margin: auto;
+    flex-wrap: wrap;
+
+    gap: 12px;
 }
+
+.filtro-btn{
+    height: 46px;
+
+    padding: 0 20px;
+
+    border-radius: 999px;
+
+    border: 1px solid #DCDCDC;
+
+    background: white;
+
+    color: var(--color-text);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.filtro-btn i{
+    font-size: 13px;
+}
+
+.filtro-btn:hover{
+    border-color: var(--color-primary);
+
+    color: var(--color-primary);
+}
+
+.filtro-btn.active{
+    background: var(--color-primary);
+
+    border-color: var(--color-primary);
+
+    color: white;
+}
+
 
 /* =========================
    GRID
 ========================= */
 
-.servicios-grid{
+.proyectos-grid{
     display: grid;
 
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    gap: 24px;
+    gap: 22px;
 
     max-width: 1100px;
 
     margin: 0 auto;
 }
 
+
+/* =========================
+   OCULTOS
+========================= */
+
+.proyecto-extra{
+    display: none;
+}
+
+.proyectos-grid.show-all .proyecto-extra{
+    display: block;
+}
+
+
 /* =========================
    CARD
 ========================= */
 
-.servicio-card{
+.proyecto-card{
     position: relative;
 
-    grid-column: span 2;
+    height: 210px;
 
-    width: 100%;
+    border-radius: 10px;
 
-    background: var(--color-white);
+    overflow: hidden;
 
-    border-radius: 18px;
-
-    overflow: visible;
-
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    cursor: pointer;
 
     transition:
     transform 0.35s ease,
     box-shadow 0.35s ease;
+
+    box-shadow: 0 6px 18px rgba(41, 41, 41, 0.18);
 }
 
-/* CENTRAR LAS 2 DE ABAJO */
+.proyecto-card:hover{
+    transform: translateY(-8px);
 
-.servicio-card:nth-child(4){
-    grid-column: 2 / span 2;
+    box-shadow: 0 18px 32px rgba(0,0,0,0.16);
 }
 
-.servicio-card:nth-child(5){
-    grid-column: 4 / span 2;
-}
-
-.servicio-card:hover{
-    transform: translateY(-7px);
-
-    box-shadow: 0 16px 32px rgba(0,0,0,0.13);
-}
-
-/* =========================
-   IMAGEN CARD
-========================= */
-
-.servicio-card img{
+.proyecto-card img{
     width: 100%;
-
-    height: 165px;
-
-    display: block;
+    height: 100%;
 
     object-fit: cover;
 
-    border-radius: 18px 18px 0 0;
-}
-
-/* =========================
-   CONTENIDO CARD
-========================= */
-
-.card-content{
-    position: relative;
-
-    width: 100%;
-
-    padding: 32px 22px 22px;
-
-    box-sizing: border-box;
-
-    background: var(--color-white);
-
-    border-radius: 0 0 18px 18px;
-
-    text-align: left;
-
     display: block;
 
-    overflow: visible;
+    transition: transform 0.45s ease;
 }
 
-/* ELIMINAR COLUMNAS HEREDADAS */
-
-.card-content,
-.card-content *{
-    columns: unset !important;
-    column-count: unset !important;
-    column-width: unset !important;
+.proyecto-card:hover img{
+    transform: scale(1.08);
 }
 
-.card-content h3,
-.card-content p,
-.card-content ul,
-.card-content li{
-    display: block !important;
-
-    width: 100% !important;
-
-    max-width: none !important;
-}
 
 /* =========================
-   ICONO
+   OVERLAY
 ========================= */
 
-.servicio-icon{
+.proyecto-overlay{
     position: absolute;
 
-    top: -28px;
-    left: 20px;
+    inset: 0;
 
-    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
-    width: 58px;
-    height: 58px;
+    padding: 20px;
 
     background: linear-gradient(
-        180deg,
-        #9BD34F 0%,
-        #7FB92F 100%
+        to top,
+        rgba(0,0,0,0.78) 0%,
+        rgba(0,0,0,0.45) 22%,
+        transparent 40%
     );
+}
 
-    border-radius: 14px;
+
+.proyecto-arrow{
+    position: absolute;
+
+    right: 18px;
+    bottom: 20px;
+
+    width: 38px;
+    height: 38px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 8px 16px rgba(139,195,74,0.35);
-}
-
-.servicio-icon i{
     color: white;
 
-    font-size: 27px;
-}
-
-/* =========================
-   TITULO CARD
-========================= */
-
-.card-content h3{
-    color: var(--color-text);
-
-    font-size: 19px;
-    font-weight: 800;
-
-    line-height: 1.15;
-
-    margin-top: 14px;
-    margin-bottom: 10px;
-}
-
-/* =========================
-   TEXTO CARD
-========================= */
-
-.card-content p{
-    color: #555;
-
-    font-size: 13.5px;
-
-    line-height: 1.45;
-
-    margin-bottom: 12px;
-}
-
-/* =========================
-   LISTA CARD
-========================= */
-
-.card-content ul{
-    list-style: none;
-
-    padding: 0;
-
-    margin: 0;
-}
-
-.card-content ul li{
-    position: relative;
-
-    color: #4E4E4E;
-
     font-size: 13px;
-
-    line-height: 1.3;
-
-    padding-left: 22px;
-
-    margin-bottom: 8px;
-}
-
-.card-content ul li::before{
-    content: "✓";
-
-    position: absolute;
-
-    left: 0;
-    top: -1px;
-
-    color: var(--color-primary);
-
-    font-size: 15px;
-
-    font-weight: 800;
-}
-
-/* =========================
-   LINK VER MÁS
-========================= */
-
-.card-content a{
-    position: relative;
-
-    display: inline-flex !important;
-
-    align-items: center;
-
-    gap: 7px;
-
-    width: auto !important;
-
-    margin-top: 12px;
-
-    text-decoration: none;
-
-    color: var(--color-primary);
-
-    font-size: 12.5px;
-
-    font-weight: 800;
 
     transition: 0.3s ease;
 }
 
-.card-content a span{
-    transition: transform 0.3s ease;
+
+.proyecto-arrow i{
+    transition: 0.3s ease;
 }
 
-.card-content a::after{
-    content: "";
 
-    position: absolute;
+.proyecto-card:hover .proyecto-arrow i{
+    transform: translateX(5px);
 
-    left: 0;
-    bottom: -4px;
+    color: var(--color-primary);
+}
 
-    width: 0;
 
-    height: 2px;
+
+
+
+
+
+.proyecto-overlay h3{
+    color: white;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    margin-bottom: 4px;
+}
+
+.proyecto-overlay p{
+    color: #F1F1F1;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   BOTÓN VER MÁS
+========================= */
+
+.proyectos-more{
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 45px;
+}
+
+.ver-mas-proyectos{
+    height: 52px;
+
+    padding: 0 28px;
+
+    border: none;
+
+    border-radius: 14px;
 
     background: var(--color-primary);
 
-    transition: width 0.35s ease;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+
+    transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+
+    box-shadow: 0 8px 18px rgba(139,195,74,0.28);
 }
 
-.card-content a:hover span{
+.ver-mas-proyectos span{
+    transition: transform 0.3s ease;
+}
+
+.ver-mas-proyectos:hover{
+    background: var(--color-primary-dark);
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 16px 28px rgba(139,195,74,0.35);
+}
+
+.ver-mas-proyectos:hover span{
     transform: translateX(5px);
-}
-
-.card-content a:hover::after{
-    width: 100%;
 }
 
 
@@ -479,6 +428,7 @@ body{
     opacity: 1;
     visibility: visible;
 }
+
 
 /* =========================
    MODAL BOX
@@ -514,6 +464,7 @@ body{
     transform: scale(1);
 }
 
+
 /* =========================
    BOTON CERRAR
 ========================= */
@@ -536,18 +487,21 @@ body{
     z-index: 20;
 }
 
+
 /* =========================
    IMAGEN PRINCIPAL
 ========================= */
 
 .modal-img-wrapper{
     position: relative;
+
+    height: 100%;
 }
 
 .modal-main-img{
     width: 100%;
 
-    height: 280px;
+    height: 330px;
 
     object-fit: cover;
 
@@ -555,6 +509,7 @@ body{
 
     display: block;
 }
+
 
 /* =========================
    FLECHAS
@@ -601,40 +556,6 @@ body{
     right: 10px;
 }
 
-/* =========================
-   MINIATURAS
-========================= */
-
-.modal-thumbs{
-    display: grid;
-
-    grid-template-columns: repeat(5, 1fr);
-
-    gap: 7px;
-
-    margin-top: 10px;
-}
-
-.modal-thumbs img{
-    width: 100%;
-
-    height: 52px;
-
-    object-fit: cover;
-
-    border-radius: 9px;
-
-    cursor: pointer;
-
-    border: 2px solid transparent;
-
-    transition: 0.3s ease;
-}
-
-.modal-thumbs img.active,
-.modal-thumbs img:hover{
-    border-color: var(--color-primary);
-}
 
 /* =========================
    DERECHA
@@ -658,6 +579,7 @@ body{
 
     margin-bottom: 12px;
 }
+
 
 /* =========================
    FEATURES
@@ -713,6 +635,7 @@ body{
 
     font-size: 10px;
 }
+
 
 /* =========================
    CTA INFERIOR
@@ -781,6 +704,7 @@ body{
     line-height: 1.4;
 }
 
+
 /* =========================
    BOTON
 ========================= */
@@ -815,6 +739,7 @@ body{
     background: var(--color-primary-dark);
 }
 
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -830,7 +755,7 @@ body{
     }
 
     .modal-main-img{
-        height: 230px;
+        height: 340px;
     }
 
     .modal-cta{

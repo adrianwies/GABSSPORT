@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/stylen.css" />
+    <link rel="stylesheet" href="../css/stylent.css" />
+   
+    <link rel="stylesheet" href="../css/stylepr.css">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_up"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+
+
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+          <img src="../img/LogoGABS.png" alt="Logo GABS" />
+        </div>
+
+        <!-- MENU -->
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../nosotros/nosotros.html">Nosotros</a></li>
+          <li><a href="../servicios/servicios.html">Servicios</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="../contactanos/contactanos.html">Contáctanos</a></li>
+        </ul>
+
+        <!-- BOTON -->
+        <a href="../contactanos/contactanos.html#contacto" class="btn-cotizar">
+          Cotizar Proyecto
+          <span>→</span>
+        </a>
+      </nav>
+    </header>
+
+
+
+
+<!-- =========================
+     BANNER PROYECTOS
+========================= -->
+
+<section class="proyecto-banner">
+
+  <div class="proyecto-content">
+
+    <span>NUESTROS PROYECTOS</span>
+
+    <h1>
+      PROYECTOS QUE
+      <br>
+      <strong>MARCAN LA DIFERENCIA</strong>
+    </h1>
+
+    <p>
+      Cada proyecto refleja nuestro compromiso con la calidad,
+      la innovación y la satisfacción de nuestros clientes.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     PROYECTOS
+========================= -->
+
+<section class="proyectos-section">
+
+  <!-- HEADER -->
+  <div class="proyectos-header">
+    <span>NUESTROS PROYECTOS</span>
+
+    <h2>Proyectos que transforman espacios deportivos</h2>
+
+    <div class="proyectos-filtros">
+
+      <button class="filtro-btn active" data-filter="all">
+        <i class="fa-solid fa-border-all"></i>
+        TODOS
+      </button>
+
+      <button class="filtro-btn" data-filter="futbol">
+        <i class="fa-regular fa-futbol"></i>
+        CANCHAS
+      </button>
+
+      <button class="filtro-btn" data-filter="pistas">
+        <i class="fa-solid fa-person-running"></i>
+        PISTAS
+      </button>
+
+      <button class="filtro-btn" data-filter="recreativos">
+        <i class="fa-solid fa-children"></i>
+        RECREATIVOS
+      </button>
+
+      <button class="filtro-btn" data-filter="luces">
+        <i class="fa-regular fa-lightbulb"></i>
+        LUCES
+      </button>
+
+      <button class="filtro-btn" data-filter="mantenimiento">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        MANTENIMIENTO
+      </button>
+
+    </div>
+  </div>
+
+  <!-- GRID -->
+  <div class="proyectos-grid">
+
+    <!-- =========================
+         8 PRIMEROS VISIBLES
+    ========================= -->
+
+    <div class="proyecto-card" id="abrirModalProyecto1" data-category="futbol">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Cancha Sintética</h3>
+        <p>Lima, Perú</p>
+        <div class="proyecto-arrow">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="proyecto-card" data-category="pistas">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Pista Atlética</h3>
+        <p>Piura, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card" data-category="recreativos">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Área Recreativa</h3>
+        <p>Trujillo, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card" data-category="luces">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Iluminación LED</h3>
+        <p>Arequipa, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card" data-category="mantenimiento">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Mantenimiento</h3>
+        <p>Cusco, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card" data-category="futbol">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Cancha Multiuso</h3>
+        <p>Lima, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="pistas">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Pista Profesional</h3>
+        <p>Ica, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="luces">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Luces Deportivas</h3>
+        <p>Chiclayo, Perú</p>
+      </div>
+    </div>
+
+    <!-- =========================
+         OCULTOS (VER MÁS)
+    ========================= -->
+
+    <div class="proyecto-card proyecto-extra" data-category="futbol">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Cancha de Fútbol</h3>
+        <p>Tacna, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="recreativos">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Parque Recreativo</h3>
+        <p>Lima, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="mantenimiento">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Mantenimiento Integral</h3>
+        <p>Piura, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="pistas">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Pista Escolar</h3>
+        <p>Huancayo, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="futbol">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Cancha Premium</h3>
+        <p>Lima, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="luces">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Sistema LED</h3>
+        <p>Chimbote, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="recreativos">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Zona Infantil</h3>
+        <p>Loreto, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="mantenimiento">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Rehabilitación</h3>
+        <p>Callao, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="futbol">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Cancha Profesional</h3>
+        <p>Arequipa, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="luces">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Torres LED</h3>
+        <p>Puno, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="recreativos">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Zona Recreativa</h3>
+        <p>Moquegua, Perú</p>
+      </div>
+    </div>
+
+    <div class="proyecto-card proyecto-extra" data-category="pistas">
+      <img src="../img/padell.png" alt="">
+      <div class="proyecto-overlay">
+        <h3>Pista Olímpica</h3>
+        <p>Lima, Perú</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="proyectos-more">
+  <button class="ver-mas-proyectos" id="verMasProyectos">
+    VER MÁS PROYECTOS
+    <span>→</span>
+  </button>
+</div>
+
+
+
+
+</section>
+
+<div class="modal-overlay" id="modalProyecto1">
+  <div class="modal-box">
+
+    <button class="modal-close" id="cerrarModalProyecto1">×</button>
+
+    <div class="modal-left">
+      <div class="modal-img-wrapper">
+        <img src="../img/padell.png" class="modal-main-img" alt="Cancha sintética">
+      </div>
+    </div>
+
+    <div class="modal-right">
+      <h2>Cancha Sintética</h2>
+
+      <p class="modal-text">
+        Proyecto desarrollado en Lima, Perú, enfocado en la construcción de una
+        cancha sintética de alto rendimiento. Se trabajó con materiales resistentes,
+        una base nivelada y acabados pensados para brindar seguridad, durabilidad
+        y una mejor experiencia de juego.
+      </p>
+
+      <div class="modal-features">
+        <div class="feature-item">
+          <i class="fa-solid fa-seedling"></i>
+          <div>
+            <h4>Superficie sintética premium</h4>
+            <p>Instalación de césped sintético resistente para uso deportivo continuo.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-layer-group"></i>
+          <div>
+            <h4>Base nivelada</h4>
+            <p>Preparación del terreno para asegurar estabilidad y buen desempeño.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h4>Alta durabilidad</h4>
+            <p>Materiales diseñados para soportar uso frecuente y condiciones exigentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cta">
+      <div class="modal-cta-text">
+        <i class="fa-solid fa-trophy"></i>
+        <div>
+          <h4>Proyecto listo para el alto rendimiento</h4>
+          <p>Un espacio deportivo seguro, moderno y funcional.</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/51999999999" target="_blank" class="modal-btn">
+        COTIZAR UNO SIMILAR
+        <span>→</span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <img
+            src="../img/logofooter.png"
+            alt="Logo Gabsport"
+            class="footer-logo"
+          />
+        </div>
+
+        <div class="footer-center">
+          <div class="footer-col">
+            <h3>ENLACES</h3>
+            <a href="#">Inicio</a>
+            <a href="../nosotros/nosotros.html">Nosotros</a>
+            <a href="../servicios/servicios.html">Servicios</a>
+            <a href="../proyectos/proyectos.html">Proyectos</a>
+            <a href="../contactanos/contactanos.html">Contacto</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>SERVICIOS</h3>
+            <a href="../servicios/servicios.html?modal=futbol">Canchas sintéticas</a>
+            <a href="../servicios/servicios.html?modal=pistas">Pistas atléticas</a>
+            <a href="../servicios/servicios.html?modal=suelos">Suelos recreativos</a>
+            <a href="../servicios/servicios.html?modal=luces">Instalación</a>
+            <a href="../servicios/servicios.html?modal=mantenimiento">Mantenimiento</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>CONTACTOS</h3>
+            <p>+51 999 999 999</p>
+            <p>info@gabsport.com</p>
+            <p>Lima, Perú</p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <h3>SÍGUENOS</h3>
+
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/gabsportperu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/gabsport.peru/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+
+          <p class="footer-copy">
+            © 2026 GABSPORT. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- BOTÓN SUBIR -->
+    <a href="#" class="scroll-top" id="scrollTop">
+      <span class="material-symbols-outlined"> keyboard_double_arrow_up </span>
+    </a>
+
+    <!-- BOTÓN WHATSAPP -->
+    <a href="https://wa.me/51983276061" class="whatsapp-btn" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+
+
+
+
+ <script src="../js/scrippr.js"></script>
+</body>
+</html>

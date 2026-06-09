@@ -264,6 +264,59 @@ mantenimientoThumbs.forEach((thumb, index)=>{
     });
 });
 
+/* BOTÓN SUBIR */
+
+const scrollTopBtn = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 300){
+        scrollTopBtn.classList.add('active');
+    }else{
+        scrollTopBtn.classList.remove('active');
+    }
+});
+
+
+/* =========================
+   ABRIR MODAL DESDE FOOTER
+========================= */
+
+
+const params = new URLSearchParams(window.location.search);
+const modalServicio = params.get("modal");
+
+
+window.addEventListener("DOMContentLoaded", () => {
+
+
+    if(modalServicio === "futbol"){
+        document.getElementById("modalFutbol").classList.add("active");
+    }
+
+
+    if(modalServicio === "pistas"){
+        document.getElementById("modalPistas").classList.add("active");
+    }
+
+
+    if(modalServicio === "suelos"){
+        document.getElementById("modalSuelos").classList.add("active");
+    }
+
+
+    if(modalServicio === "luces"){
+        document.getElementById("modalLuces").classList.add("active");
+    }
+
+
+    if(modalServicio === "mantenimiento"){
+        document.getElementById("modalMantenimiento").classList.add("active");
+    }
+
+
+});
+
+
 
 
 
