@@ -404,6 +404,11 @@
    MODAL OVERLAY
 ========================= */
 
+
+/* =========================
+   MODAL OVERLAY
+========================= */
+
 .modal-overlay{
     position: fixed;
     inset: 0;
@@ -430,6 +435,8 @@
 }
 
 
+
+
 /* =========================
    MODAL BOX
 ========================= */
@@ -439,30 +446,69 @@
 
     width: 100%;
     max-width: 780px;
-
     max-height: 82vh;
 
     background: white;
 
     border-radius: 20px;
 
-    padding: 18px;
+    padding: 18px 10px 18px 18px;
 
     display: grid;
     grid-template-columns: 1fr 0.82fr;
+    align-items: stretch;
 
     gap: 22px;
 
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     transform: scale(0.92);
 
     transition: 0.35s ease;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) transparent;
 }
 
 .modal-overlay.active .modal-box{
     transform: scale(1);
 }
+
+
+
+
+/* =========================
+   SCROLL ESTÉTICO
+========================= */
+
+/* CHROME / EDGE / OPERA */
+.modal-box::-webkit-scrollbar{
+    width: 6px;
+}
+
+.modal-box::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.modal-box::-webkit-scrollbar-thumb{
+    background: var(--color-primary);
+    border-radius: 999px;
+}
+
+/* OCULTAR FLECHAS */
+.modal-box::-webkit-scrollbar-button{
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+/* ESQUINA */
+.modal-box::-webkit-scrollbar-corner{
+    background: transparent;
+}
+
+
 
 
 /* =========================
@@ -473,7 +519,7 @@
     position: absolute;
 
     top: 12px;
-    right: 14px;
+    right: 18px;
 
     border: none;
     background: none;
@@ -488,6 +534,21 @@
 }
 
 
+
+
+/* =========================
+   IZQUIERDA
+========================= */
+
+.modal-left{
+    height: 100%;
+
+    display: flex;
+}
+
+
+
+
 /* =========================
    IMAGEN PRINCIPAL
 ========================= */
@@ -495,13 +556,15 @@
 .modal-img-wrapper{
     position: relative;
 
+    width: 100%;
     height: 100%;
 }
 
 .modal-main-img{
     width: 100%;
+    height: 100%;
 
-    height: 330px;
+    min-height: 330px;
 
     object-fit: cover;
 
@@ -511,50 +574,6 @@
 }
 
 
-/* =========================
-   FLECHAS
-========================= */
-
-.modal-arrow{
-    position: absolute;
-
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 36px;
-    height: 36px;
-
-    border: none;
-
-    border-radius: 50%;
-
-    background: white;
-
-    color: var(--color-text);
-
-    font-size: 14px;
-
-    cursor: pointer;
-
-    z-index: 10;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-
-    transition: 0.3s ease;
-}
-
-.modal-arrow:hover{
-    background: var(--color-primary);
-    color: white;
-}
-
-.modal-arrow.prev{
-    left: 10px;
-}
-
-.modal-arrow.next{
-    right: 10px;
-}
 
 
 /* =========================
@@ -579,6 +598,8 @@
 
     margin-bottom: 12px;
 }
+
+
 
 
 /* =========================
@@ -635,6 +656,8 @@
 
     font-size: 10px;
 }
+
+
 
 
 /* =========================
@@ -705,6 +728,8 @@
 }
 
 
+
+
 /* =========================
    BOTON
 ========================= */
@@ -737,31 +762,6 @@
 
 .modal-btn:hover{
     background: var(--color-primary-dark);
-}
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width: 850px){
-
-    .modal-box{
-        grid-template-columns: 1fr;
-
-        max-width: 520px;
-
-        overflow-y: auto;
-    }
-
-    .modal-main-img{
-        height: 340px;
-    }
-
-    .modal-cta{
-        flex-direction: column;
-        align-items: flex-start;
-    }
 }
 
 

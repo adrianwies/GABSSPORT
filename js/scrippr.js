@@ -92,6 +92,9 @@ filtros.forEach(btn => {
 
 });
 
+/* =========================
+   CARD 1
+========================= */
 
 const abrirModalProyecto1 = document.getElementById("abrirModalProyecto1");
 const modalProyecto1 = document.getElementById("modalProyecto1");
@@ -110,6 +113,65 @@ modalProyecto1.addEventListener("click", (e) => {
         modalProyecto1.classList.remove("active");
     }
 });
+
+/* =========================
+   CARD 2
+========================= */
+
+
+const abrirModalProyecto2 = document.getElementById("abrirModalProyecto2");
+const modalProyecto2 = document.getElementById("modalProyecto2");
+const cerrarModalProyecto2 = document.getElementById("cerrarModalProyecto2");
+
+
+abrirModalProyecto2.addEventListener("click", () => {
+    modalProyecto2.classList.add("active");
+});
+
+
+cerrarModalProyecto2.addEventListener("click", () => {
+    modalProyecto2.classList.remove("active");
+});
+
+
+modalProyecto2.addEventListener("click", (e) => {
+    if(e.target === modalProyecto2){
+        modalProyecto2.classList.remove("active");
+    }
+});
+
+/* =========================
+   CARD 3
+========================= */
+
+
+const abrirModalProyecto3 = document.getElementById("abrirModalProyecto3");
+const modalProyecto3 = document.getElementById("modalProyecto3");
+const cerrarModalProyecto3 = document.getElementById("cerrarModalProyecto3");
+
+
+abrirModalProyecto3.addEventListener("click", () => {
+    modalProyecto3.classList.add("active");
+});
+
+
+cerrarModalProyecto3.addEventListener("click", () => {
+    modalProyecto3.classList.remove("active");
+});
+
+
+modalProyecto3.addEventListener("click", (e) => {
+    if(e.target === modalProyecto3){
+        modalProyecto3.classList.remove("active");
+    }
+});
+
+
+
+
+
+
+
 
 
 /* BOTÓN SUBIR */
