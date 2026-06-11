@@ -523,3 +523,467 @@
     margin-right: 5px;
 }
 
+/* =========================
+   EFECTO BANNER CONTACTO
+========================= */
+
+.contacto-content{
+    opacity: 0;
+
+    transform: translateX(-90px);
+
+    animation: contactoBannerReveal 1.2s ease forwards;
+
+    animation-delay: 0.3s;
+}
+
+@keyframes contactoBannerReveal{
+
+    from{
+        opacity: 0;
+        transform: translateX(-90px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   CONTACTO ANIMACIONES
+========================= */
+
+/* IZQUIERDA */
+
+.contact-info{
+    opacity: 0;
+
+    transform: translateX(-90px);
+
+    transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+/* DERECHA */
+
+.contact-form-box{
+    opacity: 0;
+
+    transform: translateX(90px);
+
+    transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+/* ACTIVO */
+
+.contact-info.show,
+.contact-form-box.show{
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(120px);
+
+  background: rgba(17, 17, 17, 0.95);
+  color: #fff;
+
+  padding: 16px 28px;
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.4s ease;
+
+  z-index: 9999;
+
+  border: 1px solid rgba(139, 195, 74, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.toast.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* =========================
+   MENU HAMBURGUESA
+========================= */
+
+
+.menu-toggle{
+    display: none;
+
+
+    width: 46px;
+    height: 46px;
+
+
+    border-radius: 12px;
+    border: 2px solid var(--color-primary);
+
+
+    background: transparent;
+
+
+    color: var(--color-primary);
+
+
+    cursor: pointer;
+
+
+    font-size: 22px;
+
+
+    transition: 0.3s ease;
+}
+
+
+.menu-toggle:hover{
+    background: var(--color-primary);
+    color: white;
+}
+
+
+
+
+/* =========================
+   RESPONSIVE NAVBAR
+========================= */
+
+
+@media(max-width: 950px){
+
+
+    header{
+        padding: 18px 24px;
+    }
+
+
+    .navbar{
+        position: relative;
+    }
+
+
+    .menu-toggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .btn-cotizar{
+        display: none;
+    }
+
+
+    .nav-links{
+        position: absolute;
+
+
+        top: 80px;
+        right: 0;
+
+
+        width: 270px;
+
+
+        padding: 28px;
+
+
+        background: rgba(11,11,11,0.98);
+
+
+        border: 1px solid rgba(139,195,74,0.25);
+
+
+        border-radius: 20px;
+
+
+        backdrop-filter: blur(12px);
+
+
+        flex-direction: column;
+
+
+        gap: 24px;
+
+
+        box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+
+
+        opacity: 0;
+        visibility: hidden;
+
+
+        transform: translateY(-15px);
+
+
+        transition:
+        opacity 0.35s ease,
+        transform 0.35s ease,
+        visibility 0.35s ease;
+    }
+
+
+    .nav-links.active{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+
+    .nav-links a{
+        font-size: 14px;
+    }
+
+
+}
+
+/* =========================
+   RESPONSIVE NOSOTROS PAGE
+========================= */
+
+
+/* TABLET */
+@media (max-width: 1100px){
+
+
+  .nosotros-banner-content{
+    margin-left: 50px;
+    max-width: 550px;
+  }
+
+
+  .nosotros-banner-content h1{
+    font-size: 40px;
+  }
+
+
+  .nosotros-section{
+    padding: 60px 50px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+
+  .nosotros-left h2{
+    font-size: 42px;
+  }
+
+
+  .nosotros-carousel{
+    height: 360px;
+  }
+
+
+  .mision-vision-section{
+    padding: 55px 50px;
+    grid-template-columns: 1fr;
+  }
+
+
+  .mv-divider{
+    width: 100%;
+    height: 1px;
+  }
+}
+
+
+/* CELULAR */
+@media (max-width: 768px){
+
+
+  .nosotros-banner{
+    height: 100vh;
+    padding-top: 80px;
+
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0,0,0,0.88) 0%,
+        rgba(0,0,0,0.70) 55%,
+        rgba(0,0,0,0.45) 100%
+      ),
+      url("../img/bannerpadel.png");
+
+
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .nosotros-banner-content{
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 100%;
+  }
+
+
+  .nosotros-banner-content span{
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+
+  .nosotros-banner-content h1{
+    font-size: 32px;
+    line-height: 1.08;
+    margin-bottom: 24px;
+  }
+
+
+  .nosotros-banner-content p{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  .nosotros-section{
+    padding: 55px 20px;
+    grid-template-columns: 1fr;
+  }
+
+
+  .nosotros-left h2{
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+
+
+  .nosotros-left p{
+    font-size: 14px;
+  }
+
+
+  .nosotros-carousel{
+    height: 280px;
+    border-radius: 16px;
+  }
+
+
+  .certificaciones-section{
+    padding: 35px 0 40px;
+  }
+
+
+  .certificaciones-section h2{
+    font-size: 24px;
+    padding: 0 20px;
+    line-height: 1.3;
+  }
+
+
+  .certificaciones-track{
+    gap: 35px;
+    animation-duration: 24s;
+  }
+
+
+  .certificaciones-track img{
+    width: 95px;
+    height: 60px;
+  }
+
+
+  .mision-vision-section{
+    padding: 50px 20px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+
+  .mv-box{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+
+  .mv-icon{
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+  }
+
+
+  .mv-icon i{
+    font-size: 32px;
+  }
+
+
+  .mv-content h3{
+    font-size: 20px;
+  }
+
+
+  .mv-content p{
+    font-size: 14px;
+  }
+
+
+  .mv-divider{
+    width: 100%;
+    height: 1px;
+  }
+}
+
+
+/* CELULAR PEQUEÑO */
+@media (max-width: 480px){
+
+
+  .nosotros-banner-content h1{
+    font-size: 27px;
+  }
+
+
+  .nosotros-banner-content p{
+    font-size: 13.5px;
+  }
+
+
+  .nosotros-left h2{
+    font-size: 28px;
+  }
+
+
+  .nosotros-carousel{
+    height: 230px;
+  }
+
+
+  .certificaciones-section h2{
+    font-size: 21px;
+  }
+
+
+  .certificaciones-track img{
+    width: 85px;
+  }
+}
+
+
+
+
+
+

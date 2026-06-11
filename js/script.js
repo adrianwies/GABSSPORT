@@ -130,4 +130,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+/* =========================
+   SCROLL ANIMATION ABOUT
+========================= */
+
+const hiddenElements = document.querySelectorAll(
+  '.about-left, .about-right'
+);
+
+const showOnScroll = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+
+  });
+}, {
+  threshold: 0.2
+});
+
+hiddenElements.forEach((el) => {
+  showOnScroll.observe(el);
+});
+
+
+/* =========================
+   SCROLL STATS
+========================= */
+
+const statBoxes = document.querySelectorAll('.stat-box');
+
+const statsObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.2
+});
+
+statBoxes.forEach((box) => {
+  statsObserver.observe(box);
+});
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+
+  const icon = menuToggle.querySelector("i");
+
+  if (navLinks.classList.contains("active")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
+  } else {
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
+  }
+});
+
+
 

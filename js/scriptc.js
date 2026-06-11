@@ -316,6 +316,56 @@ window.addEventListener("DOMContentLoaded", () => {
 
 });
 
+/* =========================
+   SCROLL SERVICIOS
+========================= */
+
+const serviciosHeader = document.querySelector('.servicios-header');
+const servicioCards = document.querySelectorAll('.servicio-card');
+
+/* HEADER */
+
+const serviciosHeaderObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.2
+});
+
+serviciosHeaderObserver.observe(serviciosHeader);
+
+/* CARDS */
+
+const cardsObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry, index) => {
+
+    if(entry.isIntersecting){
+
+      setTimeout(() => {
+        entry.target.classList.add('show');
+      }, index * 120);
+
+    }
+
+  });
+
+}, {
+  threshold: 0.15
+});
+
+servicioCards.forEach((card) => {
+  cardsObserver.observe(card);
+});
+
+
 
 
 

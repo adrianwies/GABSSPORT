@@ -1,70 +1,74 @@
 /* =========================
-VER MÁS / VER MENOS
+   VER MÁS / FILTROS
 ========================= */
 
 const verMasBtn = document.getElementById("verMasProyectos");
 const proyectosGrid = document.querySelector(".proyectos-grid");
+const filtros = document.querySelectorAll(".filtro-btn");
+const proyectos = document.querySelectorAll(".proyecto-card");
 
 let expanded = false;
+let filtroActual = "all";
+
+function actualizarProyectos() {
+  proyectos.forEach((card) => {
+    const categoria = card.getAttribute("data-category");
+    const indexVisible = [...proyectos]
+  .filter((c) => {
+    const cat = c.getAttribute("data-category");
+    return filtroActual === "all" || cat === filtroActual;
+  })
+  .indexOf(card);
+
+const esExtra = indexVisible >= 6;
+
+
+    const coincide = filtroActual === "all" || categoria === filtroActual;
+
+    if (!coincide) {
+      card.style.display = "none";
+    } else if (esExtra && !expanded) {
+      card.style.display = "none";
+    } else {
+      card.style.display = "block";
+    }
+  });
+
+  verMasBtn.innerHTML = expanded
+    ? `VER MENOS <span>↑</span>`
+    : `VER MÁS PROYECTOS <span>→</span>`;
+}
 
 verMasBtn.addEventListener("click", () => {
+  expanded = !expanded;
+
+  actualizarProyectos();
+
   if (!expanded) {
-    proyectosGrid.classList.add("show-all");
-
-    verMasBtn.innerHTML = `
-VER MENOS
-<span>↑</span>
-`;
-
-    expanded = true;
-  } else {
-    proyectosGrid.classList.remove("show-all");
-
-    verMasBtn.innerHTML = `
-VER MÁS PROYECTOS
-<span>→</span>
-`;
-
-    expanded = false;
-
     proyectosGrid.scrollIntoView({
       behavior: "smooth",
     });
   }
 });
 
-/* =========================
-   FILTROS
-========================= */
-
-const filtros = document.querySelectorAll(".filtro-btn");
-const proyectos = document.querySelectorAll(".proyecto-card");
-
 filtros.forEach((btn) => {
   btn.addEventListener("click", () => {
-    /* ACTIVE */
     filtros.forEach((b) => b.classList.remove("active"));
-
     btn.classList.add("active");
 
-    /* FILTRO */
-    const filtro = btn.getAttribute("data-filter");
+    filtroActual = btn.getAttribute("data-filter");
+    expanded = false;
 
-    proyectos.forEach((card) => {
-      const categoria = card.getAttribute("data-category");
-
-      if (filtro === "all") {
-        card.style.display = "block";
-      } else {
-        if (categoria === filtro) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
-      }
-    });
+    actualizarProyectos();
   });
 });
+
+actualizarProyectos();
+
+
+
+
+
 
 /* =========================
    CARD 1
@@ -517,3 +521,83 @@ window.addEventListener("scroll", () => {
     scrollTopBtn.classList.remove("active");
   }
 });
+
+/* =========================
+   ANIMACION BANNER PROYECTOS
+========================= */
+
+const proyectoBanner = document.querySelector('.proyecto-content');
+
+const proyectoBannerObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.3
+});
+
+proyectoBannerObserver.observe(proyectoBanner);
+
+
+/* =========================
+   ANIMACION PROYECTOS
+========================= */
+
+/* TITULO */
+
+const proyectosHeader = document.querySelector('.proyectos-header');
+
+const headerObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.3
+});
+
+headerObserver.observe(proyectosHeader);
+
+
+/* CARDS */
+
+const proyectoCards = document.querySelectorAll('.proyecto-card');
+
+const cardsObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if(entry.isIntersecting){
+
+      entry.target.classList.add('show');
+
+      cardsObserver.unobserve(entry.target);
+    }
+
+  });
+
+}, {
+  threshold: 0.15
+});
+
+
+proyectoCards.forEach((card, index) => {
+
+  card.style.transitionDelay = `${index * 0.03}s`;
+
+  cardsObserver.observe(card);
+
+});
+
+

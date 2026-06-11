@@ -44,4 +44,121 @@ window.addEventListener('scroll', () => {
 });
 
 
+/* =========================
+   SCROLL NOSOTROS
+========================= */
+
+const nosotrosElements = document.querySelectorAll(
+  '.nosotros-left, .nosotros-right'
+);
+
+const nosotrosObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.2
+});
+
+nosotrosElements.forEach((el) => {
+  nosotrosObserver.observe(el);
+});
+
+/* =========================
+   SCROLL CERTIFICACIONES
+========================= */
+
+const certTitle = document.querySelector('.certificaciones-section h2');
+const certSlider = document.querySelector('.certificaciones-slider');
+
+const certObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.2
+});
+
+certObserver.observe(certTitle);
+certObserver.observe(certSlider);
+
+/* =========================
+   SCROLL MISIÓN VISIÓN
+========================= */
+
+const mvBoxes = document.querySelectorAll('.mv-box');
+
+const mvObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach((entry) => {
+
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+
+  });
+
+}, {
+  threshold: 0.2
+});
+
+mvBoxes.forEach((box) => {
+  mvObserver.observe(box);
+});
+
+/* =========================
+   MENU HAMBURGUESA
+========================= */
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.querySelector(".nav-links");
+
+
+menuToggle.addEventListener("click", () => {
+
+
+  navLinks.classList.toggle("active");
+
+
+  const icon = menuToggle.querySelector("i");
+
+
+  if(navLinks.classList.contains("active")){
+
+
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
+
+
+  }else{
+
+
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
+
+
+  }
+
+
+});
+
+
+
+
+
+
+
 
