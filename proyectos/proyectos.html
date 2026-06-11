@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/stylen.css" />
     <link rel="stylesheet" href="../css/stylent.css" />
-   
-    <link rel="stylesheet" href="../css/stylepr.css">
+
+    <link rel="stylesheet" href="../css/stylepr.css" />
 
     <link
       rel="stylesheet"
@@ -20,11 +20,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-
-
-
-</head>
-<body>
+    <!-- En tu HTML, agrega en el <head> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
+  </head>
+  <body>
     <!-- HEADER -->
     <header>
       <nav class="navbar">
@@ -50,653 +52,2973 @@
       </nav>
     </header>
 
-
-
-
-<!-- =========================
+    <!-- =========================
      BANNER PROYECTOS
 ========================= -->
 
-<section class="proyecto-banner">
+    <section class="proyecto-banner">
+      <div class="proyecto-content">
+        <span>NUESTROS PROYECTOS</span>
 
-  <div class="proyecto-content">
+        <h1>
+          PROYECTOS QUE
+          <br />
+          <strong>MARCAN LA DIFERENCIA</strong>
+        </h1>
 
-    <span>NUESTROS PROYECTOS</span>
+        <p>
+          Cada proyecto refleja nuestro compromiso con la calidad, la innovación
+          y la satisfacción de nuestros clientes.
+        </p>
+      </div>
+    </section>
 
-    <h1>
-      PROYECTOS QUE
-      <br>
-      <strong>MARCAN LA DIFERENCIA</strong>
-    </h1>
-
-    <p>
-      Cada proyecto refleja nuestro compromiso con la calidad,
-      la innovación y la satisfacción de nuestros clientes.
-    </p>
-
-  </div>
-
-</section>
-
-<!-- =========================
+    <!-- =========================
      PROYECTOS
 ========================= -->
 
-<section class="proyectos-section">
+    <section class="proyectos-section">
+      <!-- HEADER -->
+      <div class="proyectos-header">
+        <span>NUESTROS PROYECTOS</span>
 
-  <!-- HEADER -->
-  <div class="proyectos-header">
-    <span>NUESTROS PROYECTOS</span>
+        <h2>Proyectos que transforman espacios deportivos</h2>
 
-    <h2>Proyectos que transforman espacios deportivos</h2>
+        <div class="proyectos-filtros">
+          <button class="filtro-btn active" data-filter="all">
+            <i class="fa-solid fa-border-all"></i>
+            TODOS
+          </button>
 
-    <div class="proyectos-filtros">
+          <button class="filtro-btn" data-filter="futbol">
+            <i class="fa-regular fa-futbol"></i>
+            CANCHAS
+          </button>
 
-      <button class="filtro-btn active" data-filter="all">
-        <i class="fa-solid fa-border-all"></i>
-        TODOS
-      </button>
+          <button class="filtro-btn" data-filter="pistas">
+            <i class="fa-solid fa-person-running"></i>
+            PISTAS
+          </button>
 
-      <button class="filtro-btn" data-filter="futbol">
-        <i class="fa-regular fa-futbol"></i>
-        CANCHAS
-      </button>
+          <button class="filtro-btn" data-filter="recreativos">
+            <i class="fa-solid fa-children"></i>
+            RECREATIVOS
+          </button>
 
-      <button class="filtro-btn" data-filter="pistas">
-        <i class="fa-solid fa-person-running"></i>
-        PISTAS
-      </button>
+          <button class="filtro-btn" data-filter="luces">
+            <i class="fa-regular fa-lightbulb"></i>
+            LUCES
+          </button>
 
-      <button class="filtro-btn" data-filter="recreativos">
-        <i class="fa-solid fa-children"></i>
-        RECREATIVOS
-      </button>
-
-      <button class="filtro-btn" data-filter="luces">
-        <i class="fa-regular fa-lightbulb"></i>
-        LUCES
-      </button>
-
-      <button class="filtro-btn" data-filter="mantenimiento">
-        <i class="fa-solid fa-screwdriver-wrench"></i>
-        MANTENIMIENTO
-      </button>
-
-    </div>
-  </div>
-
-  <!-- GRID -->
-  <div class="proyectos-grid">
-
-    <!-- =========================
-         8 PRIMEROS VISIBLES
-    ========================= -->
-
-    <div class="proyecto-card" id="abrirModalProyecto1" data-category="futbol">
-      <img src="../img/proyecto1.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>UPC - Campus Monterrico</h3>
-        <p>Surco, Perú</p>
-        <div class="proyecto-arrow">
-        <i class="fa-solid fa-arrow-right"></i>
-    </div>
-
-
-
-      </div>
-    </div>
-
-    <div class="proyecto-card" id="abrirModalProyecto2" data-category="futbol">
-      <img src="../img/proyecto2.png" alt="Grass sintético decorativo">
-
-
-      <div class="proyecto-overlay">
-        <h3>Grass Sintético Decorativo</h3>
-        <p>La Molina, Perú</p>
-
-
-        <div class="proyecto-arrow">
-          <i class="fa-solid fa-arrow-right"></i>
+          <button class="filtro-btn" data-filter="mantenimiento">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            MANTENIMIENTO
+          </button>
         </div>
       </div>
-    </div>
 
+      <!-- GRID -->
+      <div class="proyectos-grid">
+        <!-- =========================
+         8 PRIMEROS VISIBLES
+        ========================= -->
 
+        <!-- =========================
+          CARD 1
+        ========================= -->
+        <div
+          class="proyecto-card"
+          id="abrirModalProyecto1"
+          data-category="futbol"
+        >
+          <img src="../img/proyecto1.png" alt="" />
+          <div class="proyecto-overlay">
+            <h3>UPC - Campus Monterrico</h3>
+            <p>Surco, Perú</p>
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
 
+        <!-- =========================
+          CARD 2
+        ========================= -->
+        <div
+          class="proyecto-card"
+          id="abrirModalProyecto2"
+          data-category="futbol"
+        >
+          <img src="../img/proyecto2.png" alt="Grass sintético decorativo" />
 
+          <div class="proyecto-overlay">
+            <h3>Grass Sintético Decorativo</h3>
+            <p>La Molina, Perú</p>
 
-<!-- =========================
-    CARD 3
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+            CARD 3
+        ========================= -->
+
+        <div
+          class="proyecto-card"
+          id="abrirModalProyecto3"
+          data-category="futbol"
+        >
+          <img src="../img/proyecto3.png" alt="Canchas de pádel" />
+
+          <div class="proyecto-overlay">
+            <h3>Club Oasis Piura</h3>
+            <p>Piura, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+          CARD 4
+          ========================= -->
+
+        <div
+          class="proyecto-card"
+          id="abrirModalProyecto4"
+          data-category="recreativos"
+        >
+          <img src="../img/proyecto4.png" alt="Piso multideportivo" />
+
+          <div class="proyecto-overlay">
+            <h3>UNIFÉ Universidad Femenina</h3>
+            <p>La Molina, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 5
 ========================= -->
 
+        <div
+          class="proyecto-card"
+          id="abrirModalProyecto5"
+          data-category="recreativos"
+        >
+          <img src="../img/proyecto5.png" alt="Piso multideportivo vinílico" />
 
-<div class="proyecto-card" id="abrirModalProyecto3" data-category="futbol">
- <img src="../img/proyecto3.png" alt="Canchas de pádel">
+          <div class="proyecto-overlay">
+            <h3>Coliseo Municipal de Arequipa</h3>
+            <p>Arequipa, Perú</p>
 
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
 
- <div class="proyecto-overlay">
-   <h3>Club Oasis Piura</h3>
-   <p>Piura, Perú</p>
+        <!-- =========================
+    CARD 6
+========================= -->
 
+        <div
+          class="proyecto-card"
+          id="abrirModalProyecto6"
+          data-category="recreativos"
+        >
+          <img src="../img/proyecto6.png" alt="Parque infantil" />
 
-   <div class="proyecto-arrow">
-     <i class="fa-solid fa-arrow-right"></i>
-   </div>
- </div>
-</div>
+          <div class="proyecto-overlay">
+            <h3>Parque Infantil</h3>
+            <p>Nazca, Perú</p>
 
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
 
-
-
-
-    <div class="proyecto-card" data-category="luces">
-      <img src="../img/proyecto4.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Iluminación LED</h3>
-        <p>Arequipa, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card" data-category="mantenimiento">
-      <img src="../img/proyecto5.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Mantenimiento</h3>
-        <p>Cusco, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card" data-category="futbol">
-      <img src="../img/proyecto6.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Cancha Multiuso</h3>
-        <p>Lima, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="pistas">
-      <img src="../img/proyecto7.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Pista Profesional</h3>
-        <p>Ica, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="luces">
-      <img src="../img/proyecto8.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Luces Deportivas</h3>
-        <p>Chiclayo, Perú</p>
-      </div>
-    </div>
-
-    <!-- =========================
+        <!-- =========================
          OCULTOS (VER MÁS)
     ========================= -->
 
-    <div class="proyecto-card proyecto-extra" data-category="futbol">
-      <img src="../img/proyecto9.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Cancha de Fútbol</h3>
-        <p>Tacna, Perú</p>
-      </div>
-    </div>
+        <!-- =========================
+    CARD 7
+========================= -->
 
-    <div class="proyecto-card proyecto-extra" data-category="recreativos">
-      <img src="../img/proyecto10.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Parque Recreativo</h3>
-        <p>Lima, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="mantenimiento">
-      <img src="../img/proyecto11.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Mantenimiento Integral</h3>
-        <p>Piura, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="pistas">
-      <img src="../img/proyecto12.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Pista Escolar</h3>
-        <p>Huancayo, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="futbol">
-      <img src="../img/proyecto13.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Cancha Premium</h3>
-        <p>Lima, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="luces">
-      <img src="../img/proyecto14.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Sistema LED</h3>
-        <p>Chimbote, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="recreativos">
-      <img src="../img/proyecto15.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Zona Infantil</h3>
-        <p>Loreto, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="mantenimiento">
-      <img src="../img/proyecto16.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Rehabilitación</h3>
-        <p>Callao, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="futbol">
-      <img src="../img/proyecto17.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Cancha Profesional</h3>
-        <p>Arequipa, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="luces">
-      <img src="../img/proyecto18.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Torres LED</h3>
-        <p>Puno, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="recreativos">
-      <img src="../img/proyecto19.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Zona Recreativa</h3>
-        <p>Moquegua, Perú</p>
-      </div>
-    </div>
-
-    <div class="proyecto-card proyecto-extra" data-category="pistas">
-      <img src="../img/proyecto20.png" alt="">
-      <div class="proyecto-overlay">
-        <h3>Pista Olímpica</h3>
-        <p>Lima, Perú</p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="proyectos-more">
-  <button class="ver-mas-proyectos" id="verMasProyectos">
-    VER MÁS PROYECTOS
-    <span>→</span>
-  </button>
-</div>
-
-
-
-
-</section>
-
-<div class="modal-overlay" id="modalProyecto1">
-  <div class="modal-box">
-
-
-    <button class="modal-close" id="cerrarModalProyecto1">×</button>
-
-
-    <div class="modal-left">
-      <div class="modal-img-wrapper">
-        <img
-          src="../img/proyecto1.png"
-          class="modal-main-img"
-          alt="Grass sintético decorativo"
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto7"
+          data-category="pistas"
         >
-      </div>
-    </div>
+          <img src="../img/proyecto7.png" alt="Piso multideportivo vinílico" />
 
+          <div class="proyecto-overlay">
+            <h3>Hacienda Jaén</h3>
+            <p>Cajamarca, Perú</p>
 
-    <div class="modal-right">
-      <h2>UPC - Campus Monterrico</h2>
-
-
-      <p class="modal-text">
-        Santiago de Surco, Lima - Perú. Renovamos el espacio con grass
-        sintético decorativo de alta calidad, logrando un ambiente más verde,
-        limpio y elegante.
-      </p>
-
-
-      <div class="modal-features">
-        <div class="feature-item">
-          <i class="fa-solid fa-leaf"></i>
-          <div>
-            <h4>Instalación profesional</h4>
-            <p>Ejecutamos cada proyecto con precisión y acabados impecables.</p>
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </div>
         </div>
 
+        <!-- =========================
+    CARD 8
+========================= -->
 
-        <div class="feature-item">
-          <i class="fa-solid fa-seedling"></i>
-          <div>
-            <h4>Acabado natural</h4>
-            <p>Grass sintético decorativo que brinda una apariencia real y armoniosa.</p>
-          </div>
-        </div>
-
-
-        <div class="feature-item">
-          <i class="fa-solid fa-shield-halved"></i>
-          <div>
-            <h4>Mínimo mantenimiento</h4>
-            <p>Superficie duradera, resistente y fácil de mantener durante todo el año.</p>
-          </div>
-        </div>
-
-
-        <div class="feature-item">
-          <i class="fa-solid fa-spa"></i>
-          <div>
-            <h4>Ideal para múltiples espacios</h4>
-            <p>Perfecto para jardines, terrazas, áreas recreativas y zonas de alto tránsito.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="modal-cta">
-      <div class="modal-cta-text">
-        <i class="fa-solid fa-leaf"></i>
-        <div>
-          <h4>Más verde, limpio y elegante</h4>
-          <p>Transformamos espacios en lugares que inspiran bienestar y calidad.</p>
-        </div>
-      </div>
-
-
-      <a href="https://wa.me/51999999999" target="_blank" class="modal-btn">
-        COTIZAR ESTE PROYECTO
-        <span>→</span>
-      </a>
-    </div>
-
-
-  </div>
-</div>
-
-
-<div class="modal-overlay" id="modalProyecto2">
-  <div class="modal-box">
-
-
-    <button class="modal-close" id="cerrarModalProyecto2">×</button>
-
-
-    <div class="modal-left">
-      <div class="modal-img-wrapper">
-        <img
-          src="../img/proyecto2.png"
-          class="modal-main-img"
-          alt="Grass sintético decorativo"
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto8"
+          data-category="mantenimiento"
         >
+          <img
+            src="../img/proyecto8.png"
+            alt="Mantenimiento de campo deportivo"
+          />
+
+          <div class="proyecto-overlay">
+            <h3>Club Árabe Palestino</h3>
+            <p>Lima, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 9
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto9"
+          data-category="recreativos"
+        >
+          <img src="../img/proyecto9.png" alt="Pisos de caucho infantil" />
+
+          <div class="proyecto-overlay">
+            <h3>Markham College</h3>
+            <p>Surco, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 10
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto10"
+          data-category="recreativos"
+        >
+          <img src="../img/proyecto10.png" alt="Piso para gimnasio" />
+
+          <div class="proyecto-overlay">
+            <h3>Country Club Rinconada</h3>
+            <p>La Molina, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 11
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto11"
+          data-category="pistas"
+        >
+          <img src="../img/proyecto11.png" alt="Piso sintético tipo sandwich" />
+
+          <div class="proyecto-overlay">
+            <h3>Colegio Emblemático Coronel Ladislao de Espinar</h3>
+            <p>Cusco, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 12
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto12"
+          data-category="futbol"
+        >
+          <img
+            src="../img/proyecto12.png"
+            alt="Césped sintético de alto rendimiento"
+          />
+
+          <div class="proyecto-overlay">
+            <h3>Estadio Emblemático Lolo Fernández</h3>
+            <p>Trujillo, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 13
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto13"
+          data-category="recreativos"
+        >
+          <img
+            src="../img/proyecto13.png"
+            alt="Pisos recreativos de caucho continuo"
+          />
+
+          <div class="proyecto-overlay">
+            <h3>Colegio SS.CC Recoleta</h3>
+            <p>Santiago de Surco, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 14
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto14"
+          data-category="luces"
+        >
+          <img src="../img/proyecto14.png" alt="Iluminación deportiva LED" />
+
+          <div class="proyecto-overlay">
+            <h3>CARFIP - Centro de Alto Rendimiento</h3>
+            <p>Lima, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <!-- =========================
+    CARD 15
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto15"
+          data-category="recreativos"
+        >
+          <img src="../img/proyecto15.png" alt="Piso de poliuretano multiuso" />
+
+          <div class="proyecto-overlay">
+            <h3>Universidad del Pacífico</h3>
+            <p>Lima, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 16
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto16"
+          data-category="pistas"
+        >
+          <img src="../img/proyecto16.png" alt="Pista atlética CONIPUR SP" />
+
+          <div class="proyecto-overlay">
+            <h3>Colegio Santo Toribio de Rioja</h3>
+            <p>Rioja, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 17
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto17"
+          data-category="pistas"
+        >
+          <img
+            src="../img/proyecto17.png"
+            alt="Pista Atlética Spray CONIPUR SP 13 mm"
+          />
+
+          <div class="proyecto-overlay">
+            <h3>Colegio Modelo de San Antonio de Moquegua</h3>
+            <p>Moquegua, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 18
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto18"
+          data-category="recreativos"
+        >
+          <img src="../img/proyecto18.png" alt="Piso de Poliuretano 9+2=11" />
+
+          <div class="proyecto-overlay">
+            <h3>Colegio Rosa de Santa María RSM</h3>
+            <p>Cercado de Lima, Lima, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 19
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto19"
+          data-category="pistas"
+        >
+          <img
+            src="../img/proyecto19.png"
+            alt="Pista Atlética CASALI SPORTRACK SW PF e=13.6 mm"
+          />
+
+          <div class="proyecto-overlay">
+            <h3>I. E. FAP Capitán José Abelardo Quiñones</h3>
+            <p>Iquitos, Loreto, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================
+    CARD 20
+========================= -->
+
+        <div
+          class="proyecto-card proyecto-extra"
+          id="abrirModalProyecto20"
+          data-category="pistas"
+        >
+          <img
+            src="../img/proyecto20.png"
+            alt="Pista atlética sandwich 13 mm"
+          />
+
+          <div class="proyecto-overlay">
+            <h3>Estadio IPD de Huancavelica</h3>
+            <p>Huancavelica, Perú</p>
+
+            <div class="proyecto-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="proyectos-more">
+        <button class="ver-mas-proyectos" id="verMasProyectos">
+          VER MÁS PROYECTOS
+          <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================
+    MODAL CARD 1
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto1">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto1">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto1.png"
+                  class="modal-main-img"
+                  alt="Grass sintético decorativo"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>UPC - Campus Monterrico</h2>
+
+              <p class="modal-text">
+                Santiago de Surco, Lima - Perú. Renovamos el espacio con grass
+                sintético decorativo de alta calidad, logrando un ambiente más
+                verde, limpio y elegante.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-leaf"></i>
+
+                  <div>
+                    <h4>Instalación profesional</h4>
+
+                    <p>
+                      Ejecutamos cada proyecto con precisión y acabados
+                      impecables.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-seedling"></i>
+
+                  <div>
+                    <h4>Acabado natural</h4>
+
+                    <p>
+                      Grass sintético decorativo que brinda una apariencia real
+                      y armoniosa.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+
+                  <div>
+                    <h4>Mínimo mantenimiento</h4>
+
+                    <p>
+                      Superficie duradera, resistente y fácil de mantener
+                      durante todo el año.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-spa"></i>
+
+                  <div>
+                    <h4>Ideal para múltiples espacios</h4>
+
+                    <p>
+                      Perfecto para jardines, terrazas, áreas recreativas y
+                      zonas de alto tránsito.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-leaf"></i>
+
+                <div>
+                  <h4>Más verde, limpio y elegante</h4>
+
+                  <p>
+                    Transformamos espacios en lugares que inspiran bienestar y
+                    calidad.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
+    <!-- =========================
+    MODAL CARD 2
+========================= -->
 
-    <div class="modal-right">
-      <h2>La Planicie - La Molina</h2>
+    <div class="modal-overlay" id="modalProyecto2">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto2">×</button>
 
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto2.png"
+                  class="modal-main-img"
+                  alt="Grass sintético decorativo"
+                />
+              </div>
+            </div>
 
-      <p class="modal-text">
-        La Molina, Lima - Perú. Presentamos nuestro último trabajo: un espacio
-        renovado con grass sintético decorativo de alta calidad, diseñado para
-        brindar elegancia, frescura y durabilidad.
-      </p>
+            <div class="modal-right">
+              <h2>La Planicie - La Molina</h2>
 
+              <p class="modal-text">
+                La Molina, Lima - Perú. Presentamos nuestro último trabajo: un
+                espacio renovado con grass sintético decorativo de alta calidad,
+                diseñado para brindar elegancia, frescura y durabilidad.
+              </p>
 
-      <div class="modal-features">
-        <div class="feature-item">
-          <i class="fa-solid fa-leaf"></i>
-          <div>
-            <h4>Instalación profesional</h4>
-            <p>Colocación experta garantizando precisión y acabados impecables.</p>
-          </div>
-        </div>
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-leaf"></i>
 
+                  <div>
+                    <h4>Instalación profesional</h4>
 
-        <div class="feature-item">
-          <i class="fa-solid fa-seedling"></i>
-          <div>
-            <h4>Acabado natural</h4>
-            <p>Grass sintético decorativo de alta calidad con apariencia real y armoniosa.</p>
-          </div>
-        </div>
+                    <p>
+                      Colocación experta garantizando precisión y acabados
+                      impecables.
+                    </p>
+                  </div>
+                </div>
 
+                <div class="feature-item">
+                  <i class="fa-solid fa-seedling"></i>
 
-        <div class="feature-item">
-          <i class="fa-solid fa-shield-halved"></i>
-          <div>
-            <h4>Mínimo mantenimiento</h4>
-            <p>Superficie duradera, resistente y fácil de mantener durante todo el año.</p>
-          </div>
-        </div>
+                  <div>
+                    <h4>Acabado natural</h4>
 
+                    <p>
+                      Grass sintético decorativo de alta calidad con apariencia
+                      real y armoniosa.
+                    </p>
+                  </div>
+                </div>
 
-        <div class="feature-item">
-          <i class="fa-solid fa-house"></i>
-          <div>
-            <h4>Ideal para tu hogar</h4>
-            <p>Perfecto para jardines, terrazas y áreas recreativas de casas privadas.</p>
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+
+                  <div>
+                    <h4>Mínimo mantenimiento</h4>
+
+                    <p>
+                      Superficie duradera, resistente y fácil de mantener
+                      durante todo el año.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-house"></i>
+
+                  <div>
+                    <h4>Ideal para tu hogar</h4>
+
+                    <p>
+                      Perfecto para jardines, terrazas y áreas recreativas de
+                      casas privadas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-leaf"></i>
+
+                <div>
+                  <h4>Más verde, elegante y funcional</h4>
+
+                  <p>
+                    Transformamos espacios en lugares que inspiran bienestar y
+                    calidad de vida.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-
-    <div class="modal-cta">
-      <div class="modal-cta-text">
-        <i class="fa-solid fa-leaf"></i>
-        <div>
-          <h4>Más verde, elegante y funcional</h4>
-          <p>Transformamos espacios en lugares que inspiran bienestar y calidad de vida.</p>
-        </div>
-      </div>
-
-
-      <a href="https://wa.me/51999999999" target="_blank" class="modal-btn">
-        COTIZAR ESTE PROYECTO
-        <span>→</span>
-      </a>
-    </div>
-
-
-  </div>
-</div>
-
-
-<!-- =========================
+    <!-- =========================
     MODAL CARD 3
 ========================= -->
 
-
-<div class="modal-overlay" id="modalProyecto3">
- <div class="modal-box">
-
-
-   <button class="modal-close" id="cerrarModalProyecto3">×</button>
-
-
-   <div class="modal-left">
-     <div class="modal-img-wrapper">
-       <img
-         src="../img/proyecto3.png"
-         class="modal-main-img"
-         alt="Canchas de pádel"
-       >
-     </div>
-   </div>
-
-
-   <div class="modal-right">
-     <h2>Club Oasis Piura</h2>
-
-
-     <p class="modal-text">
-       Piura, Perú. Proyecto completado con dos canchas de pádel reglamentarias,
-       diseñadas para ofrecer una experiencia deportiva de alto rendimiento,
-       seguridad y gran durabilidad.
-     </p>
-
-
-     <div class="modal-features">
-
-
-       <div class="feature-item">
-         <i class="fa-solid fa-ruler"></i>
-
-
-         <div>
-           <h4>Medidas oficiales</h4>
-
-
-           <p>
-             Canchas reglamentarias que cumplen estándares para un juego profesional.
-           </p>
-         </div>
-       </div>
-
-
-       <div class="feature-item">
-         <i class="fa-solid fa-seedling"></i>
-
-
-         <div>
-           <h4>Césped sintético de alta calidad</h4>
-
-
-           <p>
-             Superficie resistente, duradera y con excelente agarre para el juego.
-           </p>
-         </div>
-       </div>
-
-
-       <div class="feature-item">
-         <i class="fa-solid fa-border-all"></i>
-
-
-         <div>
-           <h4>Estructura profesional</h4>
-
-
-           <p>
-             Materiales de primera calidad que garantizan seguridad y larga vida útil.
-           </p>
-         </div>
-       </div>
-
-
-       <div class="feature-item">
-         <i class="fa-regular fa-lightbulb"></i>
-
-
-         <div>
-           <h4>Iluminación óptima</h4>
-
-
-           <p>
-             Sistema LED de alto rendimiento para una excelente visibilidad nocturna.
-           </p>
-         </div>
-       </div>
-
-
-       <div class="feature-item">
-         <i class="fa-regular fa-star"></i>
-
-
-         <div>
-           <h4>Acabados de primer nivel</h4>
-
-
-           <p>
-             Detalles cuidadosamente ejecutados para un resultado funcional y estético.
-           </p>
-         </div>
-       </div>
-
-
-     </div>
-   </div>
-
-
-   <div class="modal-cta">
-     <div class="modal-cta-text">
-       <i class="fa-solid fa-trophy"></i>
-
-
-       <div>
-         <h4>Calidad en cada detalle, rendimiento en cada punto</h4>
-
-
-         <p>
-           Canchas diseñadas para ofrecer la mejor experiencia de juego.
-         </p>
-       </div>
-     </div>
-
-
-     <a href="https://wa.me/51999999999" target="_blank" class="modal-btn">
-       COTIZAR ESTE PROYECTO
-       <span>→</span>
-     </a>
-   </div>
-
-
- </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- FOOTER -->
+    <div class="modal-overlay" id="modalProyecto3">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto3">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto3.png"
+                  class="modal-main-img"
+                  alt="Canchas de pádel"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Club Oasis Piura</h2>
+
+              <p class="modal-text">
+                Piura, Perú. Proyecto completado con dos canchas de pádel
+                reglamentarias, diseñadas para ofrecer una experiencia deportiva
+                de alto rendimiento, seguridad y gran durabilidad.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-ruler"></i>
+
+                  <div>
+                    <h4>Medidas oficiales</h4>
+
+                    <p>
+                      Canchas reglamentarias que cumplen estándares para un
+                      juego profesional.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-seedling"></i>
+
+                  <div>
+                    <h4>Césped sintético de alta calidad</h4>
+
+                    <p>
+                      Superficie resistente, duradera y con excelente agarre
+                      para el juego.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-border-all"></i>
+
+                  <div>
+                    <h4>Estructura profesional</h4>
+
+                    <p>
+                      Materiales de primera calidad que garantizan seguridad y
+                      larga vida útil.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-regular fa-lightbulb"></i>
+
+                  <div>
+                    <h4>Iluminación óptima</h4>
+
+                    <p>
+                      Sistema LED de alto rendimiento para una excelente
+                      visibilidad nocturna.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-regular fa-star"></i>
+
+                  <div>
+                    <h4>Acabados de primer nivel</h4>
+
+                    <p>
+                      Detalles cuidadosamente ejecutados para un resultado
+                      funcional y estético.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Calidad en cada detalle, rendimiento en cada punto</h4>
+
+                  <p>
+                    Canchas diseñadas para ofrecer la mejor experiencia de
+                    juego.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =========================
+    MODAL CARD 4
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto4">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto4">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto4.png"
+                  class="modal-main-img"
+                  alt="Piso multideportivo de poliuretano"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>UNIFÉ Universidad Femenina del Sagrado Corazón</h2>
+
+              <p class="modal-text">
+                La Molina, Lima - Perú. Proyecto terminado con éxito, donde se
+                instaló un piso multideportivo de poliuretano CASALI de 10mm de
+                espesor, diseñado para brindar máximo rendimiento, confort y
+                durabilidad.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-border-all"></i>
+                  <div>
+                    <h4>Superficie uniforme y antideslizante</h4>
+                    <p>
+                      Acabado liso que garantiza seguridad y óptimo desempeño en
+                      cada movimiento.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Alta resistencia al desgaste y rayos UV</h4>
+                    <p>
+                      Materiales de calidad superior que aseguran larga vida
+                      útil y protección solar.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-regular fa-futbol"></i>
+                  <div>
+                    <h4>Excelente amortiguación y rebote del balón</h4>
+                    <p>
+                      Tecnología avanzada que mejora la experiencia de juego en
+                      cada disciplina.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-users"></i>
+                  <div>
+                    <h4>Ideal para múltiples disciplinas deportivas</h4>
+                    <p>
+                      Perfecto para vóley, básquet, fútbol sala, handball y más.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-palette"></i>
+                  <div>
+                    <h4>Diseño personalizado con colores institucionales</h4>
+                    <p>
+                      Acabados estéticos que reflejan la identidad de cada
+                      institución.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Rendimiento, seguridad y estética en un solo proyecto</h4>
+                  <p>
+                    Construimos espacios deportivos que inspiran y transforman
+                    comunidades.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =========================
+    MODAL CARD 5
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto5">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto5">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto5.png"
+                  class="modal-main-img"
+                  alt="Piso multideportivo vinílico"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Coliseo Municipal de Arequipa</h2>
+
+              <p class="modal-text">
+                Arequipa, Perú. Proyecto terminado con la instalación de un piso
+                multideportivo vinílico de 9mm, diseñado para máximo
+                rendimiento, seguridad y durabilidad en espacios deportivos de
+                alto tránsito.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <div>
+                    <h4>Superficie de alto rendimiento</h4>
+                    <p>
+                      Piso vinílico de 9mm que brinda excelente agarre,
+                      resistencia y desempeño profesional.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-certificate"></i>
+                  <div>
+                    <h4>Certificado FIFA QUALITY PRO</h4>
+                    <p>
+                      Calidad internacional que garantiza mejores condiciones
+                      para la práctica deportiva.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-regular fa-futbol"></i>
+                  <div>
+                    <h4>Versatilidad para múltiples disciplinas</h4>
+                    <p>
+                      Ideal para básquet, vóley, futsal, handball y otras
+                      disciplinas deportivas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Seguridad y confort</h4>
+                    <p>
+                      Excelente amortiguación que reduce el impacto y mejora la
+                      experiencia de juego.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  <div>
+                    <h4>Acabados profesionales</h4>
+                    <p>
+                      Instalación con estándares de calidad que aseguran
+                      durabilidad y estética impecable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Rendimiento, seguridad y calidad en cada detalle</h4>
+                  <p>
+                    Construimos espacios que inspiran, transforman y fomentan el
+                    deporte.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =========================
+    MODAL CARD 6
+========================= -->
+
+      <div class="modal-overlay" id="modalProyecto6">
+        <div class="modal-box">
+          <div class="modal-scroll" data-simplebar>
+            <div class="modal-scroll-inner">
+              <button class="modal-close" id="cerrarModalProyecto6">×</button>
+
+              <div class="modal-left">
+                <div class="modal-img-wrapper">
+                  <img
+                    src="../img/proyecto6.png"
+                    class="modal-main-img"
+                    alt="Piso continuo anti-trauma"
+                  />
+                </div>
+              </div>
+
+              <div class="modal-right">
+                <h2>Parque Infantil CC. PP. Nueva Villa María Reiche</h2>
+
+                <p class="modal-text">
+                  Nazca, Ica - Perú. Proyecto terminado con la instalación de
+                  piso continuo anti-trauma normado Cásali Athlon PG de 80 mm,
+                  realizado para un parque infantil seguro, colorido y
+                  resistente.
+                </p>
+
+                <div class="modal-features">
+                  <div class="feature-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                      <h4>Piso continuo anti-trauma</h4>
+                      <p>
+                        Superficie segura que reduce el impacto de caídas y
+                        brinda mayor protección a los niños.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <div>
+                      <h4>Normado Cásali Athlon PG de 80 mm</h4>
+                      <p>
+                        Sistema de alta calidad que cumple con estándares de
+                        seguridad internacionales.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-children"></i>
+                    <div>
+                      <h4>Diseñado para el juego seguro</h4>
+                      <p>
+                        Ideal para áreas infantiles, ofreciendo confort y
+                        tranquilidad a padres y cuidadores.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-palette"></i>
+                    <div>
+                      <h4>Colores vibrantes y atractivos</h4>
+                      <p>
+                        Diseño personalizado que estimula la creatividad y la
+                        diversión de los niños.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <div>
+                      <h4>Durabilidad y bajo mantenimiento</h4>
+                      <p>
+                        Material resistente al uso intensivo y a las condiciones
+                        climáticas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-cta">
+                <div class="modal-cta-text">
+                  <i class="fa-solid fa-shield-halved"></i>
+
+                  <div>
+                    <h4>Seguridad, diseño y calidad en cada detalle</h4>
+                    <p>
+                      Creamos espacios donde los niños juegan, aprenden y crecen
+                      felices.
+                    </p>
+                  </div>
+                </div>
+
+                <a
+                  href="https://wa.me/51999999999"
+                  target="_blank"
+                  class="modal-btn"
+                >
+                  COTIZAR ESTE PROYECTO
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 7
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto7">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto7">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto7.png"
+                  class="modal-main-img"
+                  alt="Pista atlética y multideportivo"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Hacienda Jaén</h2>
+
+              <p class="modal-text">
+                Jaén, Cajamarca, Perú. Proyecto integral que combina una pista
+                atlética profesional con un campo multideportivo de alto
+                rendimiento y grass recreativo, diseñado para entrenamiento,
+                recreación y deporte competitivo.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-person-running"></i>
+                  <div>
+                    <h4>Pista atlética profesional</h4>
+                    <p>
+                      Pavimento tipo sandwich de alto rendimiento para máxima
+                      seguridad y durabilidad.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-border-all"></i>
+                  <div>
+                    <h4>Piso multideportivo poliuretano 9mm</h4>
+                    <p>
+                      Sistema CASALI de 9mm resistente al desgaste y a los
+                      impactos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-seedling"></i>
+                  <div>
+                    <h4>Grass recreativo</h4>
+                    <p>
+                      Césped sintético de calidad para áreas verdes y
+                      recreativas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Alta durabilidad</h4>
+                    <p>
+                      Materiales certificados que aseguran larga vida útil y
+                      mínimo mantenimiento.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div>
+                    <h4>Espacios para la comunidad</h4>
+                    <p>
+                      Infraestructura deportiva que promueve el deporte, la
+                      salud y la integración social.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>
+                    Comprometidos con la calidad y el desarrollo deportivo
+                  </h4>
+                  <p>
+                    Creamos espacios que inspiran y transforman comunidades.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 8
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto8">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto8">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto8.png"
+                  class="modal-main-img"
+                  alt="Mantenimiento de campo deportivo"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Club Árabe Palestino</h2>
+
+              <p class="modal-text">
+                Lima, Perú. Mantenimiento profesional de campo deportivo
+                sintético con relleno natural, realizado para conservar el
+                rendimiento, seguridad y vida útil de la superficie deportiva.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-leaf"></i>
+                  <div>
+                    <h4>Relleno natural</h4>
+                    <p>
+                      Mejora la amortiguación, el rebote del balón y la
+                      experiencia de juego.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Rendimiento garantizado</h4>
+                    <p>
+                      Conserva las condiciones óptimas de la superficie para un
+                      juego seguro y de alto nivel.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-gear"></i>
+                  <div>
+                    <h4>Mantenimiento profesional</h4>
+                    <p>
+                      Proceso técnico especializado con maquinaria y personal
+                      calificado.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-users"></i>
+                  <div>
+                    <h4>Mayor durabilidad</h4>
+                    <p>
+                      Extiende la vida útil del césped sintético y reduce el
+                      desgaste del campo.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <div>
+                    <h4>Seguridad para jugadores</h4>
+                    <p>
+                      Superficie estable que minimiza riesgos y protege la
+                      integridad física.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Compromiso con la calidad y el deporte</h4>
+                  <p>
+                    Cuidamos cada detalle para que tu campo siempre esté listo
+                    para el próximo partido.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 9
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto9">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto9">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto9.png"
+                  class="modal-main-img"
+                  alt="Pisos de caucho infantil"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Markham College (Sede Surco)</h2>
+
+              <p class="modal-text">
+                Santiago de Surco, Lima - Perú. Instalación de pisos de caucho
+                infantil, seguros, coloridos y resistentes, diseñados para
+                brindar protección, diversión y durabilidad en espacios de
+                juego.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Seguridad garantizada</h4>
+                    <p>
+                      Superficie de caucho anti-impacto que reduce riesgos de
+                      caídas y protege a los niños.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-palette"></i>
+                  <div>
+                    <h4>Diseño atractivo y divertido</h4>
+                    <p>
+                      Colores vibrantes y diseños personalizados que estimulan
+                      la creatividad y el juego.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shoe-prints"></i>
+                  <div>
+                    <h4>Material de alta calidad</h4>
+                    <p>
+                      Caucho EPDM resistente al desgaste, rayos UV y condiciones
+                      climáticas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-broom"></i>
+                  <div>
+                    <h4>Fácil mantenimiento</h4>
+                    <p>
+                      Superficie permeable y de rápida limpieza, ideal para uso
+                      intensivo.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-children"></i>
+                  <div>
+                    <h4>Ideal para áreas infantiles</h4>
+                    <p>
+                      Perfecto para parques, colegios, guarderías y zonas
+                      recreativas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Espacios que inspiran juegos seguros</h4>
+                  <p>
+                    Creamos ambientes donde los niños pueden jugar, aprender y
+                    crecer felices.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 10
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto10">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto10">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto10.png"
+                  class="modal-main-img"
+                  alt="Piso para gimnasio"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Country Club Rinconada</h2>
+
+              <p class="modal-text">
+                La Molina, Lima - Perú. Implementación de piso para gimnasio de
+                alta resistencia, diseñado para soportar uso intensivo, brindar
+                seguridad y mejorar el confort en áreas deportivas y de
+                entrenamiento profesional.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-dumbbell"></i>
+                  <div>
+                    <h4>Alta resistencia y durabilidad</h4>
+                    <p>
+                      Material de caucho de alta densidad que soporta cargas
+                      pesadas y uso constante.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Seguridad y amortiguación</h4>
+                    <p>
+                      Superficie antideslizante que reduce impactos y previene
+                      lesiones.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-dumbbell"></i>
+                  <div>
+                    <h4>Fácil mantenimiento</h4>
+                    <p>
+                      Superficie de fácil limpieza, resistente al sudor y al
+                      desgaste.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-regular fa-clock"></i>
+                  <div>
+                    <h4>Acabado profesional</h4>
+                    <p>
+                      Instalación precisa con acabados de alto nivel para un
+                      espacio moderno y funcional.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-person-running"></i>
+                  <div>
+                    <h4>Ideal para gimnasios</h4>
+                    <p>
+                      Perfecto para áreas de entrenamiento, pesas, crossfit y
+                      cardio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Espacios que impulsan tu mejor versión</h4>
+                  <p>
+                    Creamos ambientes funcionales que combinan rendimiento,
+                    seguridad y diseño.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 11
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto11">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto11">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto11.png"
+                  class="modal-main-img"
+                  alt="Piso sintético tipo sandwich"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Colegio Emblemático Coronel Ladislao de Espinar</h2>
+
+              <p class="modal-text">
+                Espinar, Cusco, Perú. Instalación de piso sintético tipo
+                sandwich E=13 mm diseñado para brindar alto rendimiento,
+                seguridad y durabilidad en pistas atléticas y áreas deportivas
+                escolares.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-person-running"></i>
+                  <div>
+                    <h4>Alto rendimiento</h4>
+                    <p>
+                      Superficie elástica que mejora el desempeño deportivo y
+                      reduce impactos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <div>
+                    <h4>Piso sandwich E=13 mm</h4>
+                    <p>
+                      Estructura multicapa que brinda estabilidad, confort y
+                      resistencia superior.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Seguridad garantizada</h4>
+                    <p>
+                      Excelente tracción y absorción de impactos para prevenir
+                      lesiones.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-cloud-rain"></i>
+                  <div>
+                    <h4>Resistente y duradero</h4>
+                    <p>
+                      Materiales de alta calidad resistentes al desgaste y a las
+                      condiciones climáticas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div>
+                    <h4>Ideal para instituciones</h4>
+                    <p>Solución perfecta para colegios y centros educativos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>
+                    Comprometidos con la calidad y el desarrollo deportivo
+                  </h4>
+                  <p>
+                    Creamos superficies que impulsan el talento y promueven la
+                    actividad física.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 12
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto12">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto12">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto12.png"
+                  class="modal-main-img"
+                  alt="Césped sintético de alto rendimiento"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Estadio Emblemático Lolo Fernández</h2>
+
+              <p class="modal-text">
+                Trujillo, La Libertad, Perú. Instalación de césped sintético de
+                alto rendimiento para el Estadio Emblemático Lolo Fernández,
+                diseñado para brindar máxima seguridad, confort y durabilidad en
+                espacios deportivos de uso intensivo.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-futbol"></i>
+                  <div>
+                    <h4>Césped sintético de alto rendimiento</h4>
+                    <p>
+                      Fibra de última generación que brinda excelente juego y
+                      resistencia.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-border-all"></i>
+                  <div>
+                    <h4>Campos multideportivos</h4>
+                    <p>
+                      Diseñado con marcaciones para fútbol, futsal y otras
+                      disciplinas deportivas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-droplet"></i>
+                  <div>
+                    <h4>Drenaje eficiente</h4>
+                    <p>
+                      Sistema de drenaje avanzado que permite un rápido secado y
+                      óptimo desempeño.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Máxima durabilidad</h4>
+                    <p>
+                      Alta resistencia al uso intensivo y a las condiciones
+                      climáticas extremas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-people-group"></i>
+                  <div>
+                    <h4>Mejores espacios deportivos</h4>
+                    <p>
+                      Infraestructura moderna que impulsa la actividad física y
+                      el deporte.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>
+                    Comprometidos con la calidad y el desarrollo deportivo
+                  </h4>
+                  <p>
+                    Creamos superficies que impulsan el talento y generan
+                    impacto positivo.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 13
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto13">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto13">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto13.png"
+                  class="modal-main-img"
+                  alt="Pisos recreativos de caucho continuo"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Colegio SS.CC Recoleta</h2>
+
+              <p class="modal-text">
+                Santiago de Surco, Lima - Perú. Instalación de pisos recreativos
+                de caucho continuo Casali Athlon y juegos recreativos, diseñados
+                para brindar diversión, protección y desarrollo en áreas
+                infantiles.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Superficie de caucho continuo</h4>
+                    <p>
+                      Piso anti-impacto que reduce riesgos de caídas y brinda
+                      mayor seguridad.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-palette"></i>
+                  <div>
+                    <h4>Diseño colorido y atractivo</h4>
+                    <p>
+                      Combinación de colores que estimula la creatividad y el
+                      juego en los niños.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-child-reaching"></i>
+                  <div>
+                    <h4>Equipamiento recreativo</h4>
+                    <p>
+                      Juegos infantiles de alta calidad, resistentes y
+                      certificados para uso público.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-gear"></i>
+                  <div>
+                    <h4>Material de alta calidad</h4>
+                    <p>
+                      Caucho EPDM de alto rendimiento, resistente a la
+                      intemperie y al desgaste.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-users"></i>
+                  <div>
+                    <h4>Ideal para colegios y parques</h4>
+                    <p>
+                      Fomenta el desarrollo físico, social y emocional en
+                      espacios seguros y divertidos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Compromiso con la seguridad y la diversión</h4>
+                  <p>
+                    Creamos ambientes donde los niños juegan, aprenden y crecen
+                    felices.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 13
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto13">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto13">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto13.png"
+                  class="modal-main-img"
+                  alt="Pisos recreativos de caucho continuo"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Colegio SS.CC Recoleta</h2>
+
+              <p class="modal-text">
+                Santiago de Surco, Lima - Perú. Instalación de pisos recreativos
+                de caucho continuo Casali Athlon y juegos recreativos, diseñados
+                para brindar diversión, protección y desarrollo en áreas
+                infantiles.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Superficie de caucho continuo</h4>
+                    <p>
+                      Piso anti-impacto que reduce riesgos de caídas y brinda
+                      mayor seguridad.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-palette"></i>
+                  <div>
+                    <h4>Diseño colorido y atractivo</h4>
+                    <p>
+                      Combinación de colores que estimula la creatividad y el
+                      juego en los niños.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-child-reaching"></i>
+                  <div>
+                    <h4>Equipamiento recreativo</h4>
+                    <p>
+                      Juegos infantiles de alta calidad, resistentes y
+                      certificados para uso público.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-gear"></i>
+                  <div>
+                    <h4>Material de alta calidad</h4>
+                    <p>
+                      Caucho EPDM de alto rendimiento, resistente a la
+                      intemperie y al desgaste.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-users"></i>
+                  <div>
+                    <h4>Ideal para colegios y parques</h4>
+                    <p>
+                      Fomenta el desarrollo físico, social y emocional en
+                      espacios seguros y divertidos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Compromiso con la seguridad y la diversión</h4>
+                  <p>
+                    Creamos ambientes donde los niños juegan, aprenden y crecen
+                    felices.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 14
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto14">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto14">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto14.png"
+                  class="modal-main-img"
+                  alt="Iluminación deportiva LED"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>CARFIP - Centro de Alto Rendimiento y Capacitación</h2>
+
+              <p class="modal-text">
+                Lima, Perú. Sistema de iluminación LED profesional para
+                instalaciones deportivas de alto rendimiento, diseñado para
+                ofrecer máxima eficiencia, uniformidad lumínica y confort
+                visual.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-bolt"></i>
+                  <div>
+                    <h4>Alta potencia y eficiencia</h4>
+                    <p>
+                      Reflectores LED de última generación para máximo
+                      rendimiento deportivo.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-temperature-half"></i>
+                  <div>
+                    <h4>Temperatura de color 5200K</h4>
+                    <p>
+                      Luz blanca ideal para competencias y entrenamientos de
+                      alto nivel.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-crosshairs"></i>
+                  <div>
+                    <h4>Distribución lumínica precisa</h4>
+                    <p>
+                      Ópticas especializadas para diferentes tipos de campos
+                      deportivos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-feather"></i>
+                  <div>
+                    <h4>Diseño optimizado</h4>
+                    <p>
+                      Estructura ligera que facilita la instalación y reduce
+                      carga estructural.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Durabilidad y resistencia</h4>
+                    <p>
+                      Construcción robusta preparada para exteriores y uso
+                      intensivo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Comprometidos con la calidad y el rendimiento</h4>
+                  <p>
+                    Soluciones de iluminación que elevan el desempeño deportivo.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 15
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto15">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto15">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto15.png"
+                  class="modal-main-img"
+                  alt="Piso de poliuretano multiuso"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Universidad del Pacífico</h2>
+
+              <p class="modal-text">
+                Lima, Perú. Instalación de piso de poliuretano multiuso para
+                salón de yoga, diseñado para ofrecer comodidad, seguridad, fácil
+                limpieza y una superficie uniforme para actividades de bajo
+                impacto.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-person-walking"></i>
+                  <div>
+                    <h4>Superficie cómoda y segura</h4>
+                    <p>
+                      Excelente absorción de impactos y gran confort para las
+                      articulaciones.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-leaf"></i>
+                  <div>
+                    <h4>Antideslizante</h4>
+                    <p>
+                      Acabado que brinda mayor seguridad durante la práctica y
+                      el movimiento.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Higiénico y fácil limpieza</h4>
+                    <p>
+                      Superficie continua sin juntas que evita la acumulación de
+                      suciedad.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <div>
+                    <h4>Alta durabilidad</h4>
+                    <p>Resistente al desgaste, rayos UV y uso continuo.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-palette"></i>
+                  <div>
+                    <h4>Estética moderna</h4>
+                    <p>
+                      Acabado uniforme y elegante que mejora cualquier espacio.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Comprometidos con la calidad y el bienestar</h4>
+                  <p>
+                    Creamos espacios que promueven la salud, el equilibrio y el
+                    desarrollo integral.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 16
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto16">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto16">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto16.png"
+                  class="modal-main-img"
+                  alt="Pista atlética CONIPUR SP"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Colegio Santo Toribio de Rioja</h2>
+
+              <p class="modal-text">
+                Rioja, San Martín, Perú. Instalación de pista atlética tipo
+                Spray CONIPUR SP, producto certificado WA/IAAF, diseñada para
+                ofrecer seguridad, durabilidad y alto rendimiento deportivo.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-award"></i>
+                  <div>
+                    <h4>Producto certificado WA/IAAF</h4>
+                    <p>
+                      Cumple con estándares internacionales para competencias de
+                      alto nivel.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-person-running"></i>
+                  <div>
+                    <h4>Superficie de alto rendimiento</h4>
+                    <p>
+                      Excelente tracción, elasticidad y absorción de impactos
+                      para mayor seguridad.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-spray-can"></i>
+                  <div>
+                    <h4>Sistema CONIPUR SP</h4>
+                    <p>
+                      Aplicación profesional en spray que garantiza adherencia
+                      perfecta y acabado uniforme.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Resistente y duradera</h4>
+                    <p>
+                      Alta resistencia al desgaste, rayos UV y condiciones
+                      climáticas extremas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-hard-hat"></i>
+                  <div>
+                    <h4>Instalación profesional</h4>
+                    <p>
+                      Equipo especializado y procesos certificados para
+                      resultados de calidad garantizada.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>Comprometidos con la calidad y el deporte</h4>
+                  <p>
+                    Creamos superficies que impulsan el talento y promueven el
+                    desarrollo deportivo.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 17
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto17">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto17">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto17.png"
+                  class="modal-main-img"
+                  alt="Pista Atlética Spray CONIPUR SP 13 mm"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Colegio Modelo de San Antonio de Moquegua</h2>
+
+              <p class="modal-text">
+                Moquegua, Perú. Suministro e instalación de pista atlética
+                sintética con sistema Spray CONIPUR SP de 13 mm, utilizando
+                materiales certificados de alto rendimiento para garantizar
+                seguridad, resistencia y máximo desempeño deportivo.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-road"></i>
+
+                  <div>
+                    <h4>Sistema Spray CONIPUR SP 13 mm</h4>
+
+                    <p>
+                      Superficie sintética certificada WA con excelente
+                      absorción de impactos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-person-running"></i>
+
+                  <div>
+                    <h4>Alto rendimiento deportivo</h4>
+
+                    <p>
+                      Óptima tracción, estabilidad y resistencia para
+                      entrenamientos y competencias.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+
+                  <div>
+                    <h4>Seguridad garantizada</h4>
+
+                    <p>
+                      Reduce el riesgo de lesiones y mejora la comodidad de los
+                      atletas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-layer-group"></i>
+
+                  <div>
+                    <h4>Durabilidad superior</h4>
+
+                    <p>
+                      Material resistente a la intemperie, rayos UV y uso
+                      intensivo continuo.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-users"></i>
+
+                  <div>
+                    <h4>Ideal para instituciones</h4>
+
+                    <p>
+                      Solución confiable para colegios, academias y centros
+                      educativos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>
+                    Comprometidos con la calidad y el desarrollo deportivo
+                  </h4>
+
+                  <p>
+                    Creamos superficies que impulsan el talento, forman mejores
+                    atletas y construyen comunidades.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 18
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto18">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto18">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto18.png"
+                  class="modal-main-img"
+                  alt="Piso de Poliuretano 9+2=11"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Colegio Rosa de Santa María RSM</h2>
+
+              <p class="modal-text">
+                Cercado de Lima, Lima, Perú. Instalación de piso de poliuretano
+                9+2=11 con demarcación multideportiva profesional, diseñado para
+                brindar resistencia, seguridad y alto rendimiento en actividades
+                deportivas escolares y recreativas.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-layer-group"></i>
+
+                  <div>
+                    <h4>Piso de Poliuretano 9+2=11</h4>
+
+                    <p>
+                      Sistema multicapa con excelente elasticidad, confort y
+                      resistencia.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-border-all"></i>
+
+                  <div>
+                    <h4>Demarcación multideportiva</h4>
+
+                    <p>
+                      Trazos precisos para múltiples disciplinas deportivas
+                      escolares.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+
+                  <div>
+                    <h4>Alta resistencia</h4>
+
+                    <p>
+                      Excelente desempeño frente al uso intensivo y tránsito
+                      constante.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-person-running"></i>
+
+                  <div>
+                    <h4>Superficie segura</h4>
+
+                    <p>
+                      Reduce el riesgo de lesiones y mejora la experiencia
+                      deportiva.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-school"></i>
+
+                  <div>
+                    <h4>Ideal para colegios</h4>
+
+                    <p>
+                      Solución confiable y duradera para instituciones
+                      educativas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>
+                    Comprometidos con la calidad y el desarrollo deportivo
+                  </h4>
+
+                  <p>
+                    Creamos superficies que impulsan el talento, promueven la
+                    actividad física y construyen comunidades.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 19
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto19">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto19">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto19.png"
+                  class="modal-main-img"
+                  alt="Pista Atlética CASALI SPORTRACK SW PF e=13.6 mm"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>I. E. FAP Capitán José Abelardo Quiñones</h2>
+
+              <p class="modal-text">
+                Iquitos, Loreto, Perú. Instalación de pista atlética tipo
+                sandwich CASALI SPORTRACK SW PF de 13.6 mm con certificación
+                World Athletics, diseñada para brindar máximo rendimiento,
+                seguridad y durabilidad en competencias y entrenamientos de alto
+                nivel.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-award"></i>
+
+                  <div>
+                    <h4>Certificación World Athletics</h4>
+
+                    <p>
+                      Sistema certificado bajo estándares internacionales para
+                      competencias oficiales.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-layer-group"></i>
+
+                  <div>
+                    <h4>Sistema Sandwich CASALI</h4>
+
+                    <p>
+                      Estructura multicapa que brinda mayor elasticidad, confort
+                      y resistencia.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-person-running"></i>
+
+                  <div>
+                    <h4>Alto rendimiento deportivo</h4>
+
+                    <p>
+                      Superficie diseñada para competencias y entrenamientos
+                      profesionales.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+
+                  <div>
+                    <h4>Seguridad garantizada</h4>
+
+                    <p>
+                      Excelente absorción de impactos y reducción del riesgo de
+                      lesiones.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-building-columns"></i>
+
+                  <div>
+                    <h4>Ideal para instituciones</h4>
+
+                    <p>
+                      Solución confiable para colegios, academias y centros
+                      deportivos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>
+                    Comprometidos con la calidad y el desarrollo deportivo
+                  </h4>
+
+                  <p>
+                    Creamos superficies que impulsan el talento, promueven la
+                    actividad física y construyen comunidades.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+    MODAL CARD 20
+========================= -->
+
+    <div class="modal-overlay" id="modalProyecto20">
+      <div class="modal-box">
+        <div class="modal-scroll" data-simplebar>
+          <div class="modal-scroll-inner">
+            <button class="modal-close" id="cerrarModalProyecto20">×</button>
+
+            <div class="modal-left">
+              <div class="modal-img-wrapper">
+                <img
+                  src="../img/proyecto20.png"
+                  class="modal-main-img"
+                  alt="Pista atlética sandwich 13 mm"
+                />
+              </div>
+            </div>
+
+            <div class="modal-right">
+              <h2>Estadio IPD de Huancavelica</h2>
+
+              <p class="modal-text">
+                Huancavelica, Perú. Instalación de pista atlética tipo sandwich
+                de 13 mm de 6 carriles y campo de fútbol 11, ejecutado con
+                materiales certificados para brindar máximo rendimiento,
+                seguridad y durabilidad.
+              </p>
+
+              <div class="modal-features">
+                <div class="feature-item">
+                  <i class="fa-solid fa-road"></i>
+                  <div>
+                    <h4>Pista atlética sandwich 13 mm</h4>
+                    <p>
+                      Superficie de alto rendimiento con excelente amortiguación
+                      y resistencia.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-regular fa-futbol"></i>
+                  <div>
+                    <h4>Campo de fútbol 11</h4>
+                    <p>
+                      Césped sintético profesional resistente al uso intensivo.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <div>
+                    <h4>Durabilidad garantizada</h4>
+                    <p>
+                      Materiales certificados que aseguran larga vida útil y
+                      bajo mantenimiento.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-person-running"></i>
+                  <div>
+                    <h4>Rendimiento superior</h4>
+                    <p>
+                      Óptimo para entrenamiento y competencias de alto nivel.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <i class="fa-solid fa-users"></i>
+                  <div>
+                    <h4>Infraestructura moderna</h4>
+                    <p>
+                      Espacios deportivos que impulsan el desarrollo del deporte
+                      y la comunidad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-cta">
+              <div class="modal-cta-text">
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+                  <h4>
+                    Comprometidos con la calidad y el desarrollo deportivo
+                  </h4>
+                  <p>
+                    Creamos superficies que impulsan el talento, promueven la
+                    actividad física y construyen comunidades.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="modal-btn"
+              >
+                COTIZAR ESTE PROYECTO
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-left">
@@ -719,11 +3041,19 @@
 
           <div class="footer-col">
             <h3>SERVICIOS</h3>
-            <a href="../servicios/servicios.html?modal=futbol">Canchas sintéticas</a>
-            <a href="../servicios/servicios.html?modal=pistas">Pistas atléticas</a>
-            <a href="../servicios/servicios.html?modal=suelos">Suelos recreativos</a>
+            <a href="../servicios/servicios.html?modal=futbol"
+              >Canchas sintéticas</a
+            >
+            <a href="../servicios/servicios.html?modal=pistas"
+              >Pistas atléticas</a
+            >
+            <a href="../servicios/servicios.html?modal=suelos"
+              >Suelos recreativos</a
+            >
             <a href="../servicios/servicios.html?modal=luces">Instalación</a>
-            <a href="../servicios/servicios.html?modal=mantenimiento">Mantenimiento</a>
+            <a href="../servicios/servicios.html?modal=mantenimiento"
+              >Mantenimiento</a
+            >
           </div>
 
           <div class="footer-col">
@@ -762,7 +3092,6 @@
       </div>
     </footer>
 
-
     <!-- BOTÓN SUBIR -->
     <a href="#" class="scroll-top" id="scrollTop">
       <span class="material-symbols-outlined"> keyboard_double_arrow_up </span>
@@ -773,11 +3102,7 @@
       <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-
-
-
-
-
- <script src="../js/scrippr.js"></script>
-</body>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="../js/scrippr.js"></script>
+  </body>
 </html>
