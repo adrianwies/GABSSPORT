@@ -365,6 +365,21 @@ servicioCards.forEach((card) => {
   cardsObserver.observe(card);
 });
 
+/* =========================
+   MENU HAMBURGUESA
+========================= */
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.querySelector(".nav-links");
+
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+
+
 
 
 
