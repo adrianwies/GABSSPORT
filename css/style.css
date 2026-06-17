@@ -1420,7 +1420,72 @@ header{
     display: none;
   }
 
+.footer{
+    padding: 40px 35px;
+  }
+
+
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+
+  .footer-left{
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  .footer-center{
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 28px;
+    align-items: start;
+  }
+
+
+  .footer-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .footer-col a,
+  .footer-col p{
+    width: auto;
+    text-align: center;
+  }
+
+
+  .footer-right{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .socials{
+    justify-content: center;
+  }
+
+
+  .footer-copy{
+    text-align: center;
+    white-space: normal;
+  }
+
 }
+
+
+  
+
+
 
 
 /* =========================================
@@ -1527,39 +1592,34 @@ header{
     width: 100%;
   }
 
-  /* FOOTER */
-
-  .footer{
-    padding: 50px 20px;
+ .footer{
+    padding: 40px 22px;
   }
 
-  .footer-content{
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
 
   .footer-center{
-    grid-template-columns: 1fr;
-    gap: 35px;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 18px;
   }
 
-  .footer-right{
-    align-items: flex-start;
+
+  .footer-logo{
+    width: 170px;
   }
 
-  .footer-copy{
-    white-space: normal;
-  }
 
-  /* BOTONES FLOTANTES */
+    /* BOTONES FLOTANTES */
 
   .scroll-top,
   .whatsapp-btn{
     width: 48px;
     height: 48px;
   }
-
 }
+
+
+
+
 
 
 /* =========================================
@@ -1585,71 +1645,53 @@ header{
     font-size: 34px;
   }
 
+ .footer{
+    padding: 36px 14px;
+  }
+
+
+.footer-content{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 22px 18px;
 }
 
 
+.footer-left{
+  grid-column: 1 / -1;
+}
 
 
+.footer-center{
+  display: contents !important;
+}
 
 
+.footer-col{
+  align-items: center;
+  text-align: center;
+}
 
 
+.footer-right{
+  grid-column: 2;
+  grid-row: 3;
+  align-items: center;
+  text-align: center;
+}
 
 
+.footer-copy{
+  white-space: normal;
+}
 
 
+  .footer-logo{
+    width: 150px;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -1683,10 +1725,7 @@ header{
         gap: 35px;
     }
 
-    .footer-center{
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
+
 
     .footer-left,
     .footer-right{

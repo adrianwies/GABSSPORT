@@ -648,135 +648,51 @@
   color: white;
 }
 
-/* =========================
-   RESPONSIVE NAVBAR
-========================= */
-
-@media (max-width: 950px) {
-  header {
-    padding: 18px 24px;
-  }
-
-  .navbar {
-    position: relative;
-  }
-
-  .menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .btn-cotizar {
-    display: none;
-  }
-
-  .nav-links {
-    position: absolute;
-
-    top: 80px;
-    right: 0;
-
-    width: 270px;
-
-    padding: 28px;
-
-    background: rgba(11, 11, 11, 0.98);
-
-    border: 1px solid rgba(139, 195, 74, 0.25);
-
-    border-radius: 20px;
-
-    backdrop-filter: blur(12px);
-
-    flex-direction: column;
-
-    gap: 24px;
-
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-
-    opacity: 0;
-    visibility: hidden;
-
-    transform: translateY(-15px);
-
-    transition:
-      opacity 0.35s ease,
-      transform 0.35s ease,
-      visibility 0.35s ease;
-  }
-
-  .nav-links.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-}
-
 /* =========================================
-   RESPONSIVE GLOBAL
+   RESPONSIVE CONTACTO
 ========================================= */
 
-/* =========================================
-   LAPTOP PEQUEÑA
-========================================= */
 
+/* LAPTOP PEQUEÑA */
 @media (max-width: 1200px) {
-  /* BANNERS */
-
-  .nosotros-banner-content,
   .contacto-content {
     margin-left: 60px;
     max-width: 550px;
   }
 
-  .nosotros-banner-content h1,
+
   .contacto-content h1 {
     font-size: 42px;
   }
 
-  /* NOSOTROS */
-
-  .nosotros-section {
-    padding: 60px;
-    gap: 40px;
-  }
-
-  .nosotros-left h2 {
-    font-size: 42px;
-  }
-
-  /* CONTACTO */
 
   .contact-section {
     padding: 60px;
   }
+
+
+  .contact-wrapper {
+    gap: 28px;
+  }
 }
 
-/* =========================================
-   TABLET
-========================================= */
 
+/* TABLET */
 @media (max-width: 992px) {
-  /* NAVBAR */
-
   header {
     padding: 18px 28px;
   }
 
+
   .navbar {
     position: relative;
   }
+
 
   .btn-cotizar {
     display: none;
   }
 
-  /* MENU HAMBURGUESA */
 
   .menu-toggle {
     display: flex;
@@ -784,40 +700,26 @@
     justify-content: center;
   }
 
+
   .nav-links {
     position: absolute;
-
     top: 80px;
     right: 0;
-
     width: 270px;
-
     padding: 28px;
-
     background: rgba(11, 11, 11, 0.98);
-
     border: 1px solid rgba(139, 195, 74, 0.25);
-
     border-radius: 20px;
-
     backdrop-filter: blur(12px);
-
     flex-direction: column;
-
     gap: 24px;
-
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-
     opacity: 0;
     visibility: hidden;
-
     transform: translateY(-15px);
-
-    transition:
-      opacity 0.35s ease,
-      transform 0.35s ease,
-      visibility 0.35s ease;
+    transition: 0.35s ease;
   }
+
 
   .nav-links.active {
     opacity: 1;
@@ -825,468 +727,219 @@
     transform: translateY(0);
   }
 
-  .nav-links a {
-    font-size: 14px;
-  }
 
-  /* BANNERS */
-
-  .nosotros-banner,
   .contacto-banner {
     height: 85vh;
   }
 
-  .nosotros-banner-content,
+
   .contacto-content {
     margin-left: 40px;
     max-width: 500px;
   }
 
-  .nosotros-banner-content h1,
+
   .contacto-content h1 {
     font-size: 38px;
   }
 
-  /* NOSOTROS */
-
-  .nosotros-section {
-    grid-template-columns: 1fr;
-    padding: 55px 40px;
-    gap: 40px;
-  }
-
-  .nosotros-left h2 {
-    font-size: 40px;
-  }
-
-  .nosotros-carousel {
-    height: 340px;
-  }
-
-  /* CERTIFICACIONES */
-
-  .certificaciones-section h2 {
-    font-size: 26px;
-  }
-
-  /* MISION */
-
-  .mision-vision-section {
-    grid-template-columns: 1fr;
-    gap: 35px;
-
-    padding: 55px 40px;
-  }
-
-  .mv-divider {
-    width: 100%;
-    height: 1px;
-  }
-
-  /* CONTACTO */
 
   .contact-section {
     padding: 55px 40px;
   }
 
+
   .contact-wrapper {
     grid-template-columns: 1fr;
+    gap: 35px;
   }
-  /* MODAL RESPONSIVE */
 
 
-.modal-overlay {
-  align-items: flex-start !important;
-  justify-content: center !important;
-
-
-  padding: 90px 16px 24px !important;
-
-
-  overflow-y: auto !important;
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
-.modal-box {
-  width: 100% !important;
-  max-width: 720px !important;
-
-
-  max-height: none !important;
-
-
-  display: flex !important;
-  flex-direction: column !important;
-
-
-  gap: 22px !important;
-
-
-  padding: 22px !important;
-
-
-  overflow: visible !important;
-}
-
-
-.modal-left,
-.modal-right {
-  width: 100% !important;
-}
-
-
-.modal-left {
-  order: 1;
-}
-
-
-.modal-right {
-  order: 2;
-}
-
-
-.modal-cta {
-  order: 3;
-
-
-  width: 100%;
-
-
-  display: flex !important;
-  flex-direction: column !important;
-
-
-  align-items: stretch !important;
-
-
-  gap: 16px !important;
-}
-
-
-.modal-img-wrapper {
-  width: 100% !important;
-}
-
-
-.modal-main-img {
-  width: 100% !important;
-  height: 260px !important;
-
-
-  object-fit: cover;
-
-
-  border-radius: 16px !important;
-}
-
-
-.modal-thumbs {
-  display: flex !important;
-
-
-  flex-wrap: nowrap !important;
-
-
-  gap: 10px !important;
-
-
-  overflow-x: auto !important;
-
-
-  padding-bottom: 6px;
-}
-
-
-.modal-thumbs img {
-  width: 70px !important;
-  min-width: 70px !important;
-  height: 60px !important;
-}
-
-
-.modal-right h2 {
-  font-size: 28px !important;
-  line-height: 1.1;
-
-
-  margin-top: 0 !important;
-}
-
-
-.modal-text {
-  font-size: 14px !important;
-  line-height: 1.7 !important;
-}
-
-
-.modal-features {
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-}
-
-
-.feature-item {
-  gap: 14px !important;
-}
-
-
-.feature-item h4 {
-  font-size: 15px !important;
-}
-
-
-.feature-item p {
-  font-size: 13px !important;
-  line-height: 1.6 !important;
-}
-
-
-.modal-btn {
-  width: 100% !important;
-
-
-  justify-content: center !important;
-}
-
-
-
-
-}
-
-/* =========================================
-   CELULAR
-========================================= */
-
+/* CELULAR */
 @media (max-width: 768px) {
-  /* HEADER */
-
   header {
     padding: 16px 22px;
   }
+
 
   .logo img {
     width: 120px;
   }
 
-  /* NAVBAR */
-
-  .navbar {
-    position: relative;
-  }
-
-  .menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   .nav-links {
-    position: absolute;
-
     top: 78px;
-    right: 0;
-
     width: 260px;
-
-    padding: 28px;
-
-    background: rgba(11, 11, 11, 0.98);
-
-    border: 1px solid rgba(139, 195, 74, 0.25);
-
-    border-radius: 20px;
-
-    backdrop-filter: blur(12px);
-
-    flex-direction: column;
-
     gap: 22px;
-
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-
-    opacity: 0;
-    visibility: hidden;
-
-    transform: translateY(-12px);
-
-    transition: 0.35s ease;
   }
 
-  .nav-links.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
 
-  /* BANNER */
-
-  .nosotros-banner {
+  .contacto-banner {
     height: 100vh;
-
     padding-top: 90px;
-
     background-position: center;
   }
 
-  .nosotros-banner-content {
+
+  .contacto-content {
     margin-left: 22px;
     margin-right: 22px;
-
     max-width: 100%;
   }
 
-  .nosotros-banner-content span {
-    font-size: 14px;
 
+  .contacto-content span {
+    font-size: 14px;
     margin-bottom: 16px;
   }
 
-  .nosotros-banner-content h1 {
+
+  .contacto-content h1 {
     font-size: 32px;
-
     line-height: 1.05;
-
     margin-bottom: 24px;
   }
 
-  .nosotros-banner-content p {
-    font-size: 14px;
 
+  .contacto-content p {
+    font-size: 14px;
     line-height: 1.7;
   }
 
-  /* NOSOTROS SECTION */
 
-  .nosotros-section {
-    display: grid !important;
-
-    grid-template-columns: 1fr !important;
-
-    padding: 55px 22px !important;
-
-    gap: 35px !important;
-
-    overflow: hidden;
+  .contact-section {
+    padding: 55px 22px;
   }
 
-  .nosotros-left,
-  .nosotros-right {
-    width: 100% !important;
 
-    max-width: 100% !important;
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .nosotros-left h2 {
-    font-size: 34px !important;
 
-    line-height: 1.08 !important;
-
-    letter-spacing: -1.5px !important;
-
-    margin-bottom: 22px;
+  .contact-grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
   }
 
-  .nosotros-left p {
-    font-size: 15px !important;
 
-    line-height: 1.7 !important;
-
-    max-width: 100%;
-  }
-
-  .nosotros-carousel {
-    width: 100% !important;
-
-    height: 250px !important;
-
-    border-radius: 18px;
-
-    overflow: hidden;
-
-    margin-top: 10px;
-  }
-
-  .carousel-img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-  }
-
-  /* CERTIFICACIONES */
-
-  .certificaciones-section {
-    padding: 35px 0 42px;
-  }
-
-  .certificaciones-section h2 {
-    font-size: 22px;
-
-    line-height: 1.3;
-
-    padding: 0 20px;
-  }
-
-  .certificaciones-track {
-    gap: 35px;
-  }
-
-  .certificaciones-track img {
-    width: 85px;
-    height: 55px;
-  }
-
-  /* MISION VISION */
-
-  .mision-vision-section {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 34px !important;
-  }
-
-  .mv-box {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center !important;
+  .project-box {
+    grid-template-columns: 1fr;
     text-align: center;
-
-    gap: 18px;
+    justify-items: center;
   }
 
-  .mv-icon {
-    width: 72px;
-    height: 72px;
 
-    min-width: 72px;
+  .project-btn {
+    width: 100%;
+    justify-content: center;
   }
 
-  .mv-icon i {
-    font-size: 30px;
+
+  .contact-form-box {
+    padding: 22px;
   }
 
-  .mv-content h3 {
-    font-size: 20px;
+
+  .form-row {
+    grid-template-columns: 1fr;
   }
 
-  .mv-content p {
-    font-size: 14px;
-    line-height: 1.7;
 
-    max-width: 320px;
+  .form-group textarea {
+    height: 120px;
   }
 
-  /* LINEA HORIZONTAL */
 
-  .mv-divider {
-    width: 85% !important;
-    max-width: 360px !important;
-    height: 1px !important;
-    min-height: 1px !important;
-    background: #d4d4d4 !important;
-    margin: 0 auto !important;
+  .toast {
+    width: calc(100% - 40px);
+    text-align: center;
+  }
+  /* CARD */
+
+
+.contact-card {
+  width: 100%;
+
+
+  min-width: 0;
+
+
+  padding: 20px 16px;
+
+
+  display: flex;
+
+
+  align-items: flex-start;
+
+
+  gap: 14px;
+}
+
+
+/* TITULO */
+
+
+.contact-card h3 {
+  font-size: 18px;
+
+
+  line-height: 1.2;
+
+
+  word-break: break-word;
+}
+
+
+/* TEXTO */
+
+
+.contact-card p,
+.contact-card span {
+  word-break: break-word;
+}
+
+
+
+
+}
+
+
+/* CELULAR PEQUEÑO */
+@media (max-width: 480px) {
+  .contacto-content h1 {
+    font-size: 27px;
+  }
+
+
+  .contacto-content p {
+    font-size: 13.5px;
+  }
+
+
+  .contact-section {
+    padding: 50px 18px;
+  }
+
+
+  .contact-card,
+  .project-box,
+  .contact-form-box {
+    padding: 20px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
+
+
+

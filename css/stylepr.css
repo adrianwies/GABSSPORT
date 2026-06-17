@@ -812,4 +812,424 @@
     transform: translateY(0);
 }
 
+/* =========================================
+   RESPONSIVE PROYECTOS
+========================================= */
+
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+
+@media (max-width: 992px) {
+
+
+  /* HEADER */
+
+
+  header{
+    padding: 18px 28px;
+  }
+
+
+  .navbar{
+    position: relative;
+  }
+
+
+  .btn-cotizar{
+    display: none;
+  }
+
+
+  /* MENU HAMBURGUESA */
+
+
+  .menu-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .nav-links{
+    position: absolute;
+
+
+    top: 80px;
+    right: 0;
+
+
+    width: 270px;
+
+
+    padding: 28px;
+
+
+    background: rgba(11,11,11,0.98);
+
+
+    border: 1px solid rgba(139,195,74,0.25);
+
+
+    border-radius: 20px;
+
+
+    backdrop-filter: blur(12px);
+
+
+    flex-direction: column;
+
+
+    gap: 24px;
+
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+
+
+    opacity: 0;
+    visibility: hidden;
+
+
+    transform: translateY(-15px);
+
+
+    transition:
+    opacity 0.35s ease,
+    transform 0.35s ease,
+    visibility 0.35s ease;
+  }
+
+
+  .nav-links.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+
+  /* BANNER */
+
+
+  .proyecto-banner{
+    height: 85vh;
+  }
+
+
+  .proyecto-content{
+    margin-left: 40px;
+    max-width: 500px;
+  }
+
+
+  .proyecto-content h1{
+    font-size: 38px;
+  }
+
+
+  /* GRID */
+
+
+  .proyectos-grid{
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px;
+  }
+
+
+  .proyecto-card{
+    height: 220px;
+  }
+
+
+  /* MODAL */
+
+
+  .modal-overlay{
+    align-items: flex-start !important;
+
+
+    padding: 90px 16px 24px !important;
+
+
+    overflow-y: auto !important;
+  }
+
+
+  .modal-box{
+    width: 100% !important;
+    max-width: 720px !important;
+
+
+    max-height: none !important;
+
+
+    overflow: visible !important;
+  }
+
+
+  .modal-scroll-inner{
+    display: flex !important;
+    flex-direction: column !important;
+
+
+    gap: 22px !important;
+  }
+
+
+  .modal-left,
+  .modal-right{
+    width: 100% !important;
+  }
+
+
+  .modal-main-img{
+    height: 280px !important;
+
+
+    border-radius: 16px;
+  }
+
+
+  .modal-thumbs{
+    display: flex !important;
+
+
+    justify-content: center !important;
+
+
+    flex-wrap: wrap !important;
+
+
+    gap: 10px !important;
+
+
+    width: 100%;
+  }
+
+
+  .modal-thumbs img{
+    width: 70px !important;
+    height: 60px !important;
+
+
+    object-fit: cover;
+  }
+
+
+  .modal-right h2{
+    font-size: 28px !important;
+    line-height: 1.1;
+  }
+
+
+  .modal-text{
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+
+  .modal-features{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+
+  .modal-cta{
+    display: flex !important;
+    flex-direction: column !important;
+
+
+    align-items: stretch !important;
+
+
+    gap: 18px !important;
+  }
+
+
+  .modal-btn{
+    width: 100% !important;
+
+
+    justify-content: center !important;
+  }
+}
+
+
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+
+@media (max-width: 768px) {
+
+
+  /* HEADER */
+
+
+  header{
+    padding: 16px 22px;
+  }
+
+
+  .logo img{
+    width: 120px;
+  }
+
+
+  /* BANNER */
+
+
+  .proyecto-banner{
+    height: 100vh;
+
+
+    padding-top: 90px;
+
+
+    background-position: center;
+  }
+
+
+  .proyecto-content{
+    margin-left: 22px;
+    margin-right: 22px;
+
+
+    max-width: 100%;
+  }
+
+
+  .proyecto-content span{
+    font-size: 14px;
+
+
+    margin-bottom: 16px;
+  }
+
+
+  .proyecto-content h1{
+    font-size: 32px;
+
+
+    line-height: 1.05;
+
+
+    margin-bottom: 24px;
+  }
+
+
+  .proyecto-content p{
+    font-size: 14px;
+
+
+    line-height: 1.7;
+  }
+
+
+  /* FILTROS */
+
+
+  .proyectos-filtros{
+    gap: 10px;
+  }
+
+
+  .filtro-btn{
+    height: 42px;
+
+
+    padding: 0 16px;
+
+
+    font-size: 11px;
+  }
+
+
+  /* GRID */
+
+
+  .proyectos-grid{
+    grid-template-columns: repeat(2, 1fr) !important;
+
+
+    gap: 14px;
+  }
+
+
+  .proyecto-card{
+    height: 170px;
+  }
+
+
+  .proyecto-overlay{
+    padding: 16px;
+  }
+
+
+  .proyecto-overlay h3{
+    font-size: 15px;
+  }
+
+
+  .proyecto-overlay p{
+    font-size: 11px;
+  }
+
+
+  .proyecto-arrow{
+    width: 34px;
+    height: 34px;
+
+
+    right: 14px;
+    bottom: 14px;
+  }
+}
+
+
+
+
+/* =========================================
+   CELULAR PEQUEÑO
+========================================= */
+
+
+@media (max-width: 480px) {
+
+
+  .proyecto-content h1{
+    font-size: 27px;
+  }
+
+
+  .proyectos-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+
+  .proyecto-card{
+    height: 210px;
+  }
+
+
+  .modal-main-img{
+    height: 220px !important;
+  }
+
+
+  .modal-right h2{
+    font-size: 24px !important;
+  }
+}
+
+
+
+
+
+
 

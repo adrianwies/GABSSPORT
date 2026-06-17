@@ -628,6 +628,340 @@
     transform: translateX(0);
 }
 
+/* =========================================
+   RESPONSIVE NOSOTROS
+========================================= */
+
+
+@media (max-width: 1200px) {
+  .nosotros-banner-content {
+    margin-left: 60px;
+    max-width: 550px;
+  }
+
+
+  .nosotros-banner-content h1 {
+    font-size: 42px;
+  }
+
+
+  .nosotros-section {
+    padding: 60px;
+    gap: 40px;
+  }
+
+
+  .nosotros-left h2 {
+    font-size: 42px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  header {
+    padding: 18px 28px;
+  }
+
+
+  .navbar {
+    position: relative;
+  }
+
+
+  .btn-cotizar {
+    display: none;
+  }
+
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 270px;
+    padding: 28px;
+    background: rgba(11, 11, 11, 0.98);
+    border: 1px solid rgba(139, 195, 74, 0.25);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: 0.35s ease;
+  }
+
+
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+
+  .nosotros-banner {
+    height: 85vh;
+  }
+
+
+  .nosotros-banner-content {
+    margin-left: 40px;
+    max-width: 500px;
+  }
+
+
+  .nosotros-banner-content h1 {
+    font-size: 38px;
+  }
+
+
+  .nosotros-section {
+    grid-template-columns: 1fr;
+    padding: 55px 40px;
+    gap: 40px;
+  }
+
+
+  .nosotros-left h2 {
+    font-size: 40px;
+  }
+
+
+  .nosotros-carousel {
+    height: 340px;
+  }
+
+
+  .certificaciones-section h2 {
+    font-size: 26px;
+  }
+
+
+  .mision-vision-section {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 55px 40px;
+  }
+
+
+  .mv-divider {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 16px 22px;
+  }
+
+
+  .logo img {
+    width: 120px;
+  }
+
+
+  .nav-links {
+    top: 78px;
+    width: 260px;
+    gap: 22px;
+  }
+
+
+  .nosotros-banner {
+    height: 100vh;
+    padding-top: 90px;
+    background-position: center;
+  }
+
+
+  .nosotros-banner-content {
+    margin-left: 22px;
+    margin-right: 22px;
+    max-width: 100%;
+  }
+
+
+  .nosotros-banner-content span {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+
+  .nosotros-banner-content h1 {
+    font-size: 32px;
+    line-height: 1.05;
+    margin-bottom: 24px;
+  }
+
+
+  .nosotros-banner-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+
+  .nosotros-section {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    padding: 55px 22px !important;
+    gap: 35px !important;
+    overflow: hidden;
+  }
+
+
+  .nosotros-left,
+  .nosotros-right {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+
+  .nosotros-left h2 {
+    font-size: 34px !important;
+    line-height: 1.08 !important;
+    letter-spacing: -1.5px !important;
+    margin-bottom: 22px;
+  }
+
+
+  .nosotros-left p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    max-width: 100%;
+  }
+
+
+  .nosotros-carousel {
+    width: 100% !important;
+    height: 250px !important;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+
+  .carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .certificaciones-section {
+    padding: 35px 0 42px;
+  }
+
+
+  .certificaciones-section h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    padding: 0 20px;
+  }
+
+
+  .certificaciones-track {
+    gap: 35px;
+  }
+
+
+  .certificaciones-track img {
+    width: 85px;
+    height: 55px;
+  }
+
+
+  .mision-vision-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 34px !important;
+    padding: 50px 22px;
+  }
+
+
+  .mv-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+    gap: 18px;
+  }
+
+
+  .mv-icon {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+  }
+
+
+  .mv-icon i {
+    font-size: 30px;
+  }
+
+
+  .mv-content h3 {
+    font-size: 20px;
+  }
+
+
+  .mv-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 320px;
+  }
+
+
+  .mv-divider {
+    width: 85% !important;
+    max-width: 360px !important;
+    height: 1px !important;
+    min-height: 1px !important;
+    background: #d4d4d4 !important;
+    margin: 0 auto !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .nosotros-banner-content h1 {
+    font-size: 27px;
+  }
+
+
+  .nosotros-left h2 {
+    font-size: 32px !important;
+  }
+
+
+  .nosotros-carousel {
+    height: 230px !important;
+  }
+
+
+  .certificaciones-section h2 {
+    font-size: 20px;
+  }
+
+
+  .mv-content h3 {
+    font-size: 18px;
+  }
+}
+
+
+
 
 
 
