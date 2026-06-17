@@ -183,6 +183,7 @@
                 <label for="nombre">NOMBRE COMPLETO *</label>
                 <input
                   type="text"
+                  id="nombre"
                   name="nombre"
                   placeholder="Ej. Juan Pérez"
                   required
@@ -193,6 +194,7 @@
                 <label for="correo">CORREO ELECTRÓNICO *</label>
                 <input
                   type="email"
+                  id="correo"
                   name="correo"
                   placeholder="Ej. juan@correo.com"
                   required
@@ -204,6 +206,7 @@
               <label for="telefono">TELÉFONO / WHATSAPP *</label>
               <input
                 type="text"
+                id="telefono"
                 name="telefono"
                 placeholder="+51 987 654 321"
                 required
@@ -212,7 +215,7 @@
 
             <div class="form-group">
               <label for="proyecto">TIPO DE PROYECTO</label>
-              <select name="proyecto">
+              <select id="proyecto" name="proyecto">
                 <option>Selecciona una opción</option>
                 <option>Cancha sintética</option>
                 <option>Pisos deportivos</option>
@@ -223,7 +226,8 @@
             <div class="form-group">
               <label for="mensaje">CUÉNTANOS SOBRE TU PROYECTO *</label>
               <textarea
-                name="mensaje"
+              id="mensaje"  
+              name="mensaje"
                 placeholder="Describe tu proyecto, medidas aproximadas, ubicación, etc."
                 required
               ></textarea>
