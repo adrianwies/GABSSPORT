@@ -1742,71 +1742,69 @@ header{
 
 
 /* =========================================
-   PANTALLAS GRANDES
+   FULL HD / MAC
 ========================================= */
 
 @media (min-width: 1600px) {
 
-  header{
-    height: 78px;
-    padding: 14px 70px;
-  }
-
-  .navbar{
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-
-  .logo img{
-    width: 145px;
-  }
-
-  .nav-links{
-    gap: 42px;
-  }
-
-  .nav-links a{
-    font-size: 15px;
-  }
-
-  .btn-cotizar{
-    padding: 10px 24px;
-    font-size: 12px;
-  }
-
-  .hero{
-    height: 100vh;
-  }
-
   .hero-content{
+    position: absolute;
+
     top: 52%;
-    left: 90px;
-    max-width: 2000px;
-    padding-left: 0;
+    left: 70px;
+
+    transform: translateY(-50%);
+
+    width: 980px;
+    max-width: none;
   }
 
   .hero-content h1{
-    font-size: 202px;
-    line-height: 1.03;
-    letter-spacing: -2px;
-    margin-bottom: 25px;
+    font-size: 86px;
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 34px;
+
+    max-width: 980px;
   }
 
   .hero-content p{
-    font-size: 16px;
-    max-width: 540px;
+    font-size: 24px;
+
     line-height: 1.7;
+
+    max-width: 860px;
   }
 
+  /* WHATSAPP */
+
   .whatsapp-btn{
-    width: 62px;
-    height: 62px;
+    width: 74px;
+    height: 74px;
+
     left: 34px;
     bottom: 34px;
   }
 
   .whatsapp-btn i{
-    font-size: 48px;
+    font-size: 44px;
+  }
+
+  /* SCROLL */
+
+  .scroll-top{
+    width: 72px;
+    height: 72px;
+
+    right: 34px;
+    bottom: 34px;
+  }
+
+  .scroll-top span{
+    font-size: 40px;
   }
 }
 
