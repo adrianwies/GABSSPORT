@@ -1420,3 +1420,227 @@ body {
 
 
 
+/* =========================================
+   PANTALLAS GRANDES - SERVICIOS
+========================================= */
+
+@media (min-width: 1600px) {
+
+  /* BANNER */
+
+  .servicio-banner{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .servicio-content{
+    margin-left: 0;
+    left: 5%;
+
+    width: min(52vw, 1200px);
+    max-width: none;
+  }
+
+  .servicio-content span{
+    font-size: clamp(18px, 1vw, 24px);
+  }
+
+  .servicio-content h1{
+    font-size: clamp(58px, 4.5vw, 105px);
+    line-height: 0.95;
+    letter-spacing: -3px;
+    max-width: 100%;
+    margin-bottom: clamp(28px, 2vw, 45px);
+  }
+
+  .servicio-content p{
+    font-size: clamp(18px, 1.2vw, 26px);
+    line-height: 1.7;
+    max-width: 85%;
+  }
+
+  /* SECCION */
+
+  .servicios-section{
+    padding: clamp(75px, 5vw, 120px) 6%;
+  }
+
+  .servicios-header{
+    margin-bottom: clamp(50px, 4vw, 85px);
+  }
+
+  .servicios-header span{
+    font-size: clamp(14px, 0.9vw, 20px);
+  }
+
+  .servicios-header h2{
+    font-size: clamp(44px, 3vw, 72px);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .servicios-header p{
+    font-size: clamp(16px, 1vw, 22px);
+    max-width: 950px;
+  }
+
+  /* CARDS */
+
+  .servicios-grid{
+    max-width: min(78vw, 1700px);
+    gap: clamp(28px, 2vw, 45px);
+  }
+
+  .servicio-card img{
+    height: clamp(210px, 12vw, 320px);
+  }
+
+  .card-content{
+    padding: clamp(42px, 2.5vw, 60px) clamp(28px, 2vw, 42px) clamp(30px, 2vw, 45px);
+  }
+
+  .servicio-icon{
+    width: clamp(65px, 4vw, 90px);
+    height: clamp(65px, 4vw, 90px);
+    top: clamp(-44px, -2vw, -30px);
+    left: clamp(24px, 2vw, 38px);
+  }
+
+  .servicio-icon i{
+    font-size: clamp(28px, 1.8vw, 44px);
+  }
+
+  .card-content h3{
+    font-size: clamp(24px, 1.6vw, 36px);
+  }
+
+  .card-content p{
+    font-size: clamp(16px, 1vw, 22px);
+  }
+
+  .card-content ul li{
+    font-size: clamp(15px, 0.9vw, 20px);
+  }
+
+  .card-content a{
+    font-size: clamp(14px, 0.9vw, 19px);
+  }
+
+  /* MODAL GRANDE CORREGIDO */
+
+
+.modal-overlay{
+    padding: 26px !important;
+    overflow-y: auto !important;
+  }
+
+
+  .modal-box{
+    width: min(88vw, 1450px) !important;
+    max-width: 1450px !important;
+    max-height: calc(100vh - 52px) !important;
+
+
+    padding: 28px !important;
+
+
+    display: grid !important;
+    grid-template-columns: 1.05fr 0.95fr !important;
+
+
+    gap: 30px !important;
+
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+
+
+  .modal-main-img{
+    height: clamp(300px, 22vw, 430px) !important;
+    object-fit: cover;
+  }
+
+
+  .modal-thumbs{
+    gap: 10px !important;
+    margin-top: 12px !important;
+  }
+
+
+  .modal-thumbs img{
+    height: clamp(58px, 4vw, 78px) !important;
+  }
+
+
+  .modal-right h2{
+    font-size: clamp(26px, 1.8vw, 38px) !important;
+  }
+
+
+  .modal-text{
+    font-size: clamp(13px, 0.85vw, 17px) !important;
+    line-height: 1.6 !important;
+  }
+
+
+  .feature-item{
+    padding: 12px 0 !important;
+  }
+
+
+  .feature-item i{
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+  }
+
+
+  .feature-item h4{
+    font-size: clamp(14px, 0.9vw, 18px) !important;
+  }
+
+
+  .feature-item p{
+    font-size: clamp(12px, 0.75vw, 15px) !important;
+    line-height: 1.45 !important;
+  }
+
+
+  .modal-cta{
+    grid-column: 1 / -1 !important;
+
+
+    padding: 18px 22px !important;
+
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+
+  .modal-cta-text h4{
+    font-size: clamp(14px, 0.9vw, 18px) !important;
+  }
+
+
+  .modal-cta-text p{
+    font-size: clamp(12px, 0.75vw, 15px) !important;
+  }
+
+
+  .modal-btn{
+    height: 46px !important;
+    padding: 0 24px !important;
+    font-size: 12px !important;
+  }
+
+
+
+
+}
+
+

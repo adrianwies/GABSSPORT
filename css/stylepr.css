@@ -1228,6 +1228,229 @@
 }
 
 
+/* =========================================
+   PANTALLAS GRANDES - PROYECTOS
+========================================= */
+
+
+@media (min-width: 1600px) {
+
+
+  /* BANNER */
+
+
+  .proyecto-banner{
+    min-height: 100vh;
+
+
+    background-size: cover;
+    background-position: center center;
+  }
+
+
+  .proyecto-content{
+    width: min(52vw, 1200px);
+
+
+    max-width: none;
+
+
+    margin-left: 5%;
+  }
+
+
+  .proyecto-content span{
+    font-size: clamp(18px, 1vw, 24px);
+
+
+    margin-bottom: clamp(18px, 1.5vw, 30px);
+  }
+
+
+  .proyecto-content h1{
+    font-size: clamp(62px, 4.5vw, 110px);
+
+
+    line-height: 0.95;
+
+
+    letter-spacing: -3px;
+
+
+    margin-bottom: clamp(26px, 2vw, 42px);
+
+
+    max-width: 100%;
+  }
+
+
+  .proyecto-content p{
+    font-size: clamp(18px, 1.1vw, 26px);
+
+
+    line-height: 1.75;
+
+
+    max-width: 82%;
+  }
+
+
+  /* HEADER */
+
+
+  .proyectos-header h2{
+    font-size: clamp(44px, 3vw, 74px);
+  }
+
+
+  .proyectos-header p{
+    font-size: clamp(16px, 1vw, 22px);
+  }
+
+
+  /* FILTROS */
+
+
+  .filtro-btn{
+    height: 56px;
+
+
+    padding: 0 26px;
+
+
+    font-size: 14px;
+  }
+
+
+  /* GRID */
+
+
+  .proyectos-grid{
+    max-width: min(82vw, 1700px);
+
+
+    gap: clamp(24px, 2vw, 40px);
+  }
+
+
+  .proyecto-card{
+    height: clamp(260px, 18vw, 420px);
+  }
+
+
+  .proyecto-overlay{
+    padding: clamp(22px, 1.5vw, 36px);
+  }
+
+
+  .proyecto-overlay h3{
+    font-size: clamp(22px, 1.5vw, 34px);
+  }
+
+
+  .proyecto-overlay p{
+    font-size: clamp(14px, 0.9vw, 19px);
+  }
+
+
+  .proyecto-arrow{
+    width: clamp(42px, 3vw, 64px);
+    height: clamp(42px, 3vw, 64px);
+
+
+    font-size: clamp(16px, 1vw, 24px);
+  }
+
+
+  /* MODAL */
+
+
+  .modal-box{
+    width: min(88vw, 1500px);
+
+
+    max-width: 1500px;
+  }
+/* MODAL GRANDE */
+
+
+.modal-overlay{
+  padding: 26px;
+}
+
+
+.modal-box{
+  max-height: calc(100vh - 52px);
+
+
+  overflow-y: auto;
+}
+
+
+.modal-scroll-inner{
+  grid-template-columns: 1.05fr 0.95fr;
+
+
+  gap: clamp(24px, 1.5vw, 40px);
+
+
+  padding: clamp(24px, 1.5vw, 36px);
+}
+
+
+.modal-main-img{
+  min-height: clamp(360px, 24vw, 560px);
+}
+
+
+.modal-right h2{
+  font-size: clamp(28px, 1.8vw, 42px);
+}
+
+
+.modal-text{
+  font-size: clamp(14px, 0.9vw, 18px);
+
+
+  line-height: 1.7;
+} 
+
+
+.feature-item{
+  padding: clamp(12px, 0.8vw, 20px) 0;
+}
+
+
+.feature-item h4{
+  font-size: clamp(14px, 0.9vw, 19px);
+}
+
+
+.feature-item p{
+  font-size: clamp(12px, 0.75vw, 16px);
+}
+
+
+.modal-cta{
+  padding: clamp(16px, 1vw, 26px);
+}
+
+
+.modal-btn{
+  height: clamp(42px, 2.8vw, 56px);
+
+
+  padding: 0 clamp(18px, 1.2vw, 30px);
+
+
+  font-size: clamp(11px, 0.8vw, 15px);
+}
+
+
+}
+
+
+
 
 
 
