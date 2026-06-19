@@ -1507,17 +1507,19 @@ header{
   }
 
   /* HERO */
-
- /* =========================================
-   HERO MOBILE MEJORADO
+/* =========================================
+   HERO MOBILE AJUSTADO
 ========================================= */
 
 
 .hero{
-  height: 92vh;
+  height: 88vh;
 
 
-  min-height: 760px;
+  min-height: 720px;
+
+
+  background: #000;
 
 
   overflow: hidden;
@@ -1532,11 +1534,14 @@ header{
   height: 100%;
 
 
-  object-fit: cover;
+  /* IMPORTANTE */
+  object-fit: contain !important;
 
 
-  /* MUEVE EL VIDEO PARA QUE SE VEA GABSPORT */
-  object-position: 82% center !important;
+  object-position: center center !important;
+
+
+  background: #000;
 }
 
 
@@ -1547,9 +1552,9 @@ header{
   background:
   linear-gradient(
     90deg,
-    rgba(0,0,0,0.82) 0%,
-    rgba(0,0,0,0.60) 42%,
-    rgba(0,0,0,0.18) 72%,
+    rgba(0,0,0,0.80) 0%,
+    rgba(0,0,0,0.55) 38%,
+    rgba(0,0,0,0.18) 65%,
     rgba(0,0,0,0.05) 100%
   );
 }
@@ -1562,20 +1567,19 @@ header{
   position: absolute;
 
 
-  top: 56%;
+  top: 58%;
 
 
   left: 22px;
-  right: auto;
 
 
   transform: translateY(-50%);
 
 
-  width: 58%;
+  width: 52%;
 
 
-  max-width: 58%;
+  max-width: 52%;
 
 
   z-index: 5;
@@ -1586,19 +1590,16 @@ header{
 
 
 .hero-content h1{
-  font-size: 30px;
+  font-size: 31px;
 
 
-  line-height: 0.98;
+  line-height: 0.96;
 
 
   letter-spacing: -1px;
 
 
-  margin-bottom: 20px;
-
-
-  max-width: 100%;
+  margin-bottom: 18px;
 }
 
 
@@ -1616,18 +1617,22 @@ header{
 }
 
 
-/* WHATSAPP */
+/* BOTON WHATSAPP */
 
 
 .whatsapp-btn{
-  left: 22px;
-  bottom: 22px;
+  left: 20px;
+  bottom: 20px;
 }
 
 
 .whatsapp-btn i{
-  font-size: 48px;
+  font-size: 46px;
 }
+
+
+
+
 
 
 
