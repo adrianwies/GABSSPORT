@@ -1507,22 +1507,30 @@ header{
   }
 
   /* HERO */
-/* HERO MOBILE VIDEO COMPLETO */
+/* HERO MOBILE MEJORADO */
 
 
 .hero{
   position: relative;
+
+
   width: 100%;
+
+
+  /* MAS ALTURA */
+  aspect-ratio: 16 / 10;
 
 
   height: auto !important;
   min-height: 0 !important;
-  aspect-ratio: 16 / 9;
+
+
   margin-top: 85px !important;
 
 
-
   background: #000;
+
+
   overflow: hidden;
 }
 
@@ -1544,13 +1552,26 @@ header{
 }
 
 
+/* OSCURECER MENOS */
+
+
 .overlay{
   position: absolute;
   inset: 0;
 
 
-  background: rgba(0,0,0,0.25);
+  background:
+  linear-gradient(
+    90deg,
+    rgba(0,0,0,0.60) 0%,
+    rgba(0,0,0,0.38) 45%,
+    rgba(0,0,0,0.12) 72%,
+    rgba(0,0,0,0.02) 100%
+  );
 }
+
+
+/* TEXTO */
 
 
 .hero-content{
@@ -1564,26 +1585,45 @@ header{
   transform: translateY(-50%) !important;
 
 
-  width: 42%;
-  max-width: 42%;
+  width: 48%;
+  max-width: 48%;
 
 
   z-index: 5;
 }
 
 
+/* TITULO */
+
+
 .hero-content h1{
-  font-size: 16px !important;
-  line-height: 0.95 !important;
-  letter-spacing: -0.5px;
-  margin-bottom: 6px;
+  font-size: 28px !important;
+
+
+  line-height: 0.94 !important;
+
+
+  letter-spacing: -1px;
+
+
+  margin-bottom: 12px;
 }
+
+
+/* TEXTO */
 
 
 .hero-content p{
-  font-size: 7.5px !important;
-  line-height: 1.4 !important;
+  font-size: 12px !important;
+
+
+  line-height: 1.55 !important;
+
+
+  max-width: 100%;
 }
+
+
 
 
 
