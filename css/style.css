@@ -1509,20 +1509,24 @@ header{
   /* HERO */
 /* HERO MOBILE MEJORADO */
 
+/* =========================================
+   HERO MOBILE ESTILO PREMIUM
+========================================= */
 
-.hero{
+
+/* =========================================
+   HERO MOBILE VIDEO ALTO COMPLETO
+========================================= */
+
+
+.hero {
   position: relative;
 
 
   width: 100%;
 
 
-  /* MAS ALTURA */
-  aspect-ratio: 16 / 10;
-
-
-  height: auto !important;
-  min-height: 0 !important;
+  height: clamp(520px, 72vh, 720px);
 
 
   margin-top: 85px !important;
@@ -1535,93 +1539,108 @@ header{
 }
 
 
-.hero-video{
+.hero-video {
   position: absolute !important;
-  inset: 0 !important;
 
 
-  width: 100% !important;
+  top: 50% !important;
+  left: 50% !important;
+
+
+  width: auto !important;
   height: 100% !important;
 
 
-  object-fit: contain !important;
-  object-position: center center !important;
+  min-width: 100%;
 
 
-  transform: none !important;
+  object-fit: fill !important;
+
+
+  transform: translate(-50%, -50%) scaleX(0.32) !important;
+
+
+  transform-origin: center center;
 }
 
 
-/* OSCURECER MENOS */
-
-
-.overlay{
+.overlay {
   position: absolute;
   inset: 0;
 
 
-  background:
-  linear-gradient(
+  background: linear-gradient(
     90deg,
-    rgba(0,0,0,0.60) 0%,
-    rgba(0,0,0,0.38) 45%,
-    rgba(0,0,0,0.12) 72%,
-    rgba(0,0,0,0.02) 100%
+    rgba(0, 0, 0, 0.68) 0%,
+    rgba(0, 0, 0, 0.42) 42%,
+    rgba(0, 0, 0, 0.12) 72%,
+    rgba(0, 0, 0, 0.03) 100%
   );
 }
 
 
-/* TEXTO */
-
-
-.hero-content{
+.hero-content {
   position: absolute;
 
 
   top: 58%;
-  left: 18px;
+  left: 20px;
 
 
   transform: translateY(-50%) !important;
 
 
-  width: 48%;
-  max-width: 48%;
+  width: 46%;
+  max-width: 46%;
 
 
   z-index: 5;
 }
 
 
-/* TITULO */
+.hero-content h1 {
+  font-size: 26px !important;
 
 
-.hero-content h1{
-  font-size: 28px !important;
-
-
-  line-height: 0.94 !important;
+  line-height: 0.95 !important;
 
 
   letter-spacing: -1px;
 
 
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 
-/* TEXTO */
+.hero-content p {
+  font-size: 11.5px !important;
 
 
-.hero-content p{
-  font-size: 12px !important;
-
-
-  line-height: 1.55 !important;
+  line-height: 1.5 !important;
 
 
   max-width: 100%;
 }
+
+
+
+
+
+
+/* WHATSAPP */
+
+
+.whatsapp-btn{
+  left: 20px;
+  bottom: 20px;
+}
+
+
+.whatsapp-btn i{
+  font-size: 48px;
+}
+
+
 
 
 
