@@ -1,15 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
-
 /* =========================
    VARIABLES GLOBALES
 ========================= */
 
 :root {
   /* COLORES */
-  --color-primary: #8bc34a;
-  --color-primary-light: #a5d65c;
-  --color-primary-dark: #73b626;
-
   --color-dark: #0b0b0b;
   --color-text: #1a1a1a;
   --color-text-light: #5a5a5a;
@@ -17,9 +11,6 @@
   --color-white: #ffffff;
   --color-gray-bg: #f5f5f5;
   --color-gray-line: #d6d6d6;
-
-  /* TIPOGRAFIA */
-  --font-main: "Montserrat", sans-serif;
 
   /* ESPACIADOS */
   --section-padding: 80px 5%;
@@ -184,7 +175,7 @@
 
   box-shadow: var(--shadow-card-hover);
 
-  border-color: rgba(139, 195, 74, 0.25);
+  border-color: rgba(143, 174, 55, 0.25);
 }
 
 /* =========================
@@ -331,7 +322,7 @@
 
   box-shadow: var(--shadow-card-hover);
 
-  border-color: rgba(139, 195, 74, 0.25);
+  border-color: rgba(143, 174, 55, 0.25);
 }
 
 .project-box:hover .contact-icon {
@@ -459,7 +450,7 @@
 .form-group textarea:focus {
   border-color: var(--color-primary);
 
-  box-shadow: 0 0 0 4px rgba(139, 195, 74, 0.12);
+  box-shadow: 0 0 0 4px rgba(143, 174, 55, 0.12);
 }
 
 .form-group textarea {
@@ -609,7 +600,7 @@
 
   z-index: 9999;
 
-  border: 1px solid rgba(139, 195, 74, 0.4);
+  border: 1px solid rgba(143, 174, 55, 0.4);
   backdrop-filter: blur(10px);
 }
 
@@ -708,7 +699,7 @@
     width: 270px;
     padding: 28px;
     background: rgba(11, 11, 11, 0.98);
-    border: 1px solid rgba(139, 195, 74, 0.25);
+    border: 1px solid rgba(143, 174, 55, 0.25);
     border-radius: 20px;
     backdrop-filter: blur(12px);
     flex-direction: column;
