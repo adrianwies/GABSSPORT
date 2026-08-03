@@ -1,4 +1,4 @@
-#site-footer {
+﻿#site-footer {
   display: block;
 }
 
@@ -101,7 +101,7 @@
 
 #site-footer .whatsapp-btn__icon i {
   color: inherit;
-  font-size: 30px;
+  font-size: var(--font-size-title);
   animation: none;
 }
 
@@ -110,7 +110,7 @@
   padding-right: 0;
   overflow: hidden;
   color: inherit;
-  font-size: 13px;
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-semibold);
   line-height: 1;
   white-space: nowrap;
@@ -151,11 +151,11 @@
   }
 
   #site-footer .whatsapp-btn__icon i {
-    font-size: 28px;
+    font-size: var(--font-size-subtitle);
   }
 
   #site-footer .whatsapp-btn__message {
-    font-size: 12px;
+    font-size: var(--font-size-small);
   }
 }
 

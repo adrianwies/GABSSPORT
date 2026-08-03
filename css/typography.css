@@ -1,5 +1,5 @@
-html {
-  font-size: 16px;
+﻿html {
+  font-size: var(--font-size-root);
 }
 
 body,
@@ -44,6 +44,7 @@ h6 {
 }
 
 .about-content h2,
+.about-left h2,
 .nosotros-left h2,
 .servicios-header h2,
 .proyectos-header h2,
@@ -59,9 +60,13 @@ h6 {
 
 .servicio-card h3,
 .project-card h3,
+.proyecto-card h3,
 .contact-card h3,
+.project-box h3,
 .mission-card h3,
 .vision-card h3,
+.card-text h3,
+.mv-content h3,
 .step h3 {
   font-size: var(--font-size-medium) !important;
   font-weight: var(--font-weight-semibold) !important;
@@ -77,6 +82,47 @@ select {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
   line-height: 1.65;
+}
+
+.about-left p,
+.about-left li,
+.card-text p,
+.contact-card p,
+.contact-card span,
+.project-box span,
+.stat-box p,
+.step p,
+.mv-content p,
+.cta-text p {
+  font-size: var(--font-size-base) !important;
+  font-weight: var(--font-weight-regular) !important;
+  line-height: 1.65 !important;
+}
+
+.about-subtitle,
+.process-subtitle,
+.servicios-header > span,
+.proyectos-header > span {
+  font-size: var(--font-size-small) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+.stat-info h2 {
+  font-size: var(--font-size-stat) !important;
+}
+
+.cta-text h2 {
+  font-size: var(--font-size-subtitle) !important;
+  font-weight: var(--font-weight-bold) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.015em;
+}
+
+.process > h2 {
+  font-size: var(--font-size-subtitle) !important;
+  font-weight: var(--font-weight-bold) !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em;
 }
 
 .hero-content p,
@@ -128,14 +174,15 @@ input[type="submit"] {
 }
 
 .counter {
-  font-size: var(--font-size-title-large) !important;
+  font-size: var(--font-size-stat) !important;
   font-weight: var(--font-weight-bold) !important;
   letter-spacing: -0.03em;
 }
 
 .modal-content h2,
-.modal-info h2 {
-  font-size: var(--font-size-title) !important;
+.modal-info h2,
+.modal-right h2 {
+  font-size: var(--font-size-subtitle) !important;
   font-weight: var(--font-weight-bold) !important;
 }
 
@@ -155,15 +202,21 @@ input[type="submit"] {
 }
 
 @media (max-width: 768px) {
+  .stat-info h2,
+  .counter {
+    font-size: var(--font-size-stat-mobile) !important;
+  }
+
   .hero-content h1,
   .nosotros-banner-content h1,
   .servicio-content h1,
   .proyecto-content h1,
   .contacto-content h1 {
-    font-size: var(--font-size-title) !important;
+    font-size: var(--font-size-title-large-mobile) !important;
   }
 
   .about-content h2,
+  .about-left h2,
   .nosotros-left h2,
   .servicios-header h2,
   .proyectos-header h2,
@@ -171,6 +224,6 @@ input[type="submit"] {
   .process-section > h2,
   .cta-content h2,
   .certificaciones-section > h2 {
-    font-size: 26px !important;
+    font-size: var(--font-size-title-mobile) !important;
   }
 }

@@ -68,8 +68,11 @@ function updateStep() {
 
     steps[current].classList.add("active");
 
-    let progress = (current) / (steps.length - 1) * 90;
-    timeline.style.setProperty("--progress", progress + "%");
+    const firstCircle = steps[0].querySelector(".circle");
+    const activeCircle = steps[current].querySelector(".circle");
+    const firstCenter = steps[0].offsetLeft + firstCircle.offsetLeft + firstCircle.offsetWidth / 2;
+    const activeCenter = steps[current].offsetLeft + activeCircle.offsetLeft + activeCircle.offsetWidth / 2;
+    timeline.style.setProperty("--progress", `${activeCenter - firstCenter}px`);
 
     current++;
 

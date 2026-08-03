@@ -1,4 +1,4 @@
-/* =========================
+﻿/* =========================
    BANNER PROYECTOS
 ========================= */
 
@@ -43,7 +43,7 @@
 
     color: var(--color-primary);
 
-    font-size: 15px;
+    font-size: var(--font-size-body-large);
     font-weight: 700;
 
     margin-bottom: 18px;
@@ -52,7 +52,7 @@
 }
 
 .proyecto-content h1{
-    font-size: 44px;
+    font-size: var(--font-size-title-large);
     font-weight: 900;
 
     line-height: 1;
@@ -67,7 +67,7 @@
 }
 
 .proyecto-content p{
-    font-size: 15px;
+    font-size: var(--font-size-body-large);
 
     line-height: 1.8;
 
@@ -105,7 +105,7 @@
 
     color: var(--color-primary);
 
-    font-size: 12px;
+    font-size: var(--font-size-small);
     font-weight: 700;
 
     text-transform: uppercase;
@@ -116,7 +116,7 @@
 .proyectos-header h2{
     color: var(--color-text);
 
-    font-size: 38px;
+    font-size: var(--font-size-title);
     font-weight: 800;
 
     line-height: 1.1;
@@ -152,7 +152,7 @@
 
     color: var(--color-text);
 
-    font-size: 12px;
+    font-size: var(--font-size-small);
     font-weight: 700;
 
     display: flex;
@@ -165,7 +165,7 @@
 }
 
 .filtro-btn i{
-    font-size: 13px;
+    font-size: var(--font-size-base);
 }
 
 .filtro-btn:hover{
@@ -296,7 +296,7 @@
 
     color: white;
 
-    font-size: 13px;
+    font-size: var(--font-size-base);
 
     transition: 0.3s ease;
 }
@@ -322,7 +322,7 @@
 .proyecto-overlay h3{
     color: white;
 
-    font-size: 18px;
+    font-size: var(--font-size-medium);
     font-weight: 800;
 
     line-height: 1.1;
@@ -333,7 +333,7 @@
 .proyecto-overlay p{
     color: #F1F1F1;
 
-    font-size: 12px;
+    font-size: var(--font-size-small);
 
     line-height: 1.4;
 }
@@ -366,7 +366,7 @@
 
     color: white;
 
-    font-size: 13px;
+    font-size: var(--font-size-base);
     font-weight: 800;
 
     display: inline-flex;
@@ -463,6 +463,23 @@
 
 .modal-scroll{
     max-height: 82vh;
+    overflow-y: auto;
+}
+
+.proyecto-card[type="button"]{
+    padding: 0;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+}
+
+.proyectos-error{
+    grid-column: 1 / -1;
+    padding: 40px 20px;
+    color: var(--color-text-light);
+    text-align: center;
 }
 
 /* =========================
@@ -521,7 +538,7 @@
     border: none;
     background: none;
 
-    font-size: 24px;
+    font-size: var(--font-size-subtitle);
 
     cursor: pointer;
 
@@ -572,7 +589,7 @@
 ========================= */
 
 .modal-right h2{
-    font-size: 20px;
+    font-size: var(--font-size-medium);
     font-weight: 800;
 
     color: var(--color-text);
@@ -584,7 +601,7 @@
 .modal-text{
     color: #555;
 
-    font-size: 11px;
+    font-size: var(--font-size-small);
 
     line-height: 1.45;
 
@@ -627,11 +644,11 @@
 
     color: var(--color-primary);
 
-    font-size: 13px;
+    font-size: var(--font-size-base);
 }
 
 .feature-item h4{
-    font-size: 12px;
+    font-size: var(--font-size-small);
     font-weight: 800;
 
     color: var(--color-text);
@@ -644,7 +661,7 @@
 
     line-height: 1.4;
 
-    font-size: 10px;
+    font-size: var(--font-size-xs);
 }
 
 
@@ -695,11 +712,11 @@
 
     color: var(--color-primary);
 
-    font-size: 14px;
+    font-size: var(--font-size-base);
 }
 
 .modal-cta-text h4{
-    font-size: 13px;
+    font-size: var(--font-size-base);
     font-weight: 800;
 
     color: var(--color-text);
@@ -710,7 +727,7 @@
 .modal-cta-text p{
     color: #666;
 
-    font-size: 10px;
+    font-size: var(--font-size-xs);
 
     line-height: 1.4;
 }
@@ -738,7 +755,7 @@
 
     color: white;
 
-    font-size: 10px;
+    font-size: var(--font-size-xs);
     font-weight: 800;
 
     white-space: nowrap;
@@ -926,7 +943,7 @@
 
 
   .proyecto-content h1{
-    font-size: 38px;
+    font-size: var(--font-size-title);
   }
 
 
@@ -1020,13 +1037,13 @@
 
 
   .modal-right h2{
-    font-size: 28px !important;
+    font-size: var(--font-size-subtitle) !important;
     line-height: 1.1;
   }
 
 
   .modal-text{
-    font-size: 14px !important;
+    font-size: var(--font-size-base) !important;
     line-height: 1.7 !important;
   }
 
@@ -1105,7 +1122,7 @@
 
 
   .proyecto-content span{
-    font-size: 14px;
+    font-size: var(--font-size-base);
 
 
     margin-bottom: 16px;
@@ -1113,7 +1130,7 @@
 
 
   .proyecto-content h1{
-    font-size: 32px;
+    font-size: var(--font-size-title);
 
 
     line-height: 1.05;
@@ -1124,7 +1141,7 @@
 
 
   .proyecto-content p{
-    font-size: 14px;
+    font-size: var(--font-size-base);
 
 
     line-height: 1.7;
@@ -1146,7 +1163,7 @@
     padding: 0 16px;
 
 
-    font-size: 11px;
+    font-size: var(--font-size-small);
   }
 
 
@@ -1172,12 +1189,12 @@
 
 
   .proyecto-overlay h3{
-    font-size: 15px;
+    font-size: var(--font-size-body-large);
   }
 
 
   .proyecto-overlay p{
-    font-size: 11px;
+    font-size: var(--font-size-small);
   }
 
 
@@ -1203,7 +1220,7 @@
 
 
   .proyecto-content h1{
-    font-size: 27px;
+    font-size: var(--font-size-subtitle);
   }
 
 
@@ -1223,7 +1240,7 @@
 
 
   .modal-right h2{
-    font-size: 24px !important;
+    font-size: var(--font-size-subtitle) !important;
   }
 }
 
@@ -1260,7 +1277,7 @@
 
 
   .proyecto-content span{
-    font-size: clamp(18px, 1vw, 24px);
+    font-size: var(--font-size-medium);
 
 
     margin-bottom: clamp(18px, 1.5vw, 30px);
@@ -1268,7 +1285,7 @@
 
 
   .proyecto-content h1{
-    font-size: clamp(62px, 4.5vw, 110px);
+    font-size: var(--font-size-title-large);
 
 
     line-height: 0.95;
@@ -1285,7 +1302,7 @@
 
 
   .proyecto-content p{
-    font-size: clamp(18px, 1.1vw, 26px);
+    font-size: var(--font-size-medium);
 
 
     line-height: 1.75;
@@ -1299,12 +1316,12 @@
 
 
   .proyectos-header h2{
-    font-size: clamp(44px, 3vw, 74px);
+    font-size: var(--font-size-title-large);
   }
 
 
   .proyectos-header p{
-    font-size: clamp(16px, 1vw, 22px);
+    font-size: var(--font-size-body-large);
   }
 
 
@@ -1318,7 +1335,7 @@
     padding: 0 26px;
 
 
-    font-size: 14px;
+    font-size: var(--font-size-base);
   }
 
 
@@ -1344,12 +1361,12 @@
 
 
   .proyecto-overlay h3{
-    font-size: clamp(22px, 1.5vw, 34px);
+    font-size: var(--font-size-subtitle);
   }
 
 
   .proyecto-overlay p{
-    font-size: clamp(14px, 0.9vw, 19px);
+    font-size: var(--font-size-base);
   }
 
 
@@ -1358,7 +1375,7 @@
     height: clamp(42px, 3vw, 64px);
 
 
-    font-size: clamp(16px, 1vw, 24px);
+    font-size: var(--font-size-body-large);
   }
 
 
@@ -1404,12 +1421,12 @@
 
 
 .modal-right h2{
-  font-size: clamp(28px, 1.8vw, 42px);
+  font-size: var(--font-size-subtitle);
 }
 
 
 .modal-text{
-  font-size: clamp(14px, 0.9vw, 18px);
+  font-size: var(--font-size-base);
 
 
   line-height: 1.7;
@@ -1422,12 +1439,12 @@
 
 
 .feature-item h4{
-  font-size: clamp(14px, 0.9vw, 19px);
+  font-size: var(--font-size-base);
 }
 
 
 .feature-item p{
-  font-size: clamp(12px, 0.75vw, 16px);
+  font-size: var(--font-size-small);
 }
 
 
@@ -1443,7 +1460,7 @@
   padding: 0 clamp(18px, 1.2vw, 30px);
 
 
-  font-size: clamp(11px, 0.8vw, 15px);
+  font-size: var(--font-size-small);
 }
 
 

@@ -1,4 +1,4 @@
-/* =========================
+﻿/* =========================
    VARIABLES
 ========================= */
 
@@ -70,7 +70,7 @@ body {
 
   color: var(--color-primary);
 
-  font-size: 15px;
+  font-size: var(--font-size-body-large);
   font-weight: 700;
 
   margin-bottom: 18px;
@@ -79,7 +79,7 @@ body {
 }
 
 .servicio-content h1 {
-  font-size: 44px;
+  font-size: var(--font-size-title-large);
   font-weight: 900;
 
   line-height: 1;
@@ -94,7 +94,7 @@ body {
 }
 
 .servicio-content p {
-  font-size: 15px;
+  font-size: var(--font-size-body-large);
 
   line-height: 1.8;
 
@@ -130,7 +130,7 @@ body {
 
   color: var(--color-primary);
 
-  font-size: 12px;
+  font-size: var(--font-size-small);
   font-weight: 700;
 
   text-transform: uppercase;
@@ -141,7 +141,7 @@ body {
 .servicios-header h2 {
   color: var(--color-text);
 
-  font-size: 38px;
+  font-size: var(--font-size-title);
   font-weight: 800;
 
   line-height: 1.1;
@@ -152,7 +152,7 @@ body {
 .servicios-header p {
   color: var(--color-text-light);
 
-  font-size: 14px;
+  font-size: var(--font-size-base);
 
   line-height: 1.5;
 
@@ -306,7 +306,7 @@ body {
 .servicio-icon i {
   color: white;
 
-  font-size: 27px;
+  font-size: var(--font-size-subtitle);
 }
 
 /* =========================
@@ -316,7 +316,7 @@ body {
 .card-content h3 {
   color: var(--color-text);
 
-  font-size: 19px;
+  font-size: var(--font-size-medium);
   font-weight: 800;
 
   line-height: 1.15;
@@ -332,7 +332,7 @@ body {
 .card-content p {
   color: #555;
 
-  font-size: 13.5px;
+  font-size: var(--font-size-base);
 
   line-height: 1.45;
 
@@ -356,7 +356,7 @@ body {
 
   color: #4e4e4e;
 
-  font-size: 13px;
+  font-size: var(--font-size-base);
 
   line-height: 1.3;
 
@@ -375,7 +375,7 @@ body {
 
   color: var(--color-primary);
 
-  font-size: 15px;
+  font-size: var(--font-size-body-large);
 
   font-weight: 800;
 }
@@ -401,7 +401,7 @@ body {
 
   color: var(--color-primary);
 
-  font-size: 12.5px;
+  font-size: var(--font-size-base);
 
   font-weight: 800;
 
@@ -513,7 +513,7 @@ body {
   border: none;
   background: none;
 
-  font-size: 24px;
+  font-size: var(--font-size-subtitle);
 
   cursor: pointer;
 
@@ -563,7 +563,7 @@ body {
 
   color: var(--color-text);
 
-  font-size: 14px;
+  font-size: var(--font-size-base);
 
   cursor: pointer;
 
@@ -627,7 +627,7 @@ body {
 ========================= */
 
 .modal-right h2 {
-  font-size: 20px;
+  font-size: var(--font-size-medium);
   font-weight: 800;
 
   color: var(--color-text);
@@ -638,7 +638,7 @@ body {
 .modal-text {
   color: #555;
 
-  font-size: 11px;
+  font-size: var(--font-size-small);
 
   line-height: 1.45;
 
@@ -680,11 +680,11 @@ body {
 
   color: var(--color-primary);
 
-  font-size: 13px;
+  font-size: var(--font-size-base);
 }
 
 .feature-item h4 {
-  font-size: 12px;
+  font-size: var(--font-size-small);
   font-weight: 800;
 
   color: var(--color-text);
@@ -697,7 +697,7 @@ body {
 
   line-height: 1.4;
 
-  font-size: 10px;
+  font-size: var(--font-size-xs);
 }
 
 /* =========================
@@ -743,11 +743,11 @@ body {
 
   color: var(--color-primary);
 
-  font-size: 14px;
+  font-size: var(--font-size-base);
 }
 
 .modal-cta-text h4 {
-  font-size: 13px;
+  font-size: var(--font-size-base);
   font-weight: 800;
 
   color: var(--color-text);
@@ -758,7 +758,7 @@ body {
 .modal-cta-text p {
   color: #666;
 
-  font-size: 10px;
+  font-size: var(--font-size-xs);
 
   line-height: 1.4;
 }
@@ -785,7 +785,7 @@ body {
 
   color: white;
 
-  font-size: 10px;
+  font-size: var(--font-size-xs);
   font-weight: 800;
 
   white-space: nowrap;
@@ -886,7 +886,7 @@ body {
 
 
   .servicio-content h1 {
-    font-size: 42px;
+    font-size: var(--font-size-title-large);
   }
 
 
@@ -987,7 +987,7 @@ body {
 
 
   .servicio-content h1 {
-    font-size: 38px;
+    font-size: var(--font-size-title);
   }
 
 
@@ -1000,7 +1000,7 @@ body {
 
 
   .servicios-header h2 {
-    font-size: 34px;
+    font-size: var(--font-size-title);
   }
 
 
@@ -1049,7 +1049,7 @@ body {
     padding-right: 55px !important;
     margin-top: 0 !important;
     margin-bottom: 18px !important;
-    font-size: 20px !important;
+    font-size: var(--font-size-medium) !important;
     line-height: 1.12 !important;
   }
 
@@ -1071,7 +1071,7 @@ body {
 
 
   .servicio-icon i {
-    font-size: 16px !important;
+    font-size: var(--font-size-body-large) !important;
   }
 
 
@@ -1157,14 +1157,14 @@ body {
 
 
   .modal-right h2 {
-    font-size: 28px !important;
+    font-size: var(--font-size-subtitle) !important;
     line-height: 1.1 !important;
     margin-top: 0 !important;
   }
 
 
   .modal-text {
-    font-size: 14px !important;
+    font-size: var(--font-size-base) !important;
     line-height: 1.7 !important;
   }
 
@@ -1181,12 +1181,12 @@ body {
 
 
   .feature-item h4 {
-    font-size: 15px !important;
+    font-size: var(--font-size-body-large) !important;
   }
 
 
   .feature-item p {
-    font-size: 13px !important;
+    font-size: var(--font-size-base) !important;
     line-height: 1.6 !important;
   }
 
@@ -1249,20 +1249,20 @@ body {
 
 
   .servicio-content span {
-    font-size: 14px;
+    font-size: var(--font-size-base);
     margin-bottom: 16px;
   }
 
 
   .servicio-content h1 {
-    font-size: 32px;
+    font-size: var(--font-size-title);
     line-height: 1.05;
     margin-bottom: 24px;
   }
 
 
   .servicio-content p {
-    font-size: 14px;
+    font-size: var(--font-size-base);
     line-height: 1.7;
   }
 
@@ -1281,38 +1281,38 @@ body {
 
 
   .servicios-header span {
-    font-size: 13px;
+    font-size: var(--font-size-base);
   }
 
 
   .servicios-header h2 {
-    font-size: 28px;
+    font-size: var(--font-size-subtitle);
     line-height: 1.15;
     margin-bottom: 18px;
   }
 
 
   .servicios-header p {
-    font-size: 14px;
+    font-size: var(--font-size-base);
     line-height: 1.7;
   }
 
 
   .card-content p {
-    font-size: 13px;
+    font-size: var(--font-size-base);
     line-height: 1.55;
     margin-bottom: 14px;
   }
 
 
   .card-content ul li {
-    font-size: 12px;
+    font-size: var(--font-size-small);
     line-height: 1.45;
   }
 
 
   .card-content a {
-    font-size: 12px;
+    font-size: var(--font-size-small);
     margin-top: 14px;
   }
 
@@ -1337,12 +1337,12 @@ body {
 
 
   .modal-right h2 {
-    font-size: 24px !important;
+    font-size: var(--font-size-subtitle) !important;
   }
 
 
   .modal-text {
-    font-size: 13px !important;
+    font-size: var(--font-size-base) !important;
   }
 
 
@@ -1364,12 +1364,12 @@ body {
 
 
   .servicio-content h1 {
-    font-size: 27px;
+    font-size: var(--font-size-subtitle);
   }
 
 
   .servicios-header h2 {
-    font-size: 24px;
+    font-size: var(--font-size-subtitle);
   }
 
 
@@ -1390,7 +1390,7 @@ body {
 
 
   .card-content h3 {
-    font-size: 22px !important;
+    font-size: var(--font-size-subtitle) !important;
   }
 
 
@@ -1400,13 +1400,13 @@ body {
 
 
   .modal-right h2 {
-    font-size: 22px !important;
+    font-size: var(--font-size-subtitle) !important;
   }
 
 
   .modal-btn {
     height: 44px;
-    font-size: 12px;
+    font-size: var(--font-size-small);
   }
 }
 
@@ -1435,11 +1435,11 @@ body {
   }
 
   .servicio-content span{
-    font-size: clamp(18px, 1vw, 24px);
+    font-size: var(--font-size-medium);
   }
 
   .servicio-content h1{
-    font-size: clamp(58px, 4.5vw, 105px);
+    font-size: var(--font-size-title-large);
     line-height: 0.95;
     letter-spacing: -3px;
     max-width: 100%;
@@ -1447,7 +1447,7 @@ body {
   }
 
   .servicio-content p{
-    font-size: clamp(18px, 1.2vw, 26px);
+    font-size: var(--font-size-medium);
     line-height: 1.7;
     max-width: 85%;
   }
@@ -1463,18 +1463,18 @@ body {
   }
 
   .servicios-header span{
-    font-size: clamp(14px, 0.9vw, 20px);
+    font-size: var(--font-size-base);
   }
 
   .servicios-header h2{
-    font-size: clamp(44px, 3vw, 72px);
+    font-size: var(--font-size-title-large);
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .servicios-header p{
-    font-size: clamp(16px, 1vw, 22px);
+    font-size: var(--font-size-body-large);
     max-width: 950px;
   }
 
@@ -1501,23 +1501,23 @@ body {
   }
 
   .servicio-icon i{
-    font-size: clamp(28px, 1.8vw, 44px);
+    font-size: var(--font-size-subtitle);
   }
 
   .card-content h3{
-    font-size: clamp(24px, 1.6vw, 36px);
+    font-size: var(--font-size-subtitle);
   }
 
   .card-content p{
-    font-size: clamp(16px, 1vw, 22px);
+    font-size: var(--font-size-body-large);
   }
 
   .card-content ul li{
-    font-size: clamp(15px, 0.9vw, 20px);
+    font-size: var(--font-size-body-large);
   }
 
   .card-content a{
-    font-size: clamp(14px, 0.9vw, 19px);
+    font-size: var(--font-size-base);
   }
 
   /* MODAL GRANDE CORREGIDO */
@@ -1568,12 +1568,12 @@ body {
 
 
   .modal-right h2{
-    font-size: clamp(26px, 1.8vw, 38px) !important;
+    font-size: var(--font-size-subtitle) !important;
   }
 
 
   .modal-text{
-    font-size: clamp(13px, 0.85vw, 17px) !important;
+    font-size: var(--font-size-base) !important;
     line-height: 1.6 !important;
   }
 
@@ -1591,12 +1591,12 @@ body {
 
 
   .feature-item h4{
-    font-size: clamp(14px, 0.9vw, 18px) !important;
+    font-size: var(--font-size-base) !important;
   }
 
 
   .feature-item p{
-    font-size: clamp(12px, 0.75vw, 15px) !important;
+    font-size: var(--font-size-small) !important;
     line-height: 1.45 !important;
   }
 
@@ -1615,19 +1615,19 @@ body {
 
 
   .modal-cta-text h4{
-    font-size: clamp(14px, 0.9vw, 18px) !important;
+    font-size: var(--font-size-base) !important;
   }
 
 
   .modal-cta-text p{
-    font-size: clamp(12px, 0.75vw, 15px) !important;
+    font-size: var(--font-size-small) !important;
   }
 
 
   .modal-btn{
     height: 46px !important;
     padding: 0 24px !important;
-    font-size: 12px !important;
+    font-size: var(--font-size-small) !important;
   }
 
 

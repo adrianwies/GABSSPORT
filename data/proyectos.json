@@ -1,0 +1,792 @@
+﻿[
+    {
+        "id":  1,
+        "titulo":  "UPC - Campus Monterrico",
+        "ubicacion":  "Surco, Perú",
+        "categoria":  "futbol",
+        "imagen":  "../img/proyecto1.png",
+        "descripcion":  "Santiago de Surco, Lima - Perú. Renovamos el espacio con grass sintético decorativo de alta calidad, logrando un ambiente más verde, limpio y elegante.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-leaf",
+                                    "titulo":  "Instalación profesional",
+                                    "texto":  "Ejecutamos cada proyecto con precisión y acabados impecables."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-seedling",
+                                    "titulo":  "Acabado natural",
+                                    "texto":  "Grass sintético decorativo que brinda una apariencia real y armoniosa."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Mínimo mantenimiento",
+                                    "texto":  "Superficie duradera, resistente y fácil de mantener durante todo el año."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-spa",
+                                    "titulo":  "Ideal para múltiples espacios",
+                                    "texto":  "Perfecto para jardines, terrazas, áreas recreativas y zonas de alto tránsito."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-leaf",
+                    "titulo":  "Más verde, limpio y elegante",
+                    "texto":  "Transformamos espacios en lugares que inspiran bienestar y calidad."
+                }
+    },
+    {
+        "id":  2,
+        "titulo":  "Grass Sintético Decorativo",
+        "ubicacion":  "La Molina, Perú",
+        "categoria":  "futbol",
+        "imagen":  "../img/proyecto2.png",
+        "descripcion":  "La Molina, Lima - Perú. Presentamos nuestro último trabajo: un espacio renovado con grass sintético decorativo de alta calidad, diseñado para brindar elegancia, frescura y durabilidad.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-leaf",
+                                    "titulo":  "Instalación profesional",
+                                    "texto":  "Colocación experta garantizando precisión y acabados impecables."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-seedling",
+                                    "titulo":  "Acabado natural",
+                                    "texto":  "Grass sintético decorativo de alta calidad con apariencia real y armoniosa."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Mínimo mantenimiento",
+                                    "texto":  "Superficie duradera, resistente y fácil de mantener durante todo el año."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-house",
+                                    "titulo":  "Ideal para tu hogar",
+                                    "texto":  "Perfecto para jardines, terrazas y áreas recreativas de casas privadas."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-leaf",
+                    "titulo":  "Más verde, elegante y funcional",
+                    "texto":  "Transformamos espacios en lugares que inspiran bienestar y calidad de vida."
+                }
+    },
+    {
+        "id":  3,
+        "titulo":  "Club Oasis Piura",
+        "ubicacion":  "Piura, Perú",
+        "categoria":  "futbol",
+        "imagen":  "../img/proyecto3.png",
+        "descripcion":  "Piura, Perú. Proyecto completado con dos canchas de pádel reglamentarias, diseñadas para ofrecer una experiencia deportiva de alto rendimiento, seguridad y gran durabilidad.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-ruler",
+                                    "titulo":  "Medidas oficiales",
+                                    "texto":  "Canchas reglamentarias que cumplen estándares para un juego profesional."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-seedling",
+                                    "titulo":  "Césped sintético de alta calidad",
+                                    "texto":  "Superficie resistente, duradera y con excelente agarre para el juego."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-border-all",
+                                    "titulo":  "Estructura profesional",
+                                    "texto":  "Materiales de primera calidad que garantizan seguridad y larga vida útil."
+                                },
+                                {
+                                    "icono":  "fa-regular fa-lightbulb",
+                                    "titulo":  "Iluminación óptima",
+                                    "texto":  "Sistema LED de alto rendimiento para una excelente visibilidad nocturna."
+                                },
+                                {
+                                    "icono":  "fa-regular fa-star",
+                                    "titulo":  "Acabados de primer nivel",
+                                    "texto":  "Detalles cuidadosamente ejecutados para un resultado funcional y estético."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Calidad en cada detalle, rendimiento en cada punto",
+                    "texto":  "Canchas diseñadas para ofrecer la mejor experiencia de juego."
+                }
+    },
+    {
+        "id":  4,
+        "titulo":  "UNIFÉ Universidad Femenina",
+        "ubicacion":  "La Molina, Perú",
+        "categoria":  "recreativos",
+        "imagen":  "../img/proyecto4.png",
+        "descripcion":  "La Molina, Lima - Perú. Proyecto terminado con éxito, donde se instaló un piso multideportivo de poliuretano CASALI de 10mm de espesor, diseñado para brindar máximo rendimiento, confort y durabilidad.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-border-all",
+                                    "titulo":  "Superficie uniforme y antideslizante",
+                                    "texto":  "Acabado liso que garantiza seguridad y óptimo desempeño en cada movimiento."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Alta resistencia al desgaste y rayos UV",
+                                    "texto":  "Materiales de calidad superior que aseguran larga vida útil y protección solar."
+                                },
+                                {
+                                    "icono":  "fa-regular fa-futbol",
+                                    "titulo":  "Excelente amortiguación y rebote del balón",
+                                    "texto":  "Tecnología avanzada que mejora la experiencia de juego en cada disciplina."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-users",
+                                    "titulo":  "Ideal para múltiples disciplinas deportivas",
+                                    "texto":  "Perfecto para vóley, básquet, fútbol sala, handball y más."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-palette",
+                                    "titulo":  "Diseño personalizado con colores institucionales",
+                                    "texto":  "Acabados estéticos que reflejan la identidad de cada institución."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Rendimiento, seguridad y estética en un solo proyecto",
+                    "texto":  "Construimos espacios deportivos que inspiran y transforman comunidades."
+                }
+    },
+    {
+        "id":  5,
+        "titulo":  "Coliseo Municipal de Arequipa",
+        "ubicacion":  "Arequipa, Perú",
+        "categoria":  "recreativos",
+        "imagen":  "../img/proyecto5.png",
+        "descripcion":  "Arequipa, Perú. Proyecto terminado con la instalación de un piso multideportivo vinílico de 9mm, diseñado para máximo rendimiento, seguridad y durabilidad en espacios deportivos de alto tránsito.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-layer-group",
+                                    "titulo":  "Superficie de alto rendimiento",
+                                    "texto":  "Piso vinílico de 9mm que brinda excelente agarre, resistencia y desempeño profesional."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-certificate",
+                                    "titulo":  "Certificado FIFA QUALITY PRO",
+                                    "texto":  "Calidad internacional que garantiza mejores condiciones para la práctica deportiva."
+                                },
+                                {
+                                    "icono":  "fa-regular fa-futbol",
+                                    "titulo":  "Versatilidad para múltiples disciplinas",
+                                    "texto":  "Ideal para básquet, vóley, futsal, handball y otras disciplinas deportivas."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Seguridad y confort",
+                                    "texto":  "Excelente amortiguación que reduce el impacto y mejora la experiencia de juego."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-screwdriver-wrench",
+                                    "titulo":  "Acabados profesionales",
+                                    "texto":  "Instalación con estándares de calidad que aseguran durabilidad y estética impecable."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Rendimiento, seguridad y calidad en cada detalle",
+                    "texto":  "Construimos espacios que inspiran, transforman y fomentan el deporte."
+                }
+    },
+    {
+        "id":  6,
+        "titulo":  "Parque Infantil",
+        "ubicacion":  "Nazca, Perú",
+        "categoria":  "recreativos",
+        "imagen":  "../img/proyecto6.png",
+        "descripcion":  "Nazca, Ica - Perú. Proyecto terminado con la instalación de piso continuo anti-trauma normado Cásali Athlon PG de 80 mm, realizado para un parque infantil seguro, colorido y resistente.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Piso continuo anti-trauma",
+                                    "texto":  "Superficie segura que reduce el impacto de caídas y brinda mayor protección a los niños."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-layer-group",
+                                    "titulo":  "Normado Cásali Athlon PG de 80 mm",
+                                    "texto":  "Sistema de alta calidad que cumple con estándares de seguridad internacionales."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-children",
+                                    "titulo":  "Diseñado para el juego seguro",
+                                    "texto":  "Ideal para áreas infantiles, ofreciendo confort y tranquilidad a padres y cuidadores."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-palette",
+                                    "titulo":  "Colores vibrantes y atractivos",
+                                    "texto":  "Diseño personalizado que estimula la creatividad y la diversión de los niños."
+                                },
+                                {
+                                    "icono":  "fa-regular fa-thumbs-up",
+                                    "titulo":  "Durabilidad y bajo mantenimiento",
+                                    "texto":  "Material resistente al uso intensivo y a las condiciones climáticas."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-shield-halved",
+                    "titulo":  "Seguridad, diseño y calidad en cada detalle",
+                    "texto":  "Creamos espacios donde los niños juegan, aprenden y crecen felices."
+                }
+    },
+    {
+        "id":  7,
+        "titulo":  "Hacienda Jaén",
+        "ubicacion":  "Cajamarca, Perú",
+        "categoria":  "pistas",
+        "imagen":  "../img/proyecto7.png",
+        "descripcion":  "Jaén, Cajamarca, Perú. Proyecto integral que combina una pista atlética profesional con un campo multideportivo de alto rendimiento y grass recreativo, diseñado para entrenamiento, recreación y deporte competitivo.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-person-running",
+                                    "titulo":  "Pista atlética profesional",
+                                    "texto":  "Pavimento tipo sandwich de alto rendimiento para máxima seguridad y durabilidad."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-border-all",
+                                    "titulo":  "Piso multideportivo poliuretano 9mm",
+                                    "texto":  "Sistema CASALI de 9mm resistente al desgaste y a los impactos."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-seedling",
+                                    "titulo":  "Grass recreativo",
+                                    "texto":  "Césped sintético de calidad para áreas verdes y recreativas."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Alta durabilidad",
+                                    "texto":  "Materiales certificados que aseguran larga vida útil y mínimo mantenimiento."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-people-group",
+                                    "titulo":  "Espacios para la comunidad",
+                                    "texto":  "Infraestructura deportiva que promueve el deporte, la salud y la integración social."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el desarrollo deportivo",
+                    "texto":  "Creamos espacios que inspiran y transforman comunidades."
+                }
+    },
+    {
+        "id":  8,
+        "titulo":  "Club Árabe Palestino",
+        "ubicacion":  "Lima, Perú",
+        "categoria":  "mantenimiento",
+        "imagen":  "../img/proyecto8.png",
+        "descripcion":  "Lima, Perú. Mantenimiento profesional de campo deportivo sintético con relleno natural, realizado para conservar el rendimiento, seguridad y vida útil de la superficie deportiva.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-leaf",
+                                    "titulo":  "Relleno natural",
+                                    "texto":  "Mejora la amortiguación, el rebote del balón y la experiencia de juego."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Rendimiento garantizado",
+                                    "texto":  "Conserva las condiciones óptimas de la superficie para un juego seguro y de alto nivel."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-gear",
+                                    "titulo":  "Mantenimiento profesional",
+                                    "texto":  "Proceso técnico especializado con maquinaria y personal calificado."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-users",
+                                    "titulo":  "Mayor durabilidad",
+                                    "texto":  "Extiende la vida útil del césped sintético y reduce el desgaste del campo."
+                                },
+                                {
+                                    "icono":  "fa-regular fa-thumbs-up",
+                                    "titulo":  "Seguridad para jugadores",
+                                    "texto":  "Superficie estable que minimiza riesgos y protege la integridad física."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Compromiso con la calidad y el deporte",
+                    "texto":  "Cuidamos cada detalle para que tu campo siempre esté listo para el próximo partido."
+                }
+    },
+    {
+        "id":  9,
+        "titulo":  "Markham College",
+        "ubicacion":  "Surco, Perú",
+        "categoria":  "recreativos",
+        "imagen":  "../img/proyecto9.png",
+        "descripcion":  "Santiago de Surco, Lima - Perú. Instalación de pisos de caucho infantil, seguros, coloridos y resistentes, diseñados para brindar protección, diversión y durabilidad en espacios de juego.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Seguridad garantizada",
+                                    "texto":  "Superficie de caucho anti-impacto que reduce riesgos de caídas y protege a los niños."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-palette",
+                                    "titulo":  "Diseño atractivo y divertido",
+                                    "texto":  "Colores vibrantes y diseños personalizados que estimulan la creatividad y el juego."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shoe-prints",
+                                    "titulo":  "Material de alta calidad",
+                                    "texto":  "Caucho EPDM resistente al desgaste, rayos UV y condiciones climáticas."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-broom",
+                                    "titulo":  "Fácil mantenimiento",
+                                    "texto":  "Superficie permeable y de rápida limpieza, ideal para uso intensivo."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-children",
+                                    "titulo":  "Ideal para áreas infantiles",
+                                    "texto":  "Perfecto para parques, colegios, guarderías y zonas recreativas."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Espacios que inspiran juegos seguros",
+                    "texto":  "Creamos ambientes donde los niños pueden jugar, aprender y crecer felices."
+                }
+    },
+    {
+        "id":  10,
+        "titulo":  "Country Club Rinconada",
+        "ubicacion":  "La Molina, Perú",
+        "categoria":  "recreativos",
+        "imagen":  "../img/proyecto10.png",
+        "descripcion":  "La Molina, Lima - Perú. Implementación de piso para gimnasio de alta resistencia, diseñado para soportar uso intensivo, brindar seguridad y mejorar el confort en áreas deportivas y de entrenamiento profesional.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-dumbbell",
+                                    "titulo":  "Alta resistencia y durabilidad",
+                                    "texto":  "Material de caucho de alta densidad que soporta cargas pesadas y uso constante."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Seguridad y amortiguación",
+                                    "texto":  "Superficie antideslizante que reduce impactos y previene lesiones."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-dumbbell",
+                                    "titulo":  "Fácil mantenimiento",
+                                    "texto":  "Superficie de fácil limpieza, resistente al sudor y al desgaste."
+                                },
+                                {
+                                    "icono":  "fa-regular fa-clock",
+                                    "titulo":  "Acabado profesional",
+                                    "texto":  "Instalación precisa con acabados de alto nivel para un espacio moderno y funcional."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-person-running",
+                                    "titulo":  "Ideal para gimnasios",
+                                    "texto":  "Perfecto para áreas de entrenamiento, pesas, crossfit y cardio."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Espacios que impulsan tu mejor versión",
+                    "texto":  "Creamos ambientes funcionales que combinan rendimiento, seguridad y diseño."
+                }
+    },
+    {
+        "id":  11,
+        "titulo":  "Colegio Emblemático Coronel Ladislao de Espinar",
+        "ubicacion":  "Cusco, Perú",
+        "categoria":  "pistas",
+        "imagen":  "../img/proyecto11.png",
+        "descripcion":  "Espinar, Cusco, Perú. Instalación de piso sintético tipo sandwich E=13 mm diseñado para brindar alto rendimiento, seguridad y durabilidad en pistas atléticas y áreas deportivas escolares.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-person-running",
+                                    "titulo":  "Alto rendimiento",
+                                    "texto":  "Superficie elástica que mejora el desempeño deportivo y reduce impactos."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-layer-group",
+                                    "titulo":  "Piso sandwich E=13 mm",
+                                    "texto":  "Estructura multicapa que brinda estabilidad, confort y resistencia superior."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Seguridad garantizada",
+                                    "texto":  "Excelente tracción y absorción de impactos para prevenir lesiones."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-cloud-rain",
+                                    "titulo":  "Resistente y duradero",
+                                    "texto":  "Materiales de alta calidad resistentes al desgaste y a las condiciones climáticas."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-people-group",
+                                    "titulo":  "Ideal para instituciones",
+                                    "texto":  "Solución perfecta para colegios y centros educativos."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el desarrollo deportivo",
+                    "texto":  "Creamos superficies que impulsan el talento y promueven la actividad física."
+                }
+    },
+    {
+        "id":  12,
+        "titulo":  "Estadio Emblemático Lolo Fernández",
+        "ubicacion":  "Trujillo, Perú",
+        "categoria":  "futbol",
+        "imagen":  "../img/proyecto12.png",
+        "descripcion":  "Trujillo, La Libertad, Perú. Instalación de césped sintético de alto rendimiento para el Estadio Emblemático Lolo Fernández, diseñado para brindar máxima seguridad, confort y durabilidad en espacios deportivos de uso intensivo.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-futbol",
+                                    "titulo":  "Césped sintético de alto rendimiento",
+                                    "texto":  "Fibra de última generación que brinda excelente juego y resistencia."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-border-all",
+                                    "titulo":  "Campos multideportivos",
+                                    "texto":  "Diseñado con marcaciones para fútbol, futsal y otras disciplinas deportivas."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-droplet",
+                                    "titulo":  "Drenaje eficiente",
+                                    "texto":  "Sistema de drenaje avanzado que permite un rápido secado y óptimo desempeño."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Máxima durabilidad",
+                                    "texto":  "Alta resistencia al uso intensivo y a las condiciones climáticas extremas."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-people-group",
+                                    "titulo":  "Mejores espacios deportivos",
+                                    "texto":  "Infraestructura moderna que impulsa la actividad física y el deporte."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el desarrollo deportivo",
+                    "texto":  "Creamos superficies que impulsan el talento y generan impacto positivo."
+                }
+    },
+    {
+        "id":  13,
+        "titulo":  "Colegio SS.CC. Recoleta",
+        "ubicacion":  "Santiago de Surco, Perú",
+        "categoria":  "recreativos",
+        "imagen":  "../img/proyecto13.png",
+        "descripcion":  "Santiago de Surco, Lima - Perú. Instalación de pisos recreativos de caucho continuo Casali Athlon y juegos recreativos, diseñados para brindar diversión, protección y desarrollo en áreas infantiles.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Superficie de caucho continuo",
+                                    "texto":  "Piso anti-impacto que reduce riesgos de caídas y brinda mayor seguridad."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-palette",
+                                    "titulo":  "Diseño colorido y atractivo",
+                                    "texto":  "Combinación de colores que estimula la creatividad y el juego en los niños."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-child-reaching",
+                                    "titulo":  "Equipamiento recreativo",
+                                    "texto":  "Juegos infantiles de alta calidad, resistentes y certificados para uso público."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-gear",
+                                    "titulo":  "Material de alta calidad",
+                                    "texto":  "Caucho EPDM de alto rendimiento, resistente a la intemperie y al desgaste."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-users",
+                                    "titulo":  "Ideal para colegios y parques",
+                                    "texto":  "Fomenta el desarrollo físico, social y emocional en espacios seguros y divertidos."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Compromiso con la seguridad y la diversión",
+                    "texto":  "Creamos ambientes donde los niños juegan, aprenden y crecen felices."
+                }
+    },
+    {
+        "id":  14,
+        "titulo":  "CARFIP - Centro de Alto Rendimiento",
+        "ubicacion":  "Lima, Perú",
+        "categoria":  "luces",
+        "imagen":  "../img/proyecto14.png",
+        "descripcion":  "Lima, Perú. Sistema de iluminación LED profesional para instalaciones deportivas de alto rendimiento, diseñado para ofrecer máxima eficiencia, uniformidad lumínica y confort visual.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-bolt",
+                                    "titulo":  "Alta potencia y eficiencia",
+                                    "texto":  "Reflectores LED de última generación para máximo rendimiento deportivo."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-temperature-half",
+                                    "titulo":  "Temperatura de color 5200K",
+                                    "texto":  "Luz blanca ideal para competencias y entrenamientos de alto nivel."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-crosshairs",
+                                    "titulo":  "Distribución lumínica precisa",
+                                    "texto":  "Ópticas especializadas para diferentes tipos de campos deportivos."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-feather",
+                                    "titulo":  "Diseño optimizado",
+                                    "texto":  "Estructura ligera que facilita la instalación y reduce carga estructural."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Durabilidad y resistencia",
+                                    "texto":  "Construcción robusta preparada para exteriores y uso intensivo."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el rendimiento",
+                    "texto":  "Soluciones de iluminación que elevan el desempeño deportivo."
+                }
+    },
+    {
+        "id":  15,
+        "titulo":  "Universidad del Pacífico",
+        "ubicacion":  "Lima, Perú",
+        "categoria":  "recreativos",
+        "imagen":  "../img/proyecto15.png",
+        "descripcion":  "Lima, Perú. Instalación de piso de poliuretano multiuso para salón de yoga, diseñado para ofrecer comodidad, seguridad, fácil limpieza y una superficie uniforme para actividades de bajo impacto.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-person-walking",
+                                    "titulo":  "Superficie cómoda y segura",
+                                    "texto":  "Excelente absorción de impactos y gran confort para las articulaciones."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-leaf",
+                                    "titulo":  "Antideslizante",
+                                    "texto":  "Acabado que brinda mayor seguridad durante la práctica y el movimiento."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Higiénico y fácil limpieza",
+                                    "texto":  "Superficie continua sin juntas que evita la acumulación de suciedad."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-layer-group",
+                                    "titulo":  "Alta durabilidad",
+                                    "texto":  "Resistente al desgaste, rayos UV y uso continuo."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-palette",
+                                    "titulo":  "Estética moderna",
+                                    "texto":  "Acabado uniforme y elegante que mejora cualquier espacio."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el bienestar",
+                    "texto":  "Creamos espacios que promueven la salud, el equilibrio y el desarrollo integral."
+                }
+    },
+    {
+        "id":  16,
+        "titulo":  "Colegio Santo Toribio de Rioja",
+        "ubicacion":  "Rioja, Perú",
+        "categoria":  "pistas",
+        "imagen":  "../img/proyecto16.png",
+        "descripcion":  "Rioja, San Martín, Perú. Instalación de pista atlética tipo Spray CONIPUR SP, producto certificado WA/IAAF, diseñada para ofrecer seguridad, durabilidad y alto rendimiento deportivo.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-award",
+                                    "titulo":  "Producto certificado WA/IAAF",
+                                    "texto":  "Cumple con estándares internacionales para competencias de alto nivel."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-person-running",
+                                    "titulo":  "Superficie de alto rendimiento",
+                                    "texto":  "Excelente tracción, elasticidad y absorción de impactos para mayor seguridad."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-spray-can",
+                                    "titulo":  "Sistema CONIPUR SP",
+                                    "texto":  "Aplicación profesional en spray que garantiza adherencia perfecta y acabado uniforme."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Resistente y duradera",
+                                    "texto":  "Alta resistencia al desgaste, rayos UV y condiciones climáticas extremas."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-hard-hat",
+                                    "titulo":  "Instalación profesional",
+                                    "texto":  "Equipo especializado y procesos certificados para resultados de calidad garantizada."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el deporte",
+                    "texto":  "Creamos superficies que impulsan el talento y promueven el desarrollo deportivo."
+                }
+    },
+    {
+        "id":  17,
+        "titulo":  "Colegio Modelo de San Antonio de Moquegua",
+        "ubicacion":  "Moquegua, Perú",
+        "categoria":  "pistas",
+        "imagen":  "../img/proyecto17.png",
+        "descripcion":  "Moquegua, Perú. Suministro e instalación de pista atlética sintética con sistema Spray CONIPUR SP de 13 mm, utilizando materiales certificados de alto rendimiento para garantizar seguridad, resistencia y máximo desempeño deportivo.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-road",
+                                    "titulo":  "Sistema Spray CONIPUR SP 13 mm",
+                                    "texto":  "Superficie sintética certificada WA con excelente absorción de impactos."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-person-running",
+                                    "titulo":  "Alto rendimiento deportivo",
+                                    "texto":  "Óptima tracción, estabilidad y resistencia para entrenamientos y competencias."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Seguridad garantizada",
+                                    "texto":  "Reduce el riesgo de lesiones y mejora la comodidad de los atletas."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-layer-group",
+                                    "titulo":  "Durabilidad superior",
+                                    "texto":  "Material resistente a la intemperie, rayos UV y uso intensivo continuo."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-users",
+                                    "titulo":  "Ideal para instituciones",
+                                    "texto":  "Solución confiable para colegios, academias y centros educativos."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el desarrollo deportivo",
+                    "texto":  "Creamos superficies que impulsan el talento, forman mejores atletas y construyen comunidades."
+                }
+    },
+    {
+        "id":  18,
+        "titulo":  "Colegio Rosa de Santa María RSM",
+        "ubicacion":  "Cercado de Lima, Perú",
+        "categoria":  "recreativos",
+        "imagen":  "../img/proyecto18.png",
+        "descripcion":  "Cercado de Lima, Lima, Perú. Instalación de piso de poliuretano 9+2=11 con demarcación multideportiva profesional, diseñado para brindar resistencia, seguridad y alto rendimiento en actividades deportivas escolares y recreativas.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-layer-group",
+                                    "titulo":  "Piso de Poliuretano 9+2=11",
+                                    "texto":  "Sistema multicapa con excelente elasticidad, confort y resistencia."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-border-all",
+                                    "titulo":  "Demarcación multideportiva",
+                                    "texto":  "Trazos precisos para múltiples disciplinas deportivas escolares."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Alta resistencia",
+                                    "texto":  "Excelente desempeño frente al uso intensivo y tránsito constante."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-person-running",
+                                    "titulo":  "Superficie segura",
+                                    "texto":  "Reduce el riesgo de lesiones y mejora la experiencia deportiva."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-school",
+                                    "titulo":  "Ideal para colegios",
+                                    "texto":  "Solución confiable y duradera para instituciones educativas."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el desarrollo deportivo",
+                    "texto":  "Creamos superficies que impulsan el talento, promueven la actividad física y construyen comunidades."
+                }
+    },
+    {
+        "id":  19,
+        "titulo":  "I. E. FAP Capitán José Abelardo Quiñones",
+        "ubicacion":  "Iquitos, Loreto, Perú",
+        "categoria":  "pistas",
+        "imagen":  "../img/proyecto19.png",
+        "descripcion":  "Iquitos, Loreto, Perú. Instalación de pista atlética tipo sandwich CASALI SPORTRACK SW PF de 13.6 mm con certificación World Athletics, diseñada para brindar máximo rendimiento, seguridad y durabilidad en competencias y entrenamientos de alto nivel.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-award",
+                                    "titulo":  "Certificación World Athletics",
+                                    "texto":  "Sistema certificado bajo estándares internacionales para competencias oficiales."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-layer-group",
+                                    "titulo":  "Sistema Sandwich CASALI",
+                                    "texto":  "Estructura multicapa que brinda mayor elasticidad, confort y resistencia."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-person-running",
+                                    "titulo":  "Alto rendimiento deportivo",
+                                    "texto":  "Superficie diseñada para competencias y entrenamientos profesionales."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Seguridad garantizada",
+                                    "texto":  "Excelente absorción de impactos y reducción del riesgo de lesiones."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-building-columns",
+                                    "titulo":  "Ideal para instituciones",
+                                    "texto":  "Solución confiable para colegios, academias y centros deportivos."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el desarrollo deportivo",
+                    "texto":  "Creamos superficies que impulsan el talento, promueven la actividad física y construyen comunidades."
+                }
+    },
+    {
+        "id":  20,
+        "titulo":  "Estadio IPD de Huancavelica",
+        "ubicacion":  "Huancavelica, Perú",
+        "categoria":  "pistas",
+        "imagen":  "../img/proyecto20.png",
+        "descripcion":  "Huancavelica, Perú. Instalación de pista atlética tipo sandwich de 13 mm de 6 carriles y campo de fútbol 11, ejecutado con materiales certificados para brindar máximo rendimiento, seguridad y durabilidad.",
+        "caracteristicas":  [
+                                {
+                                    "icono":  "fa-solid fa-road",
+                                    "titulo":  "Pista atlética sandwich 13 mm",
+                                    "texto":  "Superficie de alto rendimiento con excelente amortiguación y resistencia."
+                                },
+                                {
+                                    "icono":  "fa-regular fa-futbol",
+                                    "titulo":  "Campo de fútbol 11",
+                                    "texto":  "Césped sintético profesional resistente al uso intensivo."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-shield-halved",
+                                    "titulo":  "Durabilidad garantizada",
+                                    "texto":  "Materiales certificados que aseguran larga vida útil y bajo mantenimiento."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-person-running",
+                                    "titulo":  "Rendimiento superior",
+                                    "texto":  "Óptimo para entrenamiento y competencias de alto nivel."
+                                },
+                                {
+                                    "icono":  "fa-solid fa-users",
+                                    "titulo":  "Infraestructura moderna",
+                                    "texto":  "Espacios deportivos que impulsan el desarrollo del deporte y la comunidad."
+                                }
+                            ],
+        "cta":  {
+                    "icono":  "fa-solid fa-trophy",
+                    "titulo":  "Comprometidos con la calidad y el desarrollo deportivo",
+                    "texto":  "Creamos superficies que impulsan el talento, promueven la actividad física y construyen comunidades."
+                }
+    }
+]

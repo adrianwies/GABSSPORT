@@ -1,0 +1,331 @@
+/* Capa responsive común. Se carga al final en todas las páginas. */
+
+html {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  overflow-x: clip;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+.about,
+.stats,
+.process,
+.cta,
+.nosotros-section,
+.certificaciones-section,
+.mision-vision-section,
+.servicios-section,
+.proyectos-section,
+.contact-section {
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .about,
+  .nosotros-section,
+  .mision-vision-section,
+  .contact-section {
+    padding-inline: 60px;
+  }
+
+  .servicios-section,
+  .proyectos-section {
+    padding-inline: 5%;
+  }
+
+  .timeline {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about,
+  .nosotros-section,
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right,
+  .nosotros-left,
+  .nosotros-right,
+  .contact-info,
+  .contact-form-box {
+    width: 100%;
+  }
+
+  .about,
+  .nosotros-section,
+  .mision-vision-section,
+  .contact-section {
+    padding-inline: 40px;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-inline: 40px;
+  }
+
+  .stat-box:nth-child(2) {
+    border-right: 0;
+  }
+
+  .timeline {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px 16px;
+  }
+
+  .timeline::before,
+  .timeline::after {
+    display: none;
+  }
+
+  .step {
+    width: 100%;
+    max-width: none;
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta-text h2 {
+    white-space: normal;
+  }
+
+  .cta-button,
+  .cta-button a {
+    width: min(100%, 360px);
+  }
+
+  .mision-vision-section {
+    grid-template-columns: 1fr;
+  }
+
+  .mv-divider {
+    width: 100%;
+    height: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 20px;
+    --section-padding: 36px 20px;
+  }
+
+  .hero,
+  .nosotros-banner,
+  .servicio-banner,
+  .proyecto-banner,
+  .contacto-banner {
+    min-height: 560px;
+    height: min(82svh, 680px);
+  }
+
+  .hero-content,
+  .nosotros-banner-content,
+  .servicio-content,
+  .proyecto-content,
+  .contacto-content {
+    width: calc(100% - 40px) !important;
+    max-width: none !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+  }
+
+  .about,
+  .nosotros-section,
+  .mision-vision-section,
+  .contact-section,
+  .servicios-section,
+  .proyectos-section {
+    padding-inline: 20px !important;
+  }
+
+  .about-right,
+  .contact-grid,
+  .proyectos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stats {
+    padding-inline: 20px;
+  }
+
+  .stat-content {
+    justify-content: center;
+  }
+
+  .timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-form-box,
+  .contact-card,
+  .project-box {
+    min-width: 0;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal-scroll-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-main-img {
+    min-height: 220px;
+    max-height: 40svh;
+  }
+
+  .modal-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .modal-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #site-footer .footer {
+    padding-inline: 24px;
+  }
+
+  #site-footer .footer-content,
+  #site-footer .footer-center {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero .hero-btn {
+    width: 100%;
+  }
+
+  .about-right,
+  .stats,
+  .contact-grid,
+  .proyectos-grid,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-box,
+  .stat-box:nth-child(n) {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .stat-box:last-child {
+    border-bottom: 0;
+  }
+
+  .contact-card {
+    align-items: flex-start;
+  }
+
+  .project-box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .proyectos-filtros {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+  }
+
+  .filtro-btn {
+    flex: 0 0 auto;
+  }
+
+  .mv-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-content,
+  .nosotros-banner-content,
+  .servicio-content,
+  .proyecto-content,
+  .contacto-content {
+    width: calc(100% - 28px) !important;
+    margin-right: 14px !important;
+    margin-left: 14px !important;
+  }
+
+  .about,
+  .nosotros-section,
+  .mision-vision-section,
+  .contact-section,
+  .servicios-section,
+  .proyectos-section {
+    padding-inline: 14px !important;
+  }
+
+  .contact-form-box,
+  .contact-card,
+  .project-box {
+    padding: 16px;
+  }
+}
+
+@media (max-height: 560px) and (orientation: landscape) {
+  .hero,
+  .nosotros-banner,
+  .servicio-banner,
+  .proyecto-banner,
+  .contacto-banner {
+    min-height: 500px;
+    height: auto;
+  }
+}

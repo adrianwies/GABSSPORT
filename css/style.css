@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600;700&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600;700&display=swap");
 
 /* =========================
    VARIABLES GLOBALES
@@ -21,12 +21,19 @@
 
     /* TIPOGRAFIA */
     --font-main: "Instrument Sans", sans-serif;
+    --font-size-root: 16px;
     --font-size-xs: 10px;
-    --font-size-small: 11px;
+    --font-size-small: 12px;
     --font-size-base: 14px;
+    --font-size-body-large: 16px;
     --font-size-medium: 18px;
-    --font-size-title: 31px;
-    --font-size-title-large: 35px;
+    --font-size-subtitle: 24px;
+    --font-size-stat: 32px;
+    --font-size-stat-mobile: 28px;
+    --font-size-title: 32px;
+    --font-size-title-large: 50px;
+    --font-size-title-mobile: 26px;
+    --font-size-title-large-mobile: 38px;
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -53,8 +60,9 @@
     --transition-slow: 0.6s ease;
 
     /* TIMELINE */
-    --circle-size: 95px;
-    --timeline-gap: 15px;
+    --circle-size: 76px;
+    --timeline-step-width: 165px;
+    --timeline-gap: 12px;
     --timeline-line: 2px;
 }
 
@@ -127,7 +135,7 @@ header{
 
     color: var(--color-white);
 
-    font-size: 15px;
+    font-size: var(--font-size-body-large);
     font-weight: 500;
 
     padding-bottom: 5px;
@@ -190,7 +198,7 @@ header{
     text-decoration: none;
     text-transform: uppercase;
 
-    font-size: 11px;
+    font-size: var(--font-size-small);
     font-weight: 800;
     letter-spacing: 0.4px;
 
@@ -240,7 +248,7 @@ header{
 
 .btn-cotizar i,
 .btn-cotizar span{
-    font-size: 13px;
+    font-size: var(--font-size-base);
 
     transition: transform 0.35s ease;
 }
@@ -316,7 +324,7 @@ header{
 /* TITULO */
 
 .hero-content h1{
-    font-size: 64px;
+    font-size: var(--font-size-title-large);
     font-weight: 800;
 
     letter-spacing: -2px;
@@ -329,7 +337,7 @@ header{
 /* TEXTO */
 
 .hero-content p{
-    font-size: 16px;
+    font-size: var(--font-size-body-large);
     line-height: 1.7;
 
     max-width: 500px;
@@ -357,7 +365,7 @@ header{
 
     border-radius: var(--radius-small);
 
-    font-size: 14px;
+    font-size: var(--font-size-base);
     font-weight: 600;
 
     transition:
@@ -378,7 +386,7 @@ header{
 .about{
     width: 100%;
 
-    padding: 80px 90px;
+    padding: 46px 90px;
 
     background: var(--color-gray-bg);
 
@@ -397,12 +405,12 @@ header{
 .about-subtitle{
     color: var(--color-primary);
 
-    font-size: 15px;
+    font-size: var(--font-size-body-large);
     font-weight: 700;
 }
 
 .about-left h2{
-    font-size: 48px;
+    font-size: var(--font-size-title-large);
 
     line-height: 1.1;
 
@@ -411,7 +419,7 @@ header{
 }
 
 .about-left p{
-    font-size: 15px;
+    font-size: var(--font-size-body-large);
     line-height: 1.7;
 
     color: var(--color-text-light);
@@ -427,7 +435,7 @@ header{
 
 .about-left li{
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: var(--font-size-body-large);
 }
 
 /* DERECHA */
@@ -497,7 +505,7 @@ header{
 .card-text h3{
     color: var(--color-primary);
 
-    font-size: 18px;
+    font-size: var(--font-size-medium);
     font-weight: 700;
 
     margin-bottom: 2px;
@@ -508,7 +516,7 @@ header{
 
     display: inline-block;
 
-    font-size: 13px;
+    font-size: var(--font-size-base);
     font-weight: 700;
 
     padding-bottom: 8px;
@@ -574,7 +582,7 @@ header{
     width: 100%;
     background: var(--color-text);
 
-    padding: 45px 90px;
+    padding: 28px 90px;
 
     display: flex;
     justify-content: space-between;
@@ -588,7 +596,7 @@ header{
 .stat-box{
     flex: 1;
 
-    padding: 20px;
+    padding: 12px 18px;
 
     border-right: 1px solid rgba(255,255,255,0.08);
 }
@@ -608,8 +616,8 @@ header{
 /* ICONO */
 
 .stat-icon img{
-    width: 85px;
-    height: 85px;
+    width: 64px;
+    height: 64px;
 
     object-fit: contain;
 }
@@ -623,8 +631,8 @@ header{
 /* NUMERO */
 
 .stat-box h2{
-    font-size: 42px;
-    font-weight: 700;
+    font-size: var(--font-size-stat);
+    font-weight: var(--font-weight-bold);
 
     color: var(--color-primary);
 
@@ -634,9 +642,9 @@ header{
 /* TEXTO */
 
 .stat-box p{
-    color: #EAEAEA;
+    color: var(--color-gray-line);
 
-    font-size: 14px;
+    font-size: var(--font-size-base);
 
     line-height: 1.4;
 }
@@ -659,20 +667,20 @@ header{
 ========================= */
 
 .process{
-    padding: 30px 5%;
+    padding: 24px 5% 28px;
     background: var(--color-gray-bg);
     text-align: center;
 }
 
 .process-subtitle{
     color: var(--color-primary-dark);
-    font-weight: 700;
-    font-size: 15px;
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-small);
 }
 
 .process h2{
-    font-size: 35px;
-    margin: 15px 0 50px;
+    font-size: var(--font-size-subtitle);
+    margin: 10px 0 30px;
 }
 
 /* =========================
@@ -693,7 +701,8 @@ header{
     gap: var(--timeline-gap);
 
     /* NUEVO */
-    --line-offset: calc(var(--circle-size) / 2);
+    --line-offset: calc(var(--timeline-step-width) / 2);
+    --progress: 0px;
 }
 
 /* =========================
@@ -731,7 +740,7 @@ header{
     left: var(--line-offset);
 
     /* ESTA ES LA PARTE IMPORTANTE */
-    width: calc(var(--progress) + 6px);
+    width: var(--progress);
 
     height: var(--timeline-line);
 
@@ -746,7 +755,7 @@ header{
 ========================= */
 
 .step{
-    width: 190px;
+    width: var(--timeline-step-width);
 
     display: flex;
     flex-direction: column;
@@ -779,7 +788,7 @@ header{
 }
 
 .circle img{
-    width: 50px;
+    width: 40px;
     object-fit: contain;
 }
 
@@ -790,30 +799,30 @@ header{
 .step span{
     display: block;
 
-    margin-top: 15px;
+    margin-top: 10px;
 
-    font-size: 26px;
-    font-weight: 700;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
 
     color: var(--color-primary-dark);
 }
 
 .step h3{
-    margin: 10px 0 8px;
+    margin: 7px 0 5px;
 
-    font-size: 18px;
+    font-size: var(--font-size-medium);
     font-weight: 600;
 
     line-height: 1.3;
 }
 
 .step p{
-    font-size: 13px;
+    font-size: var(--font-size-base);
     line-height: 1.5;
 
     color: var(--color-text-light);
 
-    max-width: 190px;
+    max-width: var(--timeline-step-width);
 }
 
 /* =========================
@@ -837,13 +846,13 @@ header{
 .cta{
     width: 100%;
 
-    padding: 20px 60px;
+    padding: 28px clamp(24px, 5vw, 90px);
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    gap: 50px;
+    gap: clamp(36px, 5vw, 90px);
 
     background:
     linear-gradient(rgba(26,26,26,0.45),
@@ -857,26 +866,37 @@ header{
 /* TEXTOS */
 
 .cta-text{
-    flex: unset;
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: left;
 }
 
 .cta-text h2{
-    color: #FFFFFF;
+    width: 100%;
+    max-width: none;
+    color: var(--color-white);
 
-    font-size: 24px;
-    font-weight: 800;
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-bold);
 
     margin-bottom: 5px;
 
     line-height: 1.2;
+    letter-spacing: -0.025em;
+    white-space: nowrap;
 }
 
 .cta-text p{
-    color: #CCCCCC;
+    width: 100%;
+    color: var(--color-gray-line);
 
-    font-size: 14px;
+    font-size: var(--font-size-base);
 
     line-height: 1.5;
+}
+
+.cta-button{
+    flex: 0 0 auto;
 }
 
 /* BOTON */
@@ -896,18 +916,18 @@ header{
 
     padding: 12px 26px;
 
-    border: 2px solid #8fae37;
+    border: 2px solid var(--color-primary);
     border-radius: 14px;
 
     background: rgba(255, 255, 255, 0);
 
 
-    color: #FFFFFF;
+    color: var(--color-white);
 
     text-decoration: none;
     text-transform: uppercase;
 
-    font-size: 12px;
+    font-size: var(--font-size-small);
     font-weight: 800;
     letter-spacing: 0.5px;
 
@@ -931,7 +951,7 @@ header{
     width: 0%;
     height: 100%;
 
-    background: #8fae37;
+    background: var(--color-primary);
 
     z-index: -1;
 
@@ -958,7 +978,7 @@ header{
 
 .cta-button a i,
 .cta-button a span{
-    font-size: 14px;
+    font-size: var(--font-size-base);
 
     transition: transform 0.35s ease;
 }
@@ -1016,7 +1036,7 @@ header{
 .footer-col h3,
 .footer-right h3{
     color: var(--color-white);
-    font-size: 14px;
+    font-size: var(--font-size-base);
     font-weight: 800;
     margin-bottom: 18px;
 }
@@ -1026,7 +1046,7 @@ header{
     display: block;
     color: var(--color-gray-line);
     text-decoration: none;
-    font-size: 13px;
+    font-size: var(--font-size-base);
     font-weight: 500;
     margin-bottom: 9px;
 }
@@ -1084,7 +1104,7 @@ header{
 
 .socials a{
     color: var(--color-white);
-    font-size: 28px;
+    font-size: var(--font-size-subtitle);
     transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -1095,7 +1115,7 @@ header{
 
 .footer-copy{
     color: var(--color-white);
-    font-size: 9px;
+    font-size: var(--font-size-xs);
     font-weight: 500;
     line-height: 1.2;
     white-space: nowrap;
@@ -1142,7 +1162,7 @@ header{
 }
 
 .scroll-top .material-symbols-outlined{
-    font-size: 34px;
+    font-size: var(--font-size-title);
 }
 
 .scroll-top:hover{
@@ -1182,7 +1202,7 @@ header{
 .whatsapp-btn i{
     color: var(--color-primary);
 
-    font-size: 42px;
+    font-size: var(--font-size-title-large);
 
     animation: whatsappPulse 1.8s ease-in-out infinite;
 
@@ -1299,7 +1319,7 @@ header{
   background: transparent;
   border: 2px solid #8fae37;
   color: #8fae37;
-  font-size: 22px;
+  font-size: var(--font-size-subtitle);
   width: 45px;
   height: 45px;
   border-radius: 12px;
@@ -1342,7 +1362,7 @@ header{
   }
 
   .nav-links.active a {
-    font-size: 14px;
+    font-size: var(--font-size-base);
   }
 }
 
@@ -1353,7 +1373,7 @@ header{
 @media (max-width: 1200px){
 
   .hero-content h1{
-    font-size: 52px;
+    font-size: var(--font-size-title-large);
   }
 
   .about{
@@ -1377,18 +1397,18 @@ header{
   }
 
   .hero-content h1{
-    font-size: 46px;
+    font-size: var(--font-size-title-large);
   }
 
   .hero-content p{
-    font-size: 15px;
+    font-size: var(--font-size-body-large);
   }
 
   /* ABOUT */
 
   .about{
     flex-direction: column;
-    padding: 70px 40px;
+    padding: 42px 40px;
   }
 
   .about-left,
@@ -1397,14 +1417,14 @@ header{
   }
 
   .about-left h2{
-    font-size: 40px;
+    font-size: var(--font-size-title-large);
   }
 
   /* STATS */
 
   .stats{
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 32px;
   }
 
   .stat-box{
@@ -1418,6 +1438,23 @@ header{
     flex-direction: column;
     text-align: center;
     padding: 50px 30px;
+  }
+
+  .cta-text,
+  .cta-button{
+    width: 100%;
+  }
+
+  .cta-text{
+    text-align: center;
+  }
+
+  .cta-text h2{
+    white-space: normal;
+  }
+
+  .cta-button a{
+    width: min(100%, 360px);
   }
 
   /* TIMELINE */
@@ -1610,7 +1647,7 @@ header{
 
 
 .hero-content h1 {
-  font-size: 26px !important;
+  font-size: var(--font-size-subtitle) !important;
 
 
   line-height: 0.95 !important;
@@ -1624,7 +1661,7 @@ header{
 
 
 .hero-content p {
-  font-size: 11.5px !important;
+  font-size: var(--font-size-small) !important;
 
 
   line-height: 1.5 !important;
@@ -1648,7 +1685,7 @@ header{
 
 
 .whatsapp-btn i{
-  font-size: 48px;
+  font-size: var(--font-size-title-large);
 }
 
 
@@ -1672,7 +1709,7 @@ header{
 
 
 .whatsapp-btn i{
-  font-size: 46px;
+  font-size: var(--font-size-title-large);
 }
 
 
@@ -1686,11 +1723,11 @@ header{
   /* ABOUT */
 
   .about{
-    padding: 60px 20px;
+    padding: 36px 20px;
   }
 
   .about-left h2{
-    font-size: 32px;
+    font-size: var(--font-size-title);
   }
 
   .about-right{
@@ -1701,13 +1738,13 @@ header{
 
   .stats{
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 26px 20px;
   }
 
   .stat-box{
     width: 100%;
     border: none;
-    padding: 15px 0;
+    padding: 10px 0;
   }
 
   .stat-content{
@@ -1727,7 +1764,7 @@ header{
   }
 
   .process h2{
-    font-size: 28px;
+    font-size: var(--font-size-subtitle);
   }
 
   .step{
@@ -1742,7 +1779,7 @@ header{
   }
 
   .cta-text h2{
-    font-size: 28px;
+    font-size: var(--font-size-subtitle);
   }
 
   .cta-button a{
@@ -1786,20 +1823,20 @@ header{
 @media (max-width: 480px){
 
   .hero-content h1{
-    font-size: 28px;
+    font-size: var(--font-size-subtitle);
   }
 
   .about-left h2{
-    font-size: 28px;
+    font-size: var(--font-size-subtitle);
   }
 
   .process h2,
   .cta-text h2{
-    font-size: 24px;
+    font-size: var(--font-size-subtitle);
   }
 
   .stat-box h2{
-    font-size: 34px;
+    font-size: var(--font-size-title);
   }
 
  .footer{
@@ -1866,7 +1903,7 @@ header{
     }
 
     .quienes-left h2{
-        font-size: 36px;
+        font-size: var(--font-size-title);
     }
 
     .quienes-right img{
@@ -1915,7 +1952,7 @@ header{
   }
 
   .hero-content h1{
-    font-size: 86px;
+    font-size: var(--font-size-title-large);
 
     line-height: 0.95;
 
@@ -1927,7 +1964,7 @@ header{
   }
 
   .hero-content p{
-    font-size: 24px;
+    font-size: var(--font-size-subtitle);
 
     line-height: 1.7;
 
@@ -1945,7 +1982,7 @@ header{
   }
 
   .whatsapp-btn i{
-    font-size: 44px;
+    font-size: var(--font-size-title-large);
   }
 
   /* SCROLL */
@@ -1959,7 +1996,7 @@ header{
   }
 
   .scroll-top span{
-    font-size: 40px;
+    font-size: var(--font-size-title-large);
   }
 }
 
