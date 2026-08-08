@@ -24,6 +24,9 @@
   </head>
 
   <body>
+    <div class="page-loader" id="pageLoader" data-mode="always" role="status" aria-label="Cargando sitio">
+      <div class="page-loader__logo"><img src="img/logofooter.png" alt="Gabsport" /></div>
+    </div>
     <!-- HEADER -->
     <div id="site-header" data-base="./" data-active="inicio"></div>
 
@@ -49,21 +52,6 @@
           duraderas y preparadas para cada desafío.
         </p>
 
-        <div class="hero-actions">
-          <a href="proyectos/" class="hero-btn hero-btn--primary">
-            Ver proyectos
-            <span aria-hidden="true">→</span>
-          </a>
-          <a href="contactanos/#contacto" class="hero-btn hero-btn--secondary">
-            Solicitar asesoría
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-services" aria-label="Servicios principales">
-        <span>Diseño</span>
-        <span>Instalación</span>
-        <span>Mantenimiento</span>
       </div>
 
       <a href="#nosotros" class="hero-scroll" aria-label="Descubrir más contenido">
@@ -304,6 +292,7 @@
 
     <script src="componentes/header/header.js"></script>
     <script src="componentes/footer/footer.js"></script>
+    <script src="js/loader.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

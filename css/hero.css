@@ -222,7 +222,8 @@
     padding: 0;
     position: absolute !important;
     left: 0 !important;
-    bottom: 94px;
+    top: 46% !important;
+    bottom: auto !important;
   }
 
   .hero-eyebrow {
