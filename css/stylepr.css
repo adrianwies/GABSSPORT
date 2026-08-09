@@ -204,15 +204,6 @@
    OCULTOS
 ========================= */
 
-.proyecto-extra{
-    display: none;
-}
-
-.proyectos-grid.show-all .proyecto-extra{
-    display: block;
-}
-
-
 /* =========================
    CARD
 ========================= */
@@ -494,34 +485,6 @@
     align-items: stretch;
 
     gap: 22px;
-}
-
-.modal-scroll .simplebar-track.simplebar-vertical{
-    width: 4px;
-
-    top: 18px;
-    bottom: 18px;
-
-    right: 4px;
-
-    background: rgba(143, 174, 55, 0.30);
-
-    border-radius: 999px;
-}
-
-.modal-scroll .simplebar-scrollbar::before{
-    background: var(--color-primary);
-
-    border-radius: 999px;
-
-    opacity: 1;
-
-    width: 4px;
-
-    left: 0;
-    right: 0;
-
-    margin: 0 auto;
 }
 
 
@@ -856,10 +819,6 @@
     position: relative;
   }
 
-
-  .btn-cotizar{
-    display: none;
-  }
 
 
   /* MENU HAMBURGUESA */

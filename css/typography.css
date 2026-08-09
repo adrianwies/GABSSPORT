@@ -43,14 +43,11 @@ h6 {
   letter-spacing: -0.03em;
 }
 
-.about-content h2,
 .about-left h2,
 .nosotros-left h2,
 .servicios-header h2,
 .proyectos-header h2,
 .contact-form h2,
-.process-section > h2,
-.cta-content h2,
 .certificaciones-section > h2 {
   font-size: var(--font-size-title) !important;
   font-weight: var(--font-weight-bold) !important;
@@ -59,12 +56,9 @@ h6 {
 }
 
 .servicio-card h3,
-.project-card h3,
 .proyecto-card h3,
 .contact-card h3,
 .project-box h3,
-.mission-card h3,
-.vision-card h3,
 .card-text h3,
 .mv-content h3,
 .step h3 {
@@ -136,8 +130,6 @@ select {
 }
 
 button,
-.btn-cotizar,
-.hero-btn,
 .project-btn,
 .modal-btn,
 .filtro-btn,
@@ -179,22 +171,11 @@ input[type="submit"] {
   letter-spacing: -0.03em;
 }
 
-.modal-content h2,
-.modal-info h2,
 .modal-right h2 {
   font-size: var(--font-size-subtitle) !important;
   font-weight: var(--font-weight-bold) !important;
 }
 
-.modal-content h4,
-.modal-info h4 {
-  font-size: var(--font-size-medium) !important;
-  font-weight: var(--font-weight-semibold) !important;
-  line-height: 1.35 !important;
-}
-
-.modal-content p,
-.modal-info p,
 .form-note {
   font-size: var(--font-size-base) !important;
   font-weight: var(--font-weight-regular) !important;
@@ -215,14 +196,11 @@ input[type="submit"] {
     font-size: var(--font-size-title-large-mobile) !important;
   }
 
-  .about-content h2,
   .about-left h2,
   .nosotros-left h2,
   .servicios-header h2,
   .proyectos-header h2,
   .contact-form h2,
-  .process-section > h2,
-  .cta-content h2,
   .certificaciones-section > h2 {
     font-size: var(--font-size-title-mobile) !important;
   }

@@ -2,8 +2,6 @@
   const grid = document.querySelector(".proyectos-grid");
   const verMasBtn = document.getElementById("verMasProyectos");
   const filtros = [...document.querySelectorAll(".filtro-btn")];
-  const proyectosAntiguos = [...document.querySelectorAll('[id^="modalProyecto"]')];
-
   if (!grid || !verMasBtn) return;
 
   let proyectos = [];
@@ -152,7 +150,6 @@
       const respuesta = await fetch("../data/proyectos.json");
       if (!respuesta.ok) throw new Error(`HTTP ${respuesta.status}`);
       proyectos = await respuesta.json();
-      proyectosAntiguos.forEach((item) => item.remove());
       actualizarProyectos();
     } catch (error) {
       console.error("No se pudieron cargar los proyectos:", error);

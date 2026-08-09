@@ -24,73 +24,6 @@ body {
   overflow-x: clip;
 }
 
-.page-loader {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: grid;
-  place-items: center;
-  background: var(--color-text, #1a1a1a);
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.45s ease, visibility 0.45s ease;
-}
-
-.page-loader.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.page-loader--delayed {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.page-loader--delayed.is-visible {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.page-loader__logo {
-  position: relative;
-  width: min(260px, 62vw);
-  overflow: hidden;
-}
-
-.page-loader__logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  filter: grayscale(1) brightness(0.58);
-  animation: page-loader-logo 1.35s ease-out forwards;
-}
-
-.page-loader__logo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, transparent 38%, rgba(255, 255, 255, 0.94) 50%, transparent 62%);
-  background-size: 260% 100%;
-  background-position: 120% 0;
-  -webkit-mask: url("../img/logofooter.png") center / contain no-repeat;
-  mask: url("../img/logofooter.png") center / contain no-repeat;
-  animation: page-loader-shine 1.35s ease-in-out 0.12s both;
-  pointer-events: none;
-}
-
-@keyframes page-loader-logo {
-  0%, 30% { filter: grayscale(1) brightness(0.58); }
-  100% { filter: grayscale(0) brightness(1); }
-}
-
-@keyframes page-loader-shine {
-  0% { background-position: 120% 0; }
-  72%, 100% { background-position: -120% 0; }
-}
-
 img,
 video,
 svg {
@@ -315,15 +248,6 @@ textarea {
 }
 
 @media (max-width: 560px) {
-  .hero-actions {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .hero .hero-btn {
-    width: 100%;
-  }
-
   .about-right,
   .stats,
   .contact-grid,
@@ -494,14 +418,6 @@ textarea {
     font-size: clamp(1.75rem, 10vw, 2.1rem) !important;
   }
 
-  .hero-services {
-    gap: 8px;
-  }
-
-  .hero-services span + span::before {
-    display: none;
-  }
-
   .modal-overlay {
     padding-inline: 8px;
   }
@@ -513,19 +429,6 @@ textarea {
   .servicio-card:hover,
   .proyecto-card:hover {
     transform: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .page-loader,
-  .page-loader__logo img,
-  .page-loader__logo::after {
-    animation: none;
-    transition: none;
-  }
-
-  .page-loader__logo img {
-    filter: none;
   }
 }
 

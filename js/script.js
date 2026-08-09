@@ -1,5 +1,3 @@
-const counters = document.querySelectorAll('.counter');
-
 const speed = 200;
 
 const startCounter = (counter) => {
@@ -96,41 +94,6 @@ window.addEventListener('scroll', () => {
         scrollTopBtn.classList.remove('active');
     }
 });
-
-
-/* =========================
-   CARRUSEL NOSOTROS
-========================= */
-
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    const carouselImages = document.querySelectorAll('.carousel-img');
-
-    let carouselIndex = 0;
-
-    if(carouselImages.length <= 1){
-        return;
-    }
-
-    carouselImages.forEach(img => {
-        img.classList.remove('active');
-    });
-
-    carouselImages[0].classList.add('active');
-
-    setInterval(() => {
-
-        carouselImages[carouselIndex].classList.remove('active');
-
-        carouselIndex = (carouselIndex + 1) % carouselImages.length;
-
-        carouselImages[carouselIndex].classList.add('active');
-
-    }, 3000);
-
-});
-
 
 
 /* =========================

@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="componentes/loader/loader.css" />
+    <script src="componentes/loader/loader.js"></script>
   </head>
 
   <body>
-    <div class="page-loader" id="pageLoader" data-mode="always" role="status" aria-label="Cargando sitio">
-      <div class="page-loader__logo"><img src="img/logofooter.png" alt="Gabsport" /></div>
-    </div>
+    <gabs-loader data-base="./" data-mode="always"></gabs-loader>
     <!-- HEADER -->
     <div id="site-header" data-base="./" data-active="inicio"></div>
 
@@ -292,7 +292,6 @@
 
     <script src="componentes/header/header.js"></script>
     <script src="componentes/footer/footer.js"></script>
-    <script src="js/loader.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
