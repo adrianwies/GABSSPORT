@@ -97,6 +97,8 @@
 #site-footer .whatsapp-btn__icon i {
   color: inherit;
   font-size: var(--font-size-title);
+  display: block;
+  line-height: 1;
   animation: none;
 }
 
@@ -150,6 +152,7 @@
   #site-footer .footer-col a { width: fit-content; margin-inline: auto; }
   #site-footer .footer-logo { width: 170px; }
   #site-footer .whatsapp-btn { left: 16px; bottom: 16px; width: 52px; height: 52px; }
+  #site-footer .whatsapp-btn__icon { width: 52px; height: 52px; flex-basis: 52px; }
   #site-footer .whatsapp-btn:hover, #site-footer .whatsapp-btn:focus-visible { width: 52px; transform: none; }
   #site-footer .whatsapp-btn__message { display: none; }
 }
