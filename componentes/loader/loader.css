@@ -7,7 +7,7 @@
   background: var(--color-text, #1a1a1a);
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.45s ease, visibility 0.45s ease;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
 .page-loader.is-hidden {

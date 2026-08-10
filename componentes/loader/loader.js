@@ -5,7 +5,8 @@ class GabsLoader extends HTMLElement {
     this.dataset.initialized = "true";
     const base = this.dataset.base || "./";
     const isDelayed = this.dataset.mode === "delayed";
-   const minimumDuration = isDelayed ? 650 : 20000;
+    // En el inicio se muestra el logo lo suficiente para apreciarlo sin demorar demasiado.
+    const minimumDuration = isDelayed ? 650 : 1500;
     let shownAt = isDelayed ? 0 : performance.now();
     let isVisible = !isDelayed;
 
@@ -50,10 +51,15 @@ class GabsLoader extends HTMLElement {
       }, 300);
     }
 
-    if (document.readyState === "complete") {
+    const readyEvent = isDelayed ? "load" : "DOMContentLoaded";
+    const isReady = isDelayed
+      ? document.readyState === "complete"
+      : document.readyState !== "loading";
+
+    if (isReady) {
       hide();
     } else {
-      window.addEventListener("load", hide, { once: true });
+      window.addEventListener(readyEvent, hide, { once: true });
     }
   }
 }
