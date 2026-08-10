@@ -128,10 +128,3 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(4px); }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-content,
-  .hero-scroll i {
-    animation: none !important;
-  }
-}

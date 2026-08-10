@@ -2,6 +2,9 @@
   const grid = document.querySelector(".proyectos-grid");
   const verMasBtn = document.getElementById("verMasProyectos");
   const filtros = [...document.querySelectorAll(".filtro-btn")];
+  const filtrosContenedor = document.querySelector(".proyectos-filtros");
+  const flechaAnterior = document.querySelector(".filtros-flecha--prev");
+  const flechaSiguiente = document.querySelector(".filtros-flecha--next");
   if (!grid || !verMasBtn) return;
 
   let proyectos = [];
@@ -130,6 +133,25 @@
       actualizarProyectos();
     });
   });
+
+  const actualizarFlechas = () => {
+    if (!filtrosContenedor || !flechaAnterior || !flechaSiguiente) return;
+    const maximo = filtrosContenedor.scrollWidth - filtrosContenedor.clientWidth;
+    flechaAnterior.disabled = filtrosContenedor.scrollLeft <= 2;
+    flechaSiguiente.disabled = filtrosContenedor.scrollLeft >= maximo - 2;
+  };
+
+  flechaAnterior?.addEventListener("click", () => {
+    filtrosContenedor.scrollBy({ left: -filtrosContenedor.clientWidth, behavior: "smooth" });
+  });
+
+  flechaSiguiente?.addEventListener("click", () => {
+    filtrosContenedor.scrollBy({ left: filtrosContenedor.clientWidth, behavior: "smooth" });
+  });
+
+  filtrosContenedor?.addEventListener("scroll", actualizarFlechas, { passive: true });
+  window.addEventListener("resize", actualizarFlechas);
+  requestAnimationFrame(actualizarFlechas);
 
   verMasBtn.addEventListener("click", () => {
     expanded = !expanded;

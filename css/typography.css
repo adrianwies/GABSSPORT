@@ -181,27 +181,3 @@ input[type="submit"] {
   font-weight: var(--font-weight-regular) !important;
   line-height: 1.65 !important;
 }
-
-@media (max-width: 768px) {
-  .stat-info h2,
-  .counter {
-    font-size: var(--font-size-stat-mobile) !important;
-  }
-
-  .hero-content h1,
-  .nosotros-banner-content h1,
-  .servicio-content h1,
-  .proyecto-content h1,
-  .contacto-content h1 {
-    font-size: var(--font-size-title-large-mobile) !important;
-  }
-
-  .about-left h2,
-  .nosotros-left h2,
-  .servicios-header h2,
-  .proyectos-header h2,
-  .contact-form h2,
-  .certificaciones-section > h2 {
-    font-size: var(--font-size-title-mobile) !important;
-  }
-}

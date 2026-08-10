@@ -655,36 +655,11 @@
    RESPONSIVE CONTACTO
 ========================================= */
 
-
 /* LAPTOP PEQUEÑA */
 
 /* =========================================
    RESPONSIVE — CONTACTO
 ========================================= */
-@media (max-width: 1200px) { .contact-section { padding-inline: 48px; } .contact-wrapper { gap: 40px; } }
-@media (max-width: 992px) { .contact-wrapper { grid-template-columns: 1fr; max-width: 760px; margin-inline: auto; } }
-@media (min-width: 769px) { .contacto-banner { height: clamp(520px, 62vh, 680px); min-height: 0; } }
-@media (max-width: 768px) {
-  .contacto-banner { height: clamp(560px, 72svh, 660px); min-height: 560px; padding-top: 72px; }
-  .contacto-content { top: auto; width: calc(100% - 40px); max-width: 600px; margin-inline: 20px; }
-  .contacto-content h1 { font-size: clamp(2rem, 9vw, 2.65rem) !important; line-height: 1.1; }
-  .contacto-content p { font-size: 1rem; line-height: 1.65; }
-  .contact-section { padding: 40px 20px; }
-  .contact-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
-  .form-row { grid-template-columns: 1fr; }
-  .form-group input, .form-group select, .form-group textarea { min-height: 48px; font-size: 1rem; }
-}
-@media (max-width: 560px) {
-  .contact-grid { grid-template-columns: 1fr; }
-  .contact-card, .project-box, .contact-form-box { padding: 18px; }
-  .project-box { grid-template-columns: 1fr; justify-items: center; text-align: center; }
-  .project-btn { width: 100%; justify-content: center; min-height: 48px; }
-}
-@media (max-width: 380px) {
-  .contacto-content { width: calc(100% - 32px); margin-inline: 16px; }
-  .contact-section { padding-inline: 16px; }
-}
-
 /* Tipografía compacta exclusiva de la sección de contacto. */
 .contact-section .contact-card h3,
 .contact-section .project-box h3 {
@@ -721,4 +696,29 @@
 
 .contact-section .form-note {
   font-size: 11px !important;
+}
+
+@media (max-width: 1200px) { .contact-section { padding-inline: 48px; } .contact-wrapper { gap: 40px; } }
+@media (max-width: 992px) { .contact-wrapper { grid-template-columns: 1fr; max-width: 760px; margin-inline: auto; } }
+@media (min-width: 769px) { .contacto-banner { height: clamp(520px,62vh,680px); min-height: 0; } }
+@media (max-width: 768px) {
+  .contacto-banner { height: clamp(560px,72svh,660px); min-height: 560px; padding-top: 68px; }
+  .contacto-content { top: auto; width: calc(100% - 40px); max-width: 600px; margin-inline: 20px; }
+  .contacto-content h1 { font-size: clamp(2rem,9vw,2.65rem) !important; line-height: 1.1; }
+  .contacto-content p { font-size: 1rem; line-height: 1.65; }
+  .contact-section { padding: 40px 20px; }
+  .contact-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .form-row { grid-template-columns: 1fr; }
+  .form-group input, .form-group select, .form-group textarea { min-height: 48px; }
+  .contact-card, .project-box, .contact-form-box { min-width: 0; }
+}
+@media (max-width: 560px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-card, .project-box, .contact-form-box { padding: 18px; }
+  .project-box { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .project-btn { width: 100%; justify-content: center; min-height: 48px; }
+}
+@media (max-width: 380px) {
+  .contacto-content { width: calc(100% - 32px); margin-inline: 16px; }
+  .contact-section { padding-inline: 16px; }
 }

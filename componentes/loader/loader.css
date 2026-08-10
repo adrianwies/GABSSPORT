@@ -83,14 +83,5 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .page-loader,
-  .page-loader__logo img,
-  .page-loader__logo::after {
-    animation: none;
-    transition: none;
-  }
-
-  .page-loader__logo img {
-    filter: none;
-  }
+  .page-loader, .page-loader__logo img, .page-loader__logo::after { animation: none; transition: none; }
 }

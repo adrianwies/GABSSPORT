@@ -510,8 +510,18 @@ body {
   top: 12px;
   right: 14px;
 
-  border: none;
-  background: none;
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border: 1px solid rgba(17, 17, 17, 0.16);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(4px);
 
   font-size: var(--font-size-subtitle);
 
@@ -865,9 +875,6 @@ body {
    RESPONSIVE GLOBAL SERVICIOS
 ========================================= */
 
-
-
-
 /* =========================================
    LAPTOP PEQUEÑA
 ========================================= */
@@ -877,24 +884,66 @@ body {
 ========================================= */
 @media (max-width: 1200px) {
   .servicios-section { padding-inline: 48px; }
-  .servicios-grid { grid-template-columns: repeat(2, minmax(0,1fr)); max-width: 900px; }
+  .servicios-grid { grid-template-columns: repeat(2,minmax(0,1fr)); max-width: 900px; }
   .servicio-card, .servicio-card:nth-child(n) { grid-column: auto; }
-  .servicio-card:last-child { grid-column: 1 / -1; width: calc(50% - 12px); justify-self: center; }
+  .servicio-card:last-child { grid-column: 1/-1; width: calc(50% - 12px); justify-self: center; }
 }
-@media (min-width: 769px) { .servicio-banner { height: clamp(520px, 62vh, 680px); min-height: 0; } }
+@media (min-width: 769px) { .servicio-banner { height: clamp(520px,62vh,680px); min-height: 0; } }
 @media (max-width: 768px) {
-  .servicio-banner { height: clamp(560px, 72svh, 660px); min-height: 560px; padding-top: 72px; }
+  .servicio-banner { height: clamp(560px,72svh,660px); min-height: 560px; padding-top: 68px; }
   .servicio-content { width: calc(100% - 40px); max-width: 600px; margin-inline: 20px; }
-  .servicio-content h1 { font-size: clamp(2rem, 9vw, 2.65rem) !important; line-height: 1.1; }
+  .servicio-content h1 { font-size: clamp(2rem,9vw,2.65rem) !important; line-height: 1.1; }
   .servicio-content p { font-size: 1rem; line-height: 1.65; }
   .servicios-section { padding: 48px 20px; }
-  .servicios-header h2 { font-size: clamp(2rem, 8vw, 2.6rem); }
-  .servicios-header p, .card-content p, .card-content li { font-size: 1rem; line-height: 1.65; }
+  .servicios-header h2 { font-size: clamp(2rem,8vw,2.6rem); }
   .servicio-card img { height: 220px; }
   .modal-overlay { padding: 10px; }
-  .modal-box { width: 100%; max-height: calc(100svh - 20px); border-radius: 16px; }
-  .modal-scroll { max-height: calc(100svh - 20px); overflow-y: auto; }
-  .modal-scroll-inner { grid-template-columns: 1fr; }
+  .modal-box {
+    width: calc(100% - 48px);
+    max-width: 560px;
+    max-height: 82svh;
+    padding: 16px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 16px;
+  }
+  .modal-left,
+  .modal-right {
+    width: 100%;
+    min-width: 0;
+  }
+  .modal-left { grid-row: 1; }
+  .modal-right { grid-row: 2; padding-inline: 2px; }
+  .modal-main-img { height: clamp(180px, 36vw, 250px); }
+  .modal-thumbs { width: 100%; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .modal-cta {
+    grid-column: 1;
+    width: 100%;
+    min-width: 0;
+    padding: 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+  .modal-cta-text {
+    width: 100%;
+    min-width: 0;
+    align-items: flex-start;
+  }
+  .modal-cta-text > div { min-width: 0; }
+  .modal-cta-text h4,
+  .modal-cta-text p { overflow-wrap: anywhere; }
+  .modal-btn {
+    width: 100%;
+    min-height: 44px;
+    height: auto;
+    padding: 11px 16px;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+  }
 }
 @media (max-width: 560px) {
   .servicios-grid { grid-template-columns: 1fr; }
