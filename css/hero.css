@@ -93,38 +93,7 @@
   line-height: 1.65 !important;
 }
 
-.hero-scroll {
-  position: absolute;
-  right: clamp(28px, 5vw, 76px);
-  bottom: 30px;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.hero-scroll i {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  animation: heroArrow 1.8s ease-in-out infinite;
-}
-
 @keyframes heroReveal {
   from { opacity: 0; transform: translateY(22px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes heroArrow {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(4px); }
 }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../componentes/footer/footer.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_up"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call,keyboard_double_arrow_up,location_on,mail"
     />
     <link
       rel="stylesheet"
@@ -47,13 +47,25 @@
       <div class="proyectos-header">
         <span>NUESTROS PROYECTOS</span>
         <h2>Proyectos que transforman espacios deportivos</h2>
+      </div>
 
-        <div class="filtros-navegacion">
+      <div class="filtros-navegacion">
+          <button class="filtros-toggle" type="button" aria-expanded="false" aria-controls="listaFiltros">
+            <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+            <span>FILTROS</span>
+            <i class="fa-solid fa-chevron-down filtros-toggle__chevron" aria-hidden="true"></i>
+          </button>
+
+          <button class="limpiar-filtros" type="button">
+            <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+            LIMPIAR
+          </button>
+
           <button class="filtros-flecha filtros-flecha--prev" type="button" aria-label="Ver filtros anteriores">
             <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
           </button>
 
-          <div class="proyectos-filtros" aria-label="Filtrar proyectos">
+          <div class="proyectos-filtros" id="listaFiltros" aria-label="Filtrar proyectos">
           <button class="filtro-btn active" type="button" data-filter="all">
             <i class="fa-solid fa-border-all" aria-hidden="true"></i>
             TODOS
@@ -78,12 +90,12 @@
             <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
             MANTENIMIENTO
           </button>
+
           </div>
 
           <button class="filtros-flecha filtros-flecha--next" type="button" aria-label="Ver más filtros">
             <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
           </button>
-        </div>
       </div>
 
       <div class="proyectos-grid" aria-live="polite"></div>

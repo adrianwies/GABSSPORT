@@ -5,6 +5,9 @@
   const filtrosContenedor = document.querySelector(".proyectos-filtros");
   const flechaAnterior = document.querySelector(".filtros-flecha--prev");
   const flechaSiguiente = document.querySelector(".filtros-flecha--next");
+  const filtrosNavegacion = document.querySelector(".filtros-navegacion");
+  const filtrosToggle = document.querySelector(".filtros-toggle");
+  const limpiarFiltros = document.querySelector(".limpiar-filtros");
   if (!grid || !verMasBtn) return;
 
   let proyectos = [];
@@ -36,7 +39,7 @@
     // La visibilidad ya la controla el renderizado del JSON. No usamos
     // `proyecto-extra` porque esa clase antigua aplica display:none desde CSS.
     card.className = "proyecto-card";
-    card.style.transitionDelay = `${indice * 0.03}s`;
+    card.style.transitionDelay = `${indice * 0.1}s`;
     card.dataset.category = proyecto.categoria;
     card.dataset.projectId = proyecto.id;
     card.setAttribute("aria-label", `Ver proyecto ${proyecto.titulo}`);
@@ -51,13 +54,28 @@
     return card;
   };
 
+  let gridVisible = false;
+
   const mostrarCards = () => {
+    if (!gridVisible) return;
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         grid.querySelectorAll(".proyecto-card").forEach((card) => card.classList.add("show"));
       });
     });
   };
+
+  const observadorGrid = new IntersectionObserver(
+    ([entrada]) => {
+      if (!entrada.isIntersecting) return;
+      gridVisible = true;
+      mostrarCards();
+      observadorGrid.unobserve(grid);
+    },
+    { threshold: 0.12 }
+  );
+
+  observadorGrid.observe(grid);
 
   const modal = document.createElement("div");
   modal.className = "modal-overlay modal-proyecto-json";
@@ -101,7 +119,7 @@
             </div>
             <div class="modal-cta">
               <div class="modal-cta-text"><i class="${escapar(cta.icono)}" aria-hidden="true"></i><div><h4>${escapar(cta.titulo)}</h4><p>${escapar(cta.texto)}</p></div></div>
-              <a href="https://wa.me/51983276061" target="_blank" rel="noopener noreferrer" class="modal-btn">COTIZAR ESTE PROYECTO <span>→</span></a>
+              <a href="https://wa.me/51986667508" target="_blank" rel="noopener noreferrer" class="modal-btn">COTIZAR ESTE PROYECTO <span>→</span></a>
             </div>
           </div>
         </div>
@@ -131,7 +149,30 @@
       filtroActual = btn.dataset.filter;
       expanded = false;
       actualizarProyectos();
+      filtrosNavegacion?.classList.remove("is-open");
+      filtrosToggle?.setAttribute("aria-expanded", "false");
     });
+  });
+
+  filtrosToggle?.addEventListener("click", () => {
+    const abierto = filtrosNavegacion.classList.toggle("is-open");
+    filtrosToggle.setAttribute("aria-expanded", String(abierto));
+  });
+
+  limpiarFiltros?.addEventListener("click", () => {
+    filtros.forEach((item) => item.classList.toggle("active", item.dataset.filter === "all"));
+    filtroActual = "all";
+    expanded = false;
+    actualizarProyectos();
+    filtrosNavegacion?.classList.remove("is-open");
+    filtrosToggle?.setAttribute("aria-expanded", "false");
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!filtrosNavegacion?.contains(event.target)) {
+      filtrosNavegacion?.classList.remove("is-open");
+      filtrosToggle?.setAttribute("aria-expanded", "false");
+    }
   });
 
   const actualizarFlechas = () => {
@@ -154,9 +195,28 @@
   requestAnimationFrame(actualizarFlechas);
 
   verMasBtn.addEventListener("click", () => {
-    expanded = !expanded;
-    actualizarProyectos();
-    if (!expanded) grid.scrollIntoView({ behavior: "smooth", block: "start" });
+    const visibles = proyectos.filter(
+      (proyecto) => filtroActual === "all" || proyecto.categoria === filtroActual
+    );
+
+    if (!expanded) {
+      expanded = true;
+      const nuevos = visibles.slice(grid.children.length);
+      nuevos.forEach((proyecto, indice) => {
+        grid.append(crearCard(proyecto, indice));
+      });
+      mostrarCards();
+    } else {
+      expanded = false;
+      [...grid.querySelectorAll(".proyecto-card")]
+        .slice(6)
+        .forEach((card) => card.remove());
+      grid.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    verMasBtn.innerHTML = expanded
+      ? "VER MENOS <span>↑</span>"
+      : "VER MÁS PROYECTOS <span>→</span>";
   });
 
   modal.addEventListener("click", (event) => {
@@ -187,6 +247,5 @@
   const scrollTopBtn = document.getElementById("scrollTop");
   window.addEventListener("scroll", () => scrollTopBtn?.classList.toggle("active", window.scrollY > 300));
 
-  document.querySelector(".proyecto-content")?.classList.add("show");
   document.querySelector(".proyectos-header")?.classList.add("show");
 })();
