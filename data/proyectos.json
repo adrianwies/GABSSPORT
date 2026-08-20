@@ -1,10 +1,10 @@
-﻿[
+[
     {
         "id":  1,
         "titulo":  "UPC - Campus Monterrico",
         "ubicacion":  "Surco, Perú",
         "categoria":  "futbol",
-        "imagen":  "../img/proyecto1.png",
+        "imagen":  "../img/proyecto1.webp",
         "descripcion":  "Santiago de Surco, Lima - Perú. Renovamos el espacio con grass sintético decorativo de alta calidad, logrando un ambiente más verde, limpio y elegante.",
         "caracteristicas":  [
                                 {
@@ -39,7 +39,7 @@
         "titulo":  "Grass Sintético Decorativo",
         "ubicacion":  "La Molina, Perú",
         "categoria":  "futbol",
-        "imagen":  "../img/proyecto2.png",
+        "imagen":  "../img/proyecto2.webp",
         "descripcion":  "La Molina, Lima - Perú. Presentamos nuestro último trabajo: un espacio renovado con grass sintético decorativo de alta calidad, diseñado para brindar elegancia, frescura y durabilidad.",
         "caracteristicas":  [
                                 {
@@ -74,7 +74,7 @@
         "titulo":  "Club Oasis Piura",
         "ubicacion":  "Piura, Perú",
         "categoria":  "futbol",
-        "imagen":  "../img/proyecto3.png",
+        "imagen":  "../img/proyecto3.webp",
         "descripcion":  "Piura, Perú. Proyecto completado con dos canchas de pádel reglamentarias, diseñadas para ofrecer una experiencia deportiva de alto rendimiento, seguridad y gran durabilidad.",
         "caracteristicas":  [
                                 {
@@ -114,7 +114,7 @@
         "titulo":  "UNIFÉ Universidad Femenina",
         "ubicacion":  "La Molina, Perú",
         "categoria":  "recreativos",
-        "imagen":  "../img/proyecto4.png",
+        "imagen":  "../img/proyecto4.webp",
         "descripcion":  "La Molina, Lima - Perú. Proyecto terminado con éxito, donde se instaló un piso multideportivo de poliuretano CASALI de 10mm de espesor, diseñado para brindar máximo rendimiento, confort y durabilidad.",
         "caracteristicas":  [
                                 {
@@ -154,7 +154,7 @@
         "titulo":  "Coliseo Municipal de Arequipa",
         "ubicacion":  "Arequipa, Perú",
         "categoria":  "recreativos",
-        "imagen":  "../img/proyecto5.png",
+        "imagen":  "../img/proyecto5.webp",
         "descripcion":  "Arequipa, Perú. Proyecto terminado con la instalación de un piso multideportivo vinílico de 9mm, diseñado para máximo rendimiento, seguridad y durabilidad en espacios deportivos de alto tránsito.",
         "caracteristicas":  [
                                 {
@@ -194,7 +194,7 @@
         "titulo":  "Parque Infantil",
         "ubicacion":  "Nazca, Perú",
         "categoria":  "recreativos",
-        "imagen":  "../img/proyecto6.png",
+        "imagen":  "../img/proyecto6.webp",
         "descripcion":  "Nazca, Ica - Perú. Proyecto terminado con la instalación de piso continuo anti-trauma normado Cásali Athlon PG de 80 mm, realizado para un parque infantil seguro, colorido y resistente.",
         "caracteristicas":  [
                                 {
@@ -234,7 +234,7 @@
         "titulo":  "Hacienda Jaén",
         "ubicacion":  "Cajamarca, Perú",
         "categoria":  "pistas",
-        "imagen":  "../img/proyecto7.png",
+        "imagen":  "../img/proyecto7.webp",
         "descripcion":  "Jaén, Cajamarca, Perú. Proyecto integral que combina una pista atlética profesional con un campo multideportivo de alto rendimiento y grass recreativo, diseñado para entrenamiento, recreación y deporte competitivo.",
         "caracteristicas":  [
                                 {
@@ -274,7 +274,7 @@
         "titulo":  "Club Árabe Palestino",
         "ubicacion":  "Lima, Perú",
         "categoria":  "mantenimiento",
-        "imagen":  "../img/proyecto8.png",
+        "imagen":  "../img/proyecto8.webp",
         "descripcion":  "Lima, Perú. Mantenimiento profesional de campo deportivo sintético con relleno natural, realizado para conservar el rendimiento, seguridad y vida útil de la superficie deportiva.",
         "caracteristicas":  [
                                 {
@@ -314,7 +314,7 @@
         "titulo":  "Markham College",
         "ubicacion":  "Surco, Perú",
         "categoria":  "recreativos",
-        "imagen":  "../img/proyecto9.png",
+        "imagen":  "../img/proyecto9.webp",
         "descripcion":  "Santiago de Surco, Lima - Perú. Instalación de pisos de caucho infantil, seguros, coloridos y resistentes, diseñados para brindar protección, diversión y durabilidad en espacios de juego.",
         "caracteristicas":  [
                                 {
@@ -354,7 +354,7 @@
         "titulo":  "Country Club Rinconada",
         "ubicacion":  "La Molina, Perú",
         "categoria":  "recreativos",
-        "imagen":  "../img/proyecto10.png",
+        "imagen":  "../img/proyecto10.webp",
         "descripcion":  "La Molina, Lima - Perú. Implementación de piso para gimnasio de alta resistencia, diseñado para soportar uso intensivo, brindar seguridad y mejorar el confort en áreas deportivas y de entrenamiento profesional.",
         "caracteristicas":  [
                                 {
@@ -394,7 +394,7 @@
         "titulo":  "Colegio Emblemático Coronel Ladislao de Espinar",
         "ubicacion":  "Cusco, Perú",
         "categoria":  "pistas",
-        "imagen":  "../img/proyecto11.png",
+        "imagen":  "../img/proyecto11.webp",
         "descripcion":  "Espinar, Cusco, Perú. Instalación de piso sintético tipo sandwich E=13 mm diseñado para brindar alto rendimiento, seguridad y durabilidad en pistas atléticas y áreas deportivas escolares.",
         "caracteristicas":  [
                                 {
@@ -434,7 +434,7 @@
         "titulo":  "Estadio Emblemático Lolo Fernández",
         "ubicacion":  "Trujillo, Perú",
         "categoria":  "futbol",
-        "imagen":  "../img/proyecto12.png",
+        "imagen":  "../img/proyecto12.webp",
         "descripcion":  "Trujillo, La Libertad, Perú. Instalación de césped sintético de alto rendimiento para el Estadio Emblemático Lolo Fernández, diseñado para brindar máxima seguridad, confort y durabilidad en espacios deportivos de uso intensivo.",
         "caracteristicas":  [
                                 {
@@ -474,7 +474,7 @@
         "titulo":  "Colegio SS.CC. Recoleta",
         "ubicacion":  "Santiago de Surco, Perú",
         "categoria":  "recreativos",
-        "imagen":  "../img/proyecto13.png",
+        "imagen":  "../img/proyecto13.webp",
         "descripcion":  "Santiago de Surco, Lima - Perú. Instalación de pisos recreativos de caucho continuo Casali Athlon y juegos recreativos, diseñados para brindar diversión, protección y desarrollo en áreas infantiles.",
         "caracteristicas":  [
                                 {
@@ -514,7 +514,7 @@
         "titulo":  "CARFIP - Centro de Alto Rendimiento",
         "ubicacion":  "Lima, Perú",
         "categoria":  "luces",
-        "imagen":  "../img/proyecto14.png",
+        "imagen":  "../img/proyecto14.webp",
         "descripcion":  "Lima, Perú. Sistema de iluminación LED profesional para instalaciones deportivas de alto rendimiento, diseñado para ofrecer máxima eficiencia, uniformidad lumínica y confort visual.",
         "caracteristicas":  [
                                 {
@@ -554,7 +554,7 @@
         "titulo":  "Universidad del Pacífico",
         "ubicacion":  "Lima, Perú",
         "categoria":  "recreativos",
-        "imagen":  "../img/proyecto15.png",
+        "imagen":  "../img/proyecto15.webp",
         "descripcion":  "Lima, Perú. Instalación de piso de poliuretano multiuso para salón de yoga, diseñado para ofrecer comodidad, seguridad, fácil limpieza y una superficie uniforme para actividades de bajo impacto.",
         "caracteristicas":  [
                                 {
@@ -594,7 +594,7 @@
         "titulo":  "Colegio Santo Toribio de Rioja",
         "ubicacion":  "Rioja, Perú",
         "categoria":  "pistas",
-        "imagen":  "../img/proyecto16.png",
+        "imagen":  "../img/proyecto16.webp",
         "descripcion":  "Rioja, San Martín, Perú. Instalación de pista atlética tipo Spray CONIPUR SP, producto certificado WA/IAAF, diseñada para ofrecer seguridad, durabilidad y alto rendimiento deportivo.",
         "caracteristicas":  [
                                 {
@@ -634,7 +634,7 @@
         "titulo":  "Colegio Modelo de San Antonio de Moquegua",
         "ubicacion":  "Moquegua, Perú",
         "categoria":  "pistas",
-        "imagen":  "../img/proyecto17.png",
+        "imagen":  "../img/proyecto17.webp",
         "descripcion":  "Moquegua, Perú. Suministro e instalación de pista atlética sintética con sistema Spray CONIPUR SP de 13 mm, utilizando materiales certificados de alto rendimiento para garantizar seguridad, resistencia y máximo desempeño deportivo.",
         "caracteristicas":  [
                                 {
@@ -674,7 +674,7 @@
         "titulo":  "Colegio Rosa de Santa María RSM",
         "ubicacion":  "Cercado de Lima, Perú",
         "categoria":  "recreativos",
-        "imagen":  "../img/proyecto18.png",
+        "imagen":  "../img/proyecto18.webp",
         "descripcion":  "Cercado de Lima, Lima, Perú. Instalación de piso de poliuretano 9+2=11 con demarcación multideportiva profesional, diseñado para brindar resistencia, seguridad y alto rendimiento en actividades deportivas escolares y recreativas.",
         "caracteristicas":  [
                                 {
@@ -714,7 +714,7 @@
         "titulo":  "I. E. FAP Capitán José Abelardo Quiñones",
         "ubicacion":  "Iquitos, Loreto, Perú",
         "categoria":  "pistas",
-        "imagen":  "../img/proyecto19.png",
+        "imagen":  "../img/proyecto19.webp",
         "descripcion":  "Iquitos, Loreto, Perú. Instalación de pista atlética tipo sandwich CASALI SPORTRACK SW PF de 13.6 mm con certificación World Athletics, diseñada para brindar máximo rendimiento, seguridad y durabilidad en competencias y entrenamientos de alto nivel.",
         "caracteristicas":  [
                                 {
@@ -754,7 +754,7 @@
         "titulo":  "Estadio IPD de Huancavelica",
         "ubicacion":  "Huancavelica, Perú",
         "categoria":  "pistas",
-        "imagen":  "../img/proyecto20.png",
+        "imagen":  "../img/proyecto20.webp",
         "descripcion":  "Huancavelica, Perú. Instalación de pista atlética tipo sandwich de 13 mm de 6 carriles y campo de fútbol 11, ejecutado con materiales certificados para brindar máximo rendimiento, seguridad y durabilidad.",
         "caracteristicas":  [
                                 {

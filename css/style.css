@@ -1,4 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600;700&display=swap");
 
 /* =========================
    VARIABLES GLOBALES
@@ -744,7 +744,7 @@ header{
     background:
     linear-gradient(rgba(26,26,26,0.45),
     rgba(26,26,26,0.45)),
-    url("../img/grasss.png");
+    url("../img/grasss.webp");
 
     background-size: cover;
     background-position: center;

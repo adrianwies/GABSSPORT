@@ -1,4 +1,4 @@
-﻿/* =========================
+/* =========================
    BANNER PROYECTOS
 ========================= */
 
@@ -18,7 +18,7 @@
         rgba(0,0,0,0.35) 65%,
         rgba(0,0,0,0.05) 100%
     ),
-    url("../img/bannerproyectos.png");
+    url("../img/bannerproyectos.webp");
 
     background-size: cover;
     background-position: center 60%;

@@ -44,7 +44,7 @@
     card.dataset.projectId = proyecto.id;
     card.setAttribute("aria-label", `Ver proyecto ${proyecto.titulo}`);
     card.innerHTML = `
-      <img src="${escapar(proyecto.imagen)}" alt="${escapar(proyecto.titulo)}" loading="lazy" />
+      <img src="${escapar(proyecto.imagen)}" alt="${escapar(proyecto.titulo)}" loading="lazy" decoding="async" />
       <div class="proyecto-overlay">
         <h3>${escapar(proyecto.titulo)}</h3>
         <p>${escapar(proyecto.ubicacion)}</p>
@@ -110,7 +110,7 @@
           <div class="modal-scroll-inner">
             <button class="modal-close" type="button" aria-label="Cerrar modal">×</button>
             <div class="modal-left">
-              <div class="modal-img-wrapper"><img src="${escapar(proyecto.imagen)}" class="modal-main-img" alt="${escapar(proyecto.titulo)}" /></div>
+              <div class="modal-img-wrapper"><img src="${escapar(proyecto.imagen)}" class="modal-main-img" alt="${escapar(proyecto.titulo)}" decoding="async" /></div>
             </div>
             <div class="modal-right">
               <h2>${escapar(proyecto.titulo)}</h2>

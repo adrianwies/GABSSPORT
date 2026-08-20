@@ -5,8 +5,9 @@ class GabsLoader extends HTMLElement {
     this.dataset.initialized = "true";
     const base = this.dataset.base || "./";
     const isDelayed = this.dataset.mode === "delayed";
-    // En el inicio se muestra el logo lo suficiente para apreciarlo sin demorar demasiado.
-    const minimumDuration = isDelayed ? 650 : 1500;
+    // El loader acompaña el arranque del HTML, pero nunca espera imágenes u otros
+    // recursos de red. Así no bloquea la navegación en conexiones lentas.
+    const minimumDuration = isDelayed ? 200 : 700;
     let shownAt = isDelayed ? 0 : performance.now();
     let isVisible = !isDelayed;
 
@@ -51,10 +52,8 @@ class GabsLoader extends HTMLElement {
       }, 300);
     }
 
-    const readyEvent = isDelayed ? "load" : "DOMContentLoaded";
-    const isReady = isDelayed
-      ? document.readyState === "complete"
-      : document.readyState !== "loading";
+    const readyEvent = "DOMContentLoaded";
+    const isReady = document.readyState !== "loading";
 
     if (isReady) {
       hide();
