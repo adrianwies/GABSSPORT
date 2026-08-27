@@ -177,6 +177,32 @@
   background: var(--color-primary-light);
 }
 
+/* La portada ocupa toda la pantalla en tablet y móvil. */
+@media (max-width: 1024px) {
+  .hero {
+    height: 100vh;
+    height: 100svh;
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) and (max-height: 600px) {
+  .hero .hero-content {
+    padding-top: clamp(92px, 24vh, 120px) !important;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 16px;
+    font-size: clamp(2rem, 6vw, 3rem) !important;
+  }
+
+  .hero-content p {
+    margin-bottom: 18px;
+    line-height: 1.5 !important;
+  }
+}
+
 @media (max-width: 700px) {
   .hero-arrow { top: auto; bottom: 18px; width: 40px; height: 40px; transform: none; }
   .hero-prev { left: 16px; }
