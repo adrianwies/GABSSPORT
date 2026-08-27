@@ -1,8 +1,10 @@
 ﻿.hero {
   position: relative;
   width: 100%;
-  height: clamp(600px, 78svh, 760px);
-  min-height: 600px;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0 !important;
   padding: 0;
   overflow: hidden;
@@ -175,16 +177,6 @@
   width: 30px;
   border-radius: 10px;
   background: var(--color-primary-light);
-}
-
-/* La portada ocupa toda la pantalla en tablet y móvil. */
-@media (max-width: 1024px) {
-  .hero {
-    height: 100vh;
-    height: 100svh;
-    min-height: 100vh;
-    min-height: 100svh;
-  }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) and (max-height: 600px) {
