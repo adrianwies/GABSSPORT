@@ -1,5 +1,61 @@
 const speed = 200;
 
+/* CARRUSEL DE PORTADA */
+const heroCarousel = document.querySelector('.hero-carousel');
+
+if (heroCarousel) {
+  const heroSlides = [...heroCarousel.querySelectorAll('.hero-slide')];
+  const heroDots = [...heroCarousel.querySelectorAll('.hero-dot')];
+  const previousButton = heroCarousel.querySelector('.hero-prev');
+  const nextButton = heroCarousel.querySelector('.hero-next');
+  let heroIndex = 0;
+  let heroTimer;
+
+  const showHeroSlide = (newIndex) => {
+    heroIndex = (newIndex + heroSlides.length) % heroSlides.length;
+
+    heroSlides.forEach((slide, index) => {
+      const isActive = index === heroIndex;
+      slide.classList.toggle('active', isActive);
+      slide.setAttribute('aria-hidden', String(!isActive));
+    });
+
+    heroDots.forEach((dot, index) => {
+      const isActive = index === heroIndex;
+      dot.classList.toggle('active', isActive);
+      dot.setAttribute('aria-selected', String(isActive));
+    });
+  };
+
+  const startHeroCarousel = () => {
+    clearInterval(heroTimer);
+    heroTimer = setInterval(() => showHeroSlide(heroIndex + 1), 6000);
+  };
+
+  previousButton.addEventListener('click', () => {
+    showHeroSlide(heroIndex - 1);
+    startHeroCarousel();
+  });
+
+  nextButton.addEventListener('click', () => {
+    showHeroSlide(heroIndex + 1);
+    startHeroCarousel();
+  });
+
+  heroDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showHeroSlide(index);
+      startHeroCarousel();
+    });
+  });
+
+  heroCarousel.addEventListener('mouseenter', () => clearInterval(heroTimer));
+  heroCarousel.addEventListener('mouseleave', startHeroCarousel);
+  heroCarousel.addEventListener('focusin', () => clearInterval(heroTimer));
+  heroCarousel.addEventListener('focusout', startHeroCarousel);
+  startHeroCarousel();
+}
+
 const startCounter = (counter) => {
 
     const updateCount = () => {

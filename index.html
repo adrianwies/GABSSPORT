@@ -30,29 +30,75 @@
     <div id="site-header" data-base="./" data-active="inicio"></div>
 
     <!-- PORTADA -->
-    <section class="hero">
-      <!-- VIDEO -->
-      <video autoplay muted loop playsinline class="hero-video">
-        <source src="img/Animación WEB.mp4" type="video/mp4" />
-      </video>
+    <section class="hero hero-carousel" aria-label="Proyectos destacados">
+      <article class="hero-slide active" aria-hidden="false">
+        <img class="hero-image" src="img/imagenportada1.png" alt="Instalación de césped sintético en el estadio Lolo Fernández" />
 
       <div class="overlay" aria-hidden="true"></div>
 
       <div class="hero-content">
-        <span class="hero-eyebrow">Ingeniería para espacios deportivos</span>
+        <span class="hero-eyebrow hero-service">Césped artificial</span>
 
         <h1>
-          Superficies deportivas
-          <strong>hechas para rendir.</strong>
+          Estadio emblemático
+          <strong>Lolo Fernández</strong>
         </h1>
 
         <p>
-          Diseñamos, instalamos y mantenemos soluciones deportivas seguras,
-          duraderas y preparadas para cada desafío.
+          Instalación de césped sintético para renovar la superficie deportiva
+          de este emblemático estadio.
         </p>
 
       </div>
+      </article>
 
+      <article class="hero-slide" aria-hidden="true">
+        <img class="hero-image" src="img/imagenportada2.png" alt="Instalación de pista atlética en el colegio Santo Toribio de Rioja" />
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <span class="hero-eyebrow hero-service">Pista atlética</span>
+          <h1>
+            Colegio Santo Toribio
+            <strong>de Rioja</strong>
+          </h1>
+          <p>Instalación de pista atlética tipo spray CONIPUR SP, un sistema certificado WA/IAAF para el colegio ubicado en Rioja, San Martín.</p>
+        </div>
+      </article>
+
+      <article class="hero-slide" aria-hidden="true">
+        <img class="hero-image" src="img/imagenportada3.png" alt="Instalación de piso de poliuretano en el Coliseo Cerrado de Curahuasi" />
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <span class="hero-eyebrow hero-service">Piso de poliuretano</span>
+          <h1>
+            Coliseo cerrado
+            <strong>de Curahuasi</strong>
+          </h1>
+          <p>Instalación de piso de poliuretano de 9 mm, compuesto por un sistema de 7+2 mm, en el Coliseo Cerrado de Curahuasi.</p>
+        </div>
+      </article>
+
+      <article class="hero-slide" aria-hidden="true">
+        <img class="hero-image" src="img/imagenportada4.png" alt="Instalación de baldosas de polipropileno en el campo de concentración de Alianza Lima" />
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <span class="hero-eyebrow hero-service">Baldosas de polipropileno</span>
+          <h1>
+            Campo de concentración
+            <strong>Alianza Lima</strong>
+          </h1>
+          <p>Instalación de baldosas de polipropileno para el mini gimnasio del Campo de Concentración de Alianza Lima en Cieneguilla.</p>
+        </div>
+      </article>
+
+      <button class="hero-arrow hero-prev" type="button" aria-label="Ver proyecto anterior">&#10094;</button>
+      <button class="hero-arrow hero-next" type="button" aria-label="Ver proyecto siguiente">&#10095;</button>
+      <div class="hero-dots" role="tablist" aria-label="Seleccionar proyecto">
+        <button class="hero-dot active" type="button" role="tab" aria-label="Ver proyecto 1" aria-selected="true"></button>
+        <button class="hero-dot" type="button" role="tab" aria-label="Ver proyecto 2" aria-selected="false"></button>
+        <button class="hero-dot" type="button" role="tab" aria-label="Ver proyecto 3" aria-selected="false"></button>
+        <button class="hero-dot" type="button" role="tab" aria-label="Ver proyecto 4" aria-selected="false"></button>
+      </div>
     </section>
 
     <!-- NOSOTROS -->
