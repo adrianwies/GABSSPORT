@@ -116,7 +116,7 @@ for (const item of pages) {
 }
 
 const coreUrls = [
-  { urlPath: '/', priority: '1.0', frequency: 'weekly', image: 'imagenportada1.png' },
+  { urlPath: '/', priority: '1.0', frequency: 'weekly', image: 'imagenportada1.webp' },
   { urlPath: '/nosotros/', priority: '0.8', frequency: 'monthly', image: 'bannerpadel.webp' },
   { urlPath: '/servicios/', priority: '0.9', frequency: 'monthly', image: 'bannerservicios.webp' },
   { urlPath: '/proyectos/', priority: '0.9', frequency: 'weekly', image: 'bannerproyectos.webp' },

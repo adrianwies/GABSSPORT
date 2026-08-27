@@ -1,5 +1,13 @@
 
 
+/*
+ * El modal actualiza la URL con history.pushState. Convertimos primero las
+ * rutas relativas de la galeria a URLs absolutas para que las imagenes sigan
+ * apuntando a /img aunque la URL visible pase a /servicios/{servicio}/.
+ */
+document.querySelectorAll(".modal-overlay img[src]").forEach((img) => {
+    img.src = new URL(img.getAttribute("src"), document.baseURI).href;
+});
 const abrirModal = document.getElementById("abrirModal");
 const modal = document.getElementById("modalFutbol");
 const cerrarModal = document.getElementById("cerrarModal");
