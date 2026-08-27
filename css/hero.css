@@ -96,7 +96,8 @@
   display: none;
 }
 
-.hero-content h1 {
+.hero-content h1,
+.hero-content h2 {
   max-width: 900px;
   margin-bottom: clamp(18px, 2.2dvh, 30px);
   color: var(--color-white);
@@ -107,7 +108,8 @@
   text-transform: uppercase;
 }
 
-.hero-content h1 strong {
+.hero-content h1 strong,
+.hero-content h2 strong {
   display: block;
   color: var(--color-primary-light);
   font-weight: var(--font-weight-semibold);
@@ -184,7 +186,8 @@
     padding-top: clamp(92px, 24vh, 120px) !important;
   }
 
-  .hero-content h1 {
+  .hero-content h1,
+  .hero-content h2 {
     margin-bottom: 16px;
     font-size: clamp(2rem, 6vw, 3rem) !important;
   }

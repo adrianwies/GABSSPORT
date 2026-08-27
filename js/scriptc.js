@@ -284,6 +284,44 @@ window.addEventListener('scroll', () => {
 
 const params = new URLSearchParams(window.location.search);
 const modalServicio = params.get("modal");
+const serviciosBasePath = new URL("./", window.location.href).pathname;
+const rutasServicios = {
+  abrirModal: "canchas-deportivas",
+  abrirModalPistas: "pistas-atleticas",
+  abrirModalSuelos: "suelos-recreativos",
+  abrirModalLuces: "iluminacion-deportiva",
+  abrirModalMantenimiento: "mantenimiento-deportivo"
+};
+const modalesServicios = {
+  "canchas-deportivas": document.getElementById("modalFutbol"),
+  "pistas-atleticas": document.getElementById("modalPistas"),
+  "suelos-recreativos": document.getElementById("modalSuelos"),
+  "iluminacion-deportiva": document.getElementById("modalLuces"),
+  "mantenimiento-deportivo": document.getElementById("modalMantenimiento")
+};
+
+document.addEventListener("click", (event) => {
+  const enlace = event.target.closest("a[id]");
+  const slug = enlace ? rutasServicios[enlace.id] : null;
+  if (slug && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
+    history.pushState({ modalServicio: slug }, "", `${serviciosBasePath}${slug}/`);
+    return;
+  }
+
+  const cierraModal = event.target.closest(".modal-close") ||
+    event.target.classList?.contains("modal-overlay");
+  if (cierraModal && history.state?.modalServicio) history.back();
+});
+
+window.addEventListener("popstate", () => {
+  Object.values(modalesServicios).forEach((item) => item?.classList.remove("active"));
+  const modalActivo = modalesServicios[history.state?.modalServicio];
+  modalActivo?.classList.add("active");
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && history.state?.modalServicio) history.back();
+});
 
 
 window.addEventListener("DOMContentLoaded", () => {

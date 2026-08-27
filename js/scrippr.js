@@ -9,6 +9,7 @@
   const filtrosToggle = document.querySelector(".filtros-toggle");
   const limpiarFiltros = document.querySelector(".limpiar-filtros");
   if (!grid || !verMasBtn) return;
+  const proyectosBasePath = new URL("./", window.location.href).pathname;
 
   let proyectos = [];
   let filtroActual = "all";
@@ -22,6 +23,14 @@
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#039;");
 
+  const slugProyecto = (valor = "") =>
+    String(valor)
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
+
   const descripcionProyecto = (proyecto) =>
     proyecto.descripcion ||
     `${proyecto.ubicacion}. Proyecto desarrollado por GABSPORT con materiales de alta calidad, instalación profesional y acabados preparados para un uso deportivo exigente.`;
@@ -34,8 +43,8 @@
     ];
 
   const crearCard = (proyecto, indice) => {
-    const card = document.createElement("button");
-    card.type = "button";
+    const card = document.createElement("a");
+    card.href = `${slugProyecto(proyecto.titulo)}/`;
     // La visibilidad ya la controla el renderizado del JSON. No usamos
     // `proyecto-extra` porque esa clase antigua aplica display:none desde CSS.
     card.className = "proyecto-card";
@@ -50,7 +59,10 @@
         <p>${escapar(proyecto.ubicacion)}</p>
         <div class="proyecto-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
       </div>`;
-    card.addEventListener("click", () => abrirModal(proyecto));
+    card.addEventListener("click", (event) => {
+      event.preventDefault();
+      abrirModal(proyecto, true);
+    });
     return card;
   };
 
@@ -84,13 +96,14 @@
   modal.setAttribute("aria-hidden", "true");
   document.body.append(modal);
 
-  const cerrarModal = () => {
+  const cerrarModal = (actualizarRuta = true) => {
     modal.classList.remove("active");
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    if (actualizarRuta && history.state?.modalProyecto) history.back();
   };
 
-  function abrirModal(proyecto) {
+  function abrirModal(proyecto, actualizarRuta = false) {
     const cta = proyecto.cta || {
       icono: "fa-solid fa-trophy",
       titulo: "¿Tienes un proyecto similar?",
@@ -128,8 +141,23 @@
     modal.classList.add("active");
     modal.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
+    if (actualizarRuta) {
+      history.pushState(
+        { modalProyecto: proyecto.id },
+        "",
+        `${proyectosBasePath}${slugProyecto(proyecto.titulo)}/`
+      );
+    }
     modal.querySelector(".modal-close").focus();
   }
+
+  window.addEventListener("popstate", () => {
+    const proyectoActivo = proyectos.find(
+      (proyecto) => proyecto.id === history.state?.modalProyecto
+    );
+    if (proyectoActivo) abrirModal(proyectoActivo, false);
+    else cerrarModal(false);
+  });
 
   const actualizarProyectos = () => {
     const visibles = proyectos.filter((proyecto) => filtroActual === "all" || proyecto.categoria === filtroActual);
