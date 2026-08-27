@@ -80,7 +80,7 @@ function renderPage(item) {
     '<aside' + attr('class', 'detail-aside') + '><span>GABSPORT</span><h2>¿Tienes un proyecto similar?</h2><p>Conversemos sobre tu próximo espacio deportivo y recibe asesoría especializada.</p><a' + attr('class', 'detail-cta') + attr('href', 'https://wa.me/51986667508') + attr('target', '_blank') + attr('rel', 'noopener noreferrer') + '>COTIZAR PROYECTO →</a></aside>',
     '</div></section></main>',
     '<div' + attr('id', 'site-footer') + attr('data-base', '../../') + '></div>',
-    '<script' + attr('src', '../../componentes/header/header.js') + '></script>',
+    '<script' + attr('src', '../../componentes/header/header.js?v=20260827-2') + '></script>',
     '<script' + attr('src', '../../componentes/footer/footer.js') + '></script>',
     '</body></html>',
     ''

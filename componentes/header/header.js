@@ -21,12 +21,43 @@
       const navLinks = container.querySelector(".nav-links");
       const menuIcon = menuButton.querySelector("i");
 
-      menuButton.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("active");
+      const setMenuState = (isOpen) => {
+        navLinks.classList.toggle("active", isOpen);
         menuButton.setAttribute("aria-expanded", String(isOpen));
         menuButton.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
         menuIcon.classList.toggle("fa-bars", !isOpen);
         menuIcon.classList.toggle("fa-xmark", isOpen);
+      };
+
+      const closeMenu = () => setMenuState(false);
+
+      menuButton.addEventListener("click", () => {
+        setMenuState(!navLinks.classList.contains("active"));
+      });
+
+      navLinks.addEventListener("click", (event) => {
+        if (event.target.closest("a")) closeMenu();
+      });
+
+      document.addEventListener("pointerdown", (event) => {
+        if (
+          navLinks.classList.contains("active") &&
+          !navLinks.contains(event.target) &&
+          !menuButton.contains(event.target)
+        ) {
+          closeMenu();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && navLinks.classList.contains("active")) {
+          closeMenu();
+          menuButton.focus();
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 1024) closeMenu();
       });
     } catch (error) {
       console.error("No se pudo cargar el header:", error);
